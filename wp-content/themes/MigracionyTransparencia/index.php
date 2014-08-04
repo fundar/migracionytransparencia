@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div id="sliders-container">
-	<?php putRevSlider("Avada_Full_Width","homepage") ?>
+	<?php putRevSlider("Destacados","homepage") ?>
 </div>
 	
 <di id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
