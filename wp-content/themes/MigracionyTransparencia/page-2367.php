@@ -129,14 +129,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 				<?php wp_link_pages(); ?>
 			</div>
-			<?php if( ! post_password_required($post->ID) ): ?>
-			<?php if($smof_data['comments_pages']): ?>
-				<?php
-				wp_reset_query();
-				comments_template();
-				?>
-			<?php endif; ?>
-			<?php endif; // password check ?>
+                       jyi
 		</div>
 		<?php endwhile; ?>
 	</div>
