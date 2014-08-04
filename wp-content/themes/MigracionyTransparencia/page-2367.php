@@ -67,13 +67,8 @@ get_header(); ?>
 					<?php endif; ?>
 				</ul>
 			</div>
-			<?php endif; ?>
-			<?php else: ?>
-			<?php
-			if((has_post_thumbnail() || get_post_meta($post->ID, 'pyre_video', true))):
-			?>
+			<?php endif; ?>			
 
-			<?php endif; ?>
 			<?php endif; ?>
 			<?php endif; ?>
 			<?php endif; // password check ?>
