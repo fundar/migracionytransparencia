@@ -151,7 +151,7 @@ get_header(); ?>
 						}
 					}
 					if(is_front_page()) {
-						if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('SidebarHome')):
+						if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Blog Sidebar')):
 						endif;
 					}
 					?>
