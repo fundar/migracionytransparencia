@@ -33,6 +33,7 @@
 		}
 	}
 	?>
+	<?php putRevSlider("Avada_Full_Width") ?>
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
 		<?php if($smof_data['blog_layout'] == 'Timeline'): ?>
 		<div class="timeline-icon"><i class="icon-bubbles"></i></div>
