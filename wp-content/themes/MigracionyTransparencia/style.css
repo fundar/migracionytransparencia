@@ -5,6 +5,10 @@ Author: FundarLab
 Author URI: http://fundarlabs.mx/
 Version: 1.0
 -----------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://migracionytransparencia.org/wp-content/themes/MigracionyTransparencia/fonts/stylesheet.css);
+
+
 .group {
   zoom: 1;
 }
