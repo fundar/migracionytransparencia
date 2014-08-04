@@ -131,7 +131,7 @@ get_header(); ?>
 			</div>
 
 			<?php endif; ?>
-			<?php endif; // password check ?>
+
 		</div>
 		<?php endwhile; ?>
 	</div>
