@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<div id="sliders-container">
+	<?php putRevSlider("Avada_Full_Width") ?>
+</div>
 
 	
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
