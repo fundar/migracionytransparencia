@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 <div id="sliders-container">
-	<?php putRevSlider("Avada_Full_Width") ?>
+	<?php putRevSlider("Avada_Full_Width","homepage") ?>
 </div>
-
 	
-	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
+<di id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
 		<?php if($smof_data['blog_layout'] == 'Timeline'): ?>
 		<div class="timeline-icon"><i class="icon-bubbles"></i></div>
 		<?php endif; ?>
