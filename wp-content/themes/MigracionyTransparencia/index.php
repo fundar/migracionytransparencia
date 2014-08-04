@@ -1,39 +1,6 @@
 <?php get_header(); ?>
-	<?php
-	$container_class = '';
-	$post_class = '';
-	$content_class = '';
 
-	$sidebar_exists = true;
-	if($smof_data['blog_full_width']) {
-		$content_css = 'width:100%';
-		$sidebar_css = 'display:none';
-		$content_class= 'full-width';
-		$sidebar_exists = false;
-	} elseif($smof_data['blog_sidebar_position'] == 'Left') {
-		$content_css = 'float:right;';
-		$sidebar_css = 'float:left;';
-	} elseif($smof_data['blog_sidebar_position'] == 'Right') {
-		$content_css = 'float:left;';
-		$sidebar_css = 'float:right;';
-	}
-
-	if($smof_data['blog_layout'] == 'Large Alternate') {
-		$post_class = 'large-alternate';
-	} elseif($smof_data['blog_layout'] == 'Medium Alternate') {
-		$post_class = 'medium-alternate';
-	} elseif($smof_data['blog_layout'] == 'Grid') {
-		$post_class = 'grid-post';
-		$container_class = sprintf( 'grid-layout grid-layout-%s', $smof_data['blog_grid_columns'] );
-	} elseif($smof_data['blog_layout'] == 'Timeline') {
-		$post_class = 'timeline-post';
-		$container_class = 'timeline-layout';
-		if(!$smof_data['blog_full_width']) {
-			$container_class = 'timeline-layout timeline-sidebar-layout';
-		}
-	}
-	?>
-	<?php putRevSlider("Avada_Full_Width") ?>
+	
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
 		<?php if($smof_data['blog_layout'] == 'Timeline'): ?>
 		<div class="timeline-icon"><i class="icon-bubbles"></i></div>
