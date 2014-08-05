@@ -179,10 +179,36 @@
 			<?php endif; ?>
 			<?php endif; // password check ?>
 		</div>
+		
+		
 		<?php endif; ?>
 	</div>
 	<?php if( $sidebar_exists == true ): ?>
 	<?php wp_reset_query(); ?>
 	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
+		
+<!-- end #content-post-->		
+	<div id="content" >
+			<div class="container clearfix">
+		<?php 
+	$service_query = new WP_Query('page_id=3747');
+			while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
+
+	<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+
+		<div class="post_content clearfix" style="padding: 3px 0px;">
+			
+			
+			<?php the_content(); ?>
+			<?php themefusion_pagination($pages = '', $range = 2); ?>
+		</div> 	<!-- end .post_content -->
+	</article> <!-- end .entry -->
+       <?php endwhile; // end of the loop. ?>
+		</div>
+	</div><!-- post recientes -->		
+	
+	
 	<?php endif ;?>
+	
+	
 <?php get_footer(); ?>
