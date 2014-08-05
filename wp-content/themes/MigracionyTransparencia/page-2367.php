@@ -189,7 +189,7 @@
 		
 <!-- end #content-post-->		
 	<div id="content" >
-			<div class="container clearfix">
+			
 		<?php 
 	$service_query = new WP_Query('page_id=3747');
 			while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
@@ -204,7 +204,7 @@
 		</div> 	<!-- end .post_content -->
 	</article> <!-- end .entry -->
        <?php endwhile; // end of the loop. ?>
-		</div>
+		
 	</div><!-- post recientes -->		
 	
 	
