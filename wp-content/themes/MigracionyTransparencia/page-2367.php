@@ -31,7 +31,7 @@
 		}
 	}
 	?>
-	<div id="content inicio" style="<?php echo $content_css; ?>">
+	<div id="content" class="inicio" style="<?php echo $content_css; ?>">
 		<?php
 		if(have_posts()): the_post();
 		?>
