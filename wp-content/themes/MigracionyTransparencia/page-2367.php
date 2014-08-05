@@ -121,27 +121,10 @@ get_header(); ?>
 					<?php endif; ?>
 				</ul>
 			</div>
-			
 			<?php endif; ?>
 			<?php endif; ?>
 			<?php endif; ?>
 			<?php endif; // password check ?>
-			<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
-			        <?php if($smof_data['blog_layout'] == 'Timeline'): ?>
-			       <div class="timeline-icon"><i class="icon-bubbles"></i></div>
-			       <?php endif; ?>
-				<div id="posts-container" class="<?php echo $container_class; ?> clearfix">
-				 contenido
-			</div>
-			<?php themefusion_pagination($pages = '', $range = 2); ?>
-			</div>
-			<?php if( $sidebar_exists == true ): ?>
-			 <?php wp_reset_query(); ?>
-			 <div id="sidebar" style="<?php echo $sidebar_css; ?>">
-			<?php get_sidebar('Sidebar Inicio'); ?>
-	                </div>
-	                <?php endif; ?>
-			
 			<div class="post-content">
 				<?php the_content(); ?>
 				<?php wp_link_pages(); ?>
