@@ -157,7 +157,7 @@
 			<?php endif; ?>
 			<?php endif; ?>
 			<?php endif; // password check ?>
-			<div class="post-content">
+			<div class="post-content inicio">
 				<?php the_content(); ?>
 				<?php wp_link_pages(); ?>
 			</div>
