@@ -138,7 +138,7 @@ get_header(); ?>
 			<?php if( $sidebar_exists == true ): ?>
 			 <?php wp_reset_query(); ?>
 			 <div id="sidebar" style="<?php echo $sidebar_css; ?>">
-			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar Inicio') ) { ?>
+			<?php get_sidebar('Sidebar Inicio'); ?>
 	                </div>
 	                <?php endif; ?>
 			
