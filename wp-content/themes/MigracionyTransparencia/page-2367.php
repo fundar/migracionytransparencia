@@ -188,7 +188,9 @@
 	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
 		
 <!-- inicio #recientes- entradas-->
-        <div id="content" class="full-width">	
+        <div id="content" class="full-width">
+		<div class="divisor-2"></div>		
+		
 			
 		<?php 
 	$service_query = new WP_Query('page_id=3747');
