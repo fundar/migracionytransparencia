@@ -31,7 +31,7 @@
 		}
 	}
 	?>
-	<div id="content" style="<?php echo $content_css; ?>">
+	<div id="content inicio" style="<?php echo $content_css; ?>">
 		<?php
 		if(have_posts()): the_post();
 		?>
@@ -157,7 +157,7 @@
 			<?php endif; ?>
 			<?php endif; ?>
 			<?php endif; // password check ?>
-			<div class="post-content inicio">
+			<div class="post-content">
 				<?php the_content(); ?>
 				<?php wp_link_pages(); ?>
 			</div>
