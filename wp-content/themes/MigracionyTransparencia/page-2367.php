@@ -199,7 +199,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
 
 		<div class="post_content clearfix" style="padding: 3px 0px;">
-			
+			<h3 class="headings"><?php the_title(); ?></h3>
 			
 			<?php the_content(); ?>
 			<?php themefusion_pagination($pages = '', $range = 2); ?>
