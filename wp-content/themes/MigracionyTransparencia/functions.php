@@ -1383,3 +1383,21 @@ function avada_auto_updater() {
 	}
 }
 add_action( 'admin_init', 'avada_auto_updater' );
+
+/**
+ * Custom Post Type "Solicitudes"
+ */
+add_action( 'init', 'create_post_type_solicitudes' );
+function create_post_type_proyectos() {
+    register_post_type( 'proyecto',
+        array(
+            'labels' => array(
+                'name' => __( 'Solicitudes' ),
+                'singular_name' => __( 'Solicitud' )
+            ),
+        'public' => true,
+        'has_archive' => true,
+        )
+    );
+}
+
