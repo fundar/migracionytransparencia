@@ -1393,9 +1393,10 @@ function create_post_type_solicitudes() {
         array(
             'labels' => array(
                 'name' => __( 'Solicitudes' ),
-                'singular_name' => __( 'Solicitud' )
+                'singular_name' => __( 'Solicitud' ),
+                'singular_label' => __( 'Solicitud' ),		
                 'all_items' => __('Solicitudes'),
-                'add_new_item' => __('Añadir una nueva solicitud'),
+                'add_new_item' => __('Añadir una solicitud nueva'),
                 'edit_item' => __('Editar solicitud')		
             ),
         'public' => true,
