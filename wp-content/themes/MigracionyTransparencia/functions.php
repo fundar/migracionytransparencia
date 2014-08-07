@@ -1388,8 +1388,8 @@ add_action( 'admin_init', 'avada_auto_updater' );
  * Custom Post Type "Solicitudes"
  */
 add_action( 'init', 'create_post_type_solicitudes' );
-function create_post_type_proyectos() {
-    register_post_type( 'proyecto',
+function create_post_type_solicitudes() {
+    register_post_type( 'Solicitud',
         array(
             'labels' => array(
                 'name' => __( 'Solicitudes' ),
