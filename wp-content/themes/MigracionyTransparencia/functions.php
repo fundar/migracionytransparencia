@@ -1394,9 +1394,19 @@ function create_post_type_solicitudes() {
             'labels' => array(
                 'name' => __( 'Solicitudes' ),
                 'singular_name' => __( 'Solicitud' )
+                'all_items' => __('Solicitudes'),
+                'add_new_item' => __('Añadir una nueva solicitud'),
+                'edit_item' => __('Editar solicitud')		
             ),
         'public' => true,
         'has_archive' => true,
+        'capability_type' => 'post',
+        'hierarchical' => true,
+        'query_var' => true,
+        'menu_position' => 5,
+        'menu_icon' => get_stylesheet_directory_uri() . '/images/solicitud_icon.png',
+        'rewrite' => array('slug' => 'Solicitudes'),
+        'supports' => array('title','editor','thumbnail')	
         )
     );
 }
