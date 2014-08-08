@@ -74,7 +74,7 @@
 				);
 				?>
 				<div class="fusion-sharing-box share-box">
-					<h4><?php echo __('Share This Story, Choose Your Platform!', 'Avada'); ?></h4>
+					
 					<?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
 				</div>
 			<?php endif; ?>
