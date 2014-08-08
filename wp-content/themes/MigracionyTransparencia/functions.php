@@ -1416,7 +1416,7 @@ function create_post_type_solicitudes() {
     );
 }
 
-function my_taxonomies_product() {
+function my_taxonomies_solicitud() {
   $labels = array(
     'name'              => _x( 'Solicitud Categories', 'taxonomy general name' ),
     'singular_name'     => _x( 'Solicitud Category', 'taxonomy singular name' ),
