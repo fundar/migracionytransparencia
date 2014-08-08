@@ -71,8 +71,7 @@
 	</div>
 	
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
-	<?php if(have_posts()): the_post(); ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
+
 		
 				<?php if( $smof_data['social_sharing_box'] ):
 				$full_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
