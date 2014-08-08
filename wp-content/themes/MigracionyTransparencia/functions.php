@@ -1416,3 +1416,24 @@ function create_post_type_solicitudes() {
     );
 }
 
+function my_taxonomies_product() {
+  $labels = array(
+    'name'              => _x( 'Solicitud Categories', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Solicitud Category', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search Solicitud Categories' ),
+    'all_items'         => __( 'All Solicitud Categories' ),
+    'parent_item'       => __( 'Parent Solicitud Category' ),
+    'parent_item_colon' => __( 'Parent Solicitud Category:' ),
+    'edit_item'         => __( 'Edit Solicitud Category' ), 
+    'update_item'       => __( 'Update Solicitud Category' ),
+    'add_new_item'      => __( 'Add New Solicitud Category' ),
+    'new_item_name'     => __( 'New Solicitud Category' ),
+    'menu_name'         => __( 'Solicitud Categories' ),
+  );
+  $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+  );
+  register_taxonomy( 'product_category', 'solicitud', $args );
+}
+add_action( 'init', 'my_taxonomies_solicitud', 0 );
