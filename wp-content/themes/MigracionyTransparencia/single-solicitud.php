@@ -73,5 +73,5 @@
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
 	
 	</div>
-	<?php endif; ?>
+	
 <?php get_footer(); ?>
