@@ -34,8 +34,6 @@
 	}
 	?>
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
-		<?php if(!$smof_data['blog_pn_nav']): ?>
-		<?php endif; ?>
 		<?php if(have_posts()): the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
 
