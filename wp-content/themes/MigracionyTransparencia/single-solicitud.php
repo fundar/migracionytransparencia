@@ -2,8 +2,8 @@
 	<?php
 	$content_css = '';
 	$sidebar_css = '';
-	$sidebar_exists = true;
 	$content_class = '';
+	$sidebar_exists = true;
 	if(get_post_meta($post->ID, 'pyre_full_width', true) == 'yes') {
 		$content_css = 'width:100%';
 		$sidebar_css = 'display:none';
@@ -26,7 +26,6 @@
 		}
 	}
 
-	$full_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
 	if($smof_data['single_post_full_width']) {
 		$content_css = 'width:100%';
 		$sidebar_css = 'display:none';
@@ -180,7 +179,7 @@
 					?>
 					<?php $attachment_image = wp_get_attachment_image_src($attachment_new_id, 'full'); ?>
 					<?php $full_image = wp_get_attachment_image_src($attachment_new_id, 'full'); ?>
-					<?php $attachment_data = wp_get_attachment_metadata($attachment_new_id); ?>>
+					<?php $attachment_data = wp_get_attachment_metadata($attachment_new_id); ?>
 					<li>
 						<?php if( ! $smof_data['status_lightbox'] && ! $smof_data['status_lightbox_single'] ): ?>
 						<a href="<?php echo $full_image[0]; ?>" rel="prettyPhoto[gallery<?php the_ID(); ?>]" title="<?php echo get_post_field('post_excerpt', $attachment_new_id); ?>"><img src="<?php echo $attachment_image[0]; ?>" alt="<?php echo get_post_meta($attachment_new_id, '_wp_attachment_image_alt', true); ?>" /></a>
@@ -202,7 +201,7 @@
 			<span class="entry-title" style="display: none;"><?php the_title(); ?></span>
 			<?php endif; ?>
 			<div class="post-content">
-				<?php render_wpfc_sermon_single(); ?>
+				<?php the_content(); ?>
 				<?php wp_link_pages(); ?>
 			</div>
 			<?php if( ! post_password_required($post->ID) ): ?>
@@ -214,7 +213,7 @@
 			</div>
 			<?php endif; ?>
 			<?php if( $smof_data['social_sharing_box'] ):
-
+				$full_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
 				$sharingbox_soical_icon_options = array (
 					'sharingbox'		=> 'yes',
 					'icon_colors' 		=> $smof_data['sharing_social_links_icon_color'],
@@ -236,7 +235,7 @@
 			<?php endif; ?>
 			<?php if($smof_data['author_info']): ?>
 			<div class="about-author">
-				<div class="title"><h2><?php echo __('About the Author:', 'Avada'); ?> <?php the_author_posts_link(); ?></h2><div class="title-sep-container"><div class="title-sep"></div></div></div>
+				<div class="fusion-title title"><h2 class="title-heading-left"><?php echo __('About the Author:', 'Avada'); ?> <?php the_author_posts_link(); ?></h2><div class="title-sep-container"><div class="title-sep sep-double"></div></div></div>
 				<div class="about-author-container">
 					<div class="avatar">
 						<?php echo get_avatar(get_the_author_meta('email'), '72'); ?>
@@ -289,6 +288,7 @@
 									?>
 									<div class="image-extras">
 										<div class="image-extras-content">
+											<?php $full_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full'); ?>
 											<a style="<?php echo $link_icon_css; ?>" class="icon link-icon" href="<?php echo $icon_permalink; ?>">Permalink</a>
 											<?php
 											if(get_post_meta($post->ID, 'pyre_video_url', true)) {

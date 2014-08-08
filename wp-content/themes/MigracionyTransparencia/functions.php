@@ -1389,7 +1389,7 @@ add_action( 'admin_init', 'avada_auto_updater' );
  */
 add_action( 'init', 'create_post_type_solicitudes' );
 function create_post_type_solicitudes() {
-    register_post_type( 'Solicitud',
+    register_post_type( 'solicitud',
         array(
             'labels' => array(
                 'name' => __( 'Solicitudes' ),
@@ -1414,6 +1414,7 @@ function create_post_type_solicitudes() {
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'comments' )	
         )
     );
+    
 }
 
 function my_taxonomies_solicitud() {
