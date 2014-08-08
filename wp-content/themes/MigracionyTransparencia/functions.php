@@ -1401,10 +1401,12 @@ function create_post_type_solicitudes() {
 		'view_item'          => __( 'Ver Solicitud' ),
 		'search_items'       => __( 'Buscar Solicitudes' ),
 		'not_found'          => __( 'No solicitudes encontradas' ),
-		'not_found_in_trash' => __( 'No solicitudes encontradas en basura' ), 		
+		'not_found_in_trash' => __( 'No solicitudes encontradas en basura' ),
+		'menu_name'          => 'Solicitudes'
 		 	
-
-            ),
+            );
+        $args = array(
+        'labels'        => $labels,
         'public' => true,
         'has_archive' => true,
         'capability_type' => 'post',
@@ -1416,7 +1418,7 @@ function create_post_type_solicitudes() {
         'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
         'has_archive'   => true,
         );
-  register_post_type( 'product', $args ); 
+  register_post_type( 'solicitudes', $args ); 
 }
-add_action( 'init', 'my_custom_post_product' );
+add_action( 'init', 'my_custom_post_solicitud' );
 
