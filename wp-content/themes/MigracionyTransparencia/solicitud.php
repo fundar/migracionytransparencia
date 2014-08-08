@@ -3,7 +3,7 @@
 get_header(); ?>
 <?php
     $args = array(
-      'post_type' => 'solicitud',
+      'post_type' => 'solicitudes',
       'tax_query' => array(
         array(
           'taxonomy' => 'solicitud_category',
@@ -27,11 +27,11 @@ get_header(); ?>
       echo 'Oh ohm no products!';
     }
   ?>
-  	</div>
+</div>
 
-	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
-	
-	</div>
+<div id="sidebar" style="<?php echo $sidebar_css; ?>">
+	o9p09'
+</div>
 
 
 <?php endwhile;?>
