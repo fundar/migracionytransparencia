@@ -30,7 +30,7 @@ get_header(); ?>
   	</div>
 
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
-	<?php generated_dynamic_sidebar(); ?>
+	
 	</div>
 
 
