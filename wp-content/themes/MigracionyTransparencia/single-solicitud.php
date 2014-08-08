@@ -57,27 +57,7 @@
 				</div>
 			</div>
 			<?php endif; ?>
-			<?php if( $smof_data['social_sharing_box'] ):
-				$full_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-				$sharingbox_soical_icon_options = array (
-					'sharingbox'		=> 'yes',
-					'icon_colors' 		=> $smof_data['sharing_social_links_icon_color'],
-					'box_colors' 		=> $smof_data['sharing_social_links_box_color'],
-					'icon_boxed' 		=> $smof_data['sharing_social_links_boxed'],
-					'icon_boxed_radius' => $smof_data['sharing_social_links_boxed_radius'],
-					'tooltip_placement'	=> $smof_data['sharing_social_links_tooltip_placement'],
-					'linktarget'		=> '_blank',
-					'title'				=> rawurlencode( $post->post_title ),
-					'description'		=> get_the_title( $post->ID ),
-					'link'				=> get_permalink( $post->ID ),
-					'pinterest_image'	=> rawurlencode( $full_image[0] ),
-				);
-				?>
-				<div class="fusion-sharing-box share-box">
-					
-					<?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
-				</div>
-			<?php endif; ?>
+
 
 			<?php if($smof_data['blog_comments']): ?>
 				<?php
