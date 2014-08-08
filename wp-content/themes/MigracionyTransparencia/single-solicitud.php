@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 	<?php
 	$content_css = '';
 	$sidebar_css = '';
@@ -71,7 +72,9 @@
 	</div>
 	
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
+                <div class="textwidget">
 
+                </div>
 		
 				<?php if( $smof_data['social_sharing_box'] ):
 				$full_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
