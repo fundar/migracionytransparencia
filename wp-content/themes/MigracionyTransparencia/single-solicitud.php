@@ -79,7 +79,7 @@
 						<p>Fecha de solicitud</p>
 						<p>Tipo de documentos</p>
 						<p>Calidad de respuesta</p>
-						<p>Recurso de revisi&ocute;n</p>						
+						<p>Recurso de revisi&oacute;n</p>						
 						<p>Organizaci&oacute;n</p>						
 					</div>
 				</div>
