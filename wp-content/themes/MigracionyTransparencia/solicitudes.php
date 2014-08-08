@@ -3,7 +3,7 @@
 get_header(); ?>
 <?php
     $args = array(
-      'post_type' => 'solicitud',
+      'post_type' => 'Solicitud',
       'tax_query' => array(
         array(
           'taxonomy' => 'solicitud_category',
@@ -30,7 +30,7 @@ get_header(); ?>
   	</div>
 
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
-	ergy
+	
 	</div>
 
 
