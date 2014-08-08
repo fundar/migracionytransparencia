@@ -1410,7 +1410,7 @@ function create_post_type_solicitudes() {
         'query_var' => true,
         'menu_position' => 5,
         'menu_icon' => get_stylesheet_directory_uri() . '/images/solicitud_icon.png',
-        'rewrite' => array('slug' => 'Solicitudes'),
+        'rewrite' => array('slug' => 'solicitudes'),
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'comments' )	
         )
     );
