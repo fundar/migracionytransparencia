@@ -72,11 +72,13 @@
 	</div>
 	
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
-                <div class="textwidget">
-			<p>Dependencia</p>
-			<p>Folio</p>
-
-                </div>
+				<div id="text-15" class="widget widget_text">
+					<div class="textwidget">
+						<p>Dependencia</p>
+						<p>Folio</p>
+			
+					</div>
+				</div>
 		
 				<?php if( $smof_data['social_sharing_box'] ):
 				$full_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
