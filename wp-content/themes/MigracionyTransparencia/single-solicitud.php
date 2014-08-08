@@ -73,6 +73,8 @@
 	
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
                 <div class="textwidget">
+			<p>Dependencia</p>
+			<p>Folio</p>
 
                 </div>
 		
