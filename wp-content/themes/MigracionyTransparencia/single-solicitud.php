@@ -41,7 +41,6 @@
 			if((has_post_thumbnail() || get_post_meta($post->ID, 'pyre_video', true))):
 			?>
 		
-
 			<h2 class="entry-title"><?php the_title(); ?></h2>
 			<?php else: ?>
 			<span class="entry-title"><?php the_title(); ?></span>
@@ -50,7 +49,6 @@
 				<?php the_content(); ?>
 				<?php wp_link_pages(); ?>
 			</div>
-			<?php if( ! post_password_required($post->ID) ): ?>
 			<?php if($smof_data['post_meta'] && ( (!$smof_data['post_meta_author']) || (!$smof_data['post_meta_date']) || (!$smof_data['post_meta_cats']) || (!$smof_data['post_meta_comments']) || (!$smof_data['post_meta_tags']) ) ): ?>
 			<div class="meta-info">
 				<div class="vcard">
