@@ -36,6 +36,12 @@
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
 		<?php if(have_posts()): the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
+
+			<?php
+			if((has_post_thumbnail() || get_post_meta($post->ID, 'pyre_video', true))):
+			?>
+		
+
 			<h2 class="entry-title"><?php the_title(); ?></h2>
 			<?php else: ?>
 			<span class="entry-title" style="display: none;"><?php the_title(); ?></span>
