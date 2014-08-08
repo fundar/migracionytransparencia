@@ -2,8 +2,6 @@
 // Template Name: Solicitud
 get_header(); ?>
 
-
-aSQWE
 	<?php
 	$content_css = '';
 	$sidebar_css = '';
@@ -44,7 +42,7 @@ aSQWE
 			<?php previous_post_link('%link', __('Previous', 'Avada')); ?>
 			<?php next_post_link('%link', __('Next', 'Avada')); ?>
 		</div>
-		<?php endif; ?>
+		<?php endif; ?> aSQWE
 		<?php if(have_posts()): the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
 			<?php
