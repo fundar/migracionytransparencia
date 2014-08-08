@@ -1,6 +1,9 @@
 <?php
 // Template Name: Solicitud
 get_header(); ?>
+
+
+aSQWE
 	<?php
 	$content_css = '';
 	$sidebar_css = '';
