@@ -1411,7 +1411,7 @@ function create_post_type_solicitudes() {
         'menu_position' => 5,
         'menu_icon' => get_stylesheet_directory_uri() . '/images/solicitud_icon.png',
         'rewrite' => array('slug' => 'Solicitudes'),
-        'supports' => array('title','editor','thumbnail')	
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'comments' )	
         )
     );
 }
