@@ -1397,7 +1397,11 @@ function create_post_type_solicitudes() {
                 'singular_label' => __( 'Solicitud' ),		
                 'all_items' => __('Solicitudes'),
                 'add_new_item' => __('Añadir una solicitud nueva'),
-                'edit_item' => __('Editar solicitud')		
+                'edit_item' => __('Editar solicitud'),
+		'search_items'       => __( 'Buscar Solicitudes' ),
+		'not_found'          => __( 'No solicitudes encontradas' ),
+		'not_found_in_trash' => __( 'No solicitudes encontradas en basura' ),
+		'menu_name'          => 'Solicitudes'
             ),
         'public' => true,
         'has_archive' => true,
