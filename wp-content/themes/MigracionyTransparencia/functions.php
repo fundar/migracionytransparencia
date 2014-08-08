@@ -1397,7 +1397,13 @@ function create_post_type_solicitudes() {
                 'singular_label' => __( 'Solicitud' ),		
                 'all_items' => __('Solicitudes'),
                 'add_new_item' => __('Añadir una solicitud nueva'),
-                'edit_item' => __('Editar solicitud')		
+                'edit_item' => __('Editar solicitud'),
+		'view_item'          => __( 'Ver Solicitud' ),
+		'search_items'       => __( 'Buscar Solicitudes' ),
+		'not_found'          => __( 'No solicitudes encontradas' ),
+		'not_found_in_trash' => __( 'No solicitudes encontradas en basura' ), 		
+		 	
+
             ),
         'public' => true,
         'has_archive' => true,
@@ -1407,8 +1413,10 @@ function create_post_type_solicitudes() {
         'menu_position' => 5,
         'menu_icon' => get_stylesheet_directory_uri() . '/images/solicitud_icon.png',
         'rewrite' => array('slug' => 'Solicitudes'),
-        'supports' => array('title','editor','thumbnail')	
-        )
-    );
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+        'has_archive'   => true,
+        );
+  register_post_type( 'product', $args ); 
 }
+add_action( 'init', 'my_custom_post_product' );
 
