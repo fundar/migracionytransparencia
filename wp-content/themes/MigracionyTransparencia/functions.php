@@ -1397,16 +1397,8 @@ function create_post_type_solicitudes() {
                 'singular_label' => __( 'Solicitud' ),		
                 'all_items' => __('Solicitudes'),
                 'add_new_item' => __('Añadir una solicitud nueva'),
-                'edit_item' => __('Editar solicitud'),
-		'view_item'          => __( 'Ver Solicitud' ),
-		'search_items'       => __( 'Buscar Solicitudes' ),
-		'not_found'          => __( 'No solicitudes encontradas' ),
-		'not_found_in_trash' => __( 'No solicitudes encontradas en basura' ),
-		'menu_name'          => 'Solicitudes'
-		 	
-            );
-        $args = array(
-        'labels'        => $labels,
+                'edit_item' => __('Editar solicitud')		
+            ),
         'public' => true,
         'has_archive' => true,
         'capability_type' => 'post',
@@ -1415,10 +1407,8 @@ function create_post_type_solicitudes() {
         'menu_position' => 5,
         'menu_icon' => get_stylesheet_directory_uri() . '/images/solicitud_icon.png',
         'rewrite' => array('slug' => 'Solicitudes'),
-        'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
-        'has_archive'   => true,
-        );
-  register_post_type( 'solicitudes', $args ); 
+        'supports' => array('title','editor','thumbnail')	
+        )
+    );
 }
-add_action( 'init', 'my_custom_post_solicitud' );
 
