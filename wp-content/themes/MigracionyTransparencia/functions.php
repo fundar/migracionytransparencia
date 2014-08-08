@@ -1428,7 +1428,7 @@ function my_taxonomies_solicitud() {
     'update_item'       => __( 'Update Solicitud Category' ),
     'add_new_item'      => __( 'Add New Solicitud Category' ),
     'new_item_name'     => __( 'New Solicitud Category' ),
-    'menu_name'         => __( 'Solicitud Categories' ),
+    'menu_name'         => __( 'Categorias' ),
   );
   $args = array(
     'labels' => $labels,
