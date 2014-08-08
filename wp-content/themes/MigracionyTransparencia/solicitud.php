@@ -1,46 +1,24 @@
 <?php
-// Template Name: Solicitudes
+
+/**
+ * Template Name: Solicitudes
+ *
+ */
 get_header(); ?>
+
 <?php
-    $args = array(
-      'post_type' => 'solicitudes',
-      'tax_query' => array(
-        array(
-          'taxonomy' => 'solicitud_category',
-          'field' => 'slug'
-        )
-      )
-    );
-    $solicitudes = new WP_Query( $args );
-    if( $solicitudes->have_posts() ) {
-      while( $solicitudes->have_posts() ) {
-        $solicitudes->the_post();
-        ?>
-          <h1><?php the_title() ?></h1>
-          <div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
-            <?php the_content() ?>
-          </div>
-        <?php
-      }
-    }
-    else {
-      echo 'Oh ohm no products!';
-    }
-  ?>
-</div>
+  query_posts( array( 'post_type' => 'Solicitud', 'listing_category' => 'solicitud' ) );
+  if ( have_posts() ) : while ( have_posts() ) : the_post();
+?>
 
-<div id="sidebar" style="<?php echo $sidebar_css; ?>">
-	o9p09'
-</div>
-
-
-<?php endwhile;?>
-
-
-
-
-	
-
-
+  <h3><?php the_title(); ?></h3>
+  <?php the_content(); ?>
+dgttyu
+<?php endwhile; endif; wp_reset_query(); ?>
+	<?php if( $sidebar_exists == true ): ?>
+	<?php wp_reset_query(); ?>
+	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
+	<?php generated_dynamic_sidebar(); ?>
+	</div>
 	<?php endif; ?>
 <?php get_footer(); ?>
