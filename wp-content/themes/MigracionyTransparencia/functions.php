@@ -1434,6 +1434,6 @@ function my_taxonomies_product() {
     'labels' => $labels,
     'hierarchical' => true,
   );
-  register_taxonomy( 'product_category', 'solicitud', $args );
+  register_taxonomy( 'solicitud_category', 'solicitud', $args );
 }
 add_action( 'init', 'my_taxonomies_solicitud', 0 );
