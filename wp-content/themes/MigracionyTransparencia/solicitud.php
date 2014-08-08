@@ -3,7 +3,7 @@
 get_header(); ?>
 <?php
     $args = array(
-      'post_type' => 'Solicitud',
+      'post_type' => 'solicitud',
       'tax_query' => array(
         array(
           'taxonomy' => 'solicitud_category',
