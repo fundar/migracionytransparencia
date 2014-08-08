@@ -44,7 +44,7 @@
 
 			<h2 class="entry-title"><?php the_title(); ?></h2>
 			<?php else: ?>
-			<span class="entry-title" style="display: none;"><?php the_title(); ?></span>
+			<span class="entry-title"><?php the_title(); ?></span>
 			<?php endif; ?>
 			<div class="post-content">
 				<?php the_content(); ?>
