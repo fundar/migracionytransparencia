@@ -322,6 +322,7 @@
 	<?php if( $sidebar_exists == true ): ?>
 	<?php wp_reset_query(); ?>
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
+	jioje9iojerw8ijtui4jhrtii4rhtuh45reuiitrh
 	<?php generated_dynamic_sidebar(); ?>
 	</div>
 	<?php endif; ?>
