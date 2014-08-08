@@ -80,8 +80,6 @@
 				</div>
 			<?php endif; ?>
 
-			<?php wp_reset_postdata(); endif; ?>
-			<?php endif; ?>
 			<?php if($smof_data['blog_comments']): ?>
 				<?php
 				wp_reset_query();
