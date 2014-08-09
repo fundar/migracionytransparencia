@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/solicitud.css" />
 
 	<?php
 	$content_css = '';
