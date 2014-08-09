@@ -122,7 +122,7 @@
 				);
 				?>
 				<div class="fusion-sharing-box share-box">					
-				<p>Compartir:</p><?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
+				<div class="fusion-social-networks"><p>Compartir:</p></div><?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
 				</div>
 			<?php endif; ?>
 	
