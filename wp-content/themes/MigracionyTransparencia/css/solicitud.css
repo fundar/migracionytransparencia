@@ -4,8 +4,8 @@
 /*
 -------------------------------------------------------------- */
 .seccion{}
-p.titulo{color:#000;font-size:11px;}
-p.info{color:#4D4D4D;font-size:15px;}
+p.titulo {color: #000;display: block;font-size: 11px;line-height: 13px;margin-bottom: 2px;}
+p.info{color:#4D4D4D;display: inline-block;font-size:15px;margin: 2px 0;}
 .fusion-sharing-box {padding: 0;}
 .fusion-social-networks .fusion-social-network-icon {margin-right: 13px;}
 .fusion-sharing-box .fusion-social-networks {text-align: left;}

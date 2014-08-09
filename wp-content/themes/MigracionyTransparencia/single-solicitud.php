@@ -77,30 +77,30 @@
 					<div class="textwidget">
 						<div class="seccion">
 						<p class="titulo">Dependencia</p>
-						<p class="info">0411100082710</p>
+						<p class="info">Instituto Nacional de Migración</p>
 						</div>
 						<div class="seccion">
 						<p class="titulo">Folio</p>
-						<p class="info"></p>
+						<p class="info">0411100082710</p>
 						</div>
 						<div class="seccion">
 						<p class="titulo">Fecha de solicitud</p>
-						<p class="info"></p>
+						<p class="info">8 de diciembre de 2013</p>
 						</div>
 						<div class="seccion">
 						<p class="titulo">Tipo de documentos</p>
-						<p class="info"></p>
+						<p class="info">Leyes, Protocolos, Circulares</p>
 						</div>
 						<div class="seccion">
 						<p class="titulo">Calidad de respuesta</p>
-						<p class="info"></p>
+						<p class="info">Completa, Legible</p>
 						</div>
 						<div class="seccion">
 						<p class="titulo">Recurso de revisi&oacute;n</p>
-						<p class="info"></p>
+						<p class="info">No</p>
 						<div class="seccion">
 						<p class="titulo">Organizaci&oacute;n</p>
-						<p class="info"></p>
+						<p class="info">Fundar, Centro de Analisis e Investigacion</p>
 						</div>
 					</div>
 				</div>
