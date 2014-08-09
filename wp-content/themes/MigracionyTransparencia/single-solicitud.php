@@ -77,7 +77,7 @@
 					<div class="textwidget">
 						<div class="seccion">
 						<p class="titulo">Dependencia</p>
-						<p class="info">Instituto Nacional de Migración</p>
+						<p class="info">Instituto Nacional de Migracion</p>
 						</div>
 						<div class="seccion">
 						<p class="titulo">Folio</p>
