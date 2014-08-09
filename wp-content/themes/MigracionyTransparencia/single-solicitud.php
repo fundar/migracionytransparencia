@@ -48,8 +48,10 @@
 			<span class="entry-title"><?php the_title(); ?></span>
 			<?php endif; ?>
 			<div class="post-content">
-				<?php the_content(); ?>
-				<?php wp_link_pages(); ?>
+				<div class="divisor-1"></div>
+				<div class="post-content">
+                                <p>r234t543y</p>
+                                </div>
 			</div>
 			<?php if( ! post_password_required($post->ID) ): ?>
 			<?php if($smof_data['post_meta'] && ( (!$smof_data['post_meta_author']) || (!$smof_data['post_meta_date']) || (!$smof_data['post_meta_cats']) || (!$smof_data['post_meta_comments']) || (!$smof_data['post_meta_tags']) ) ): ?>
