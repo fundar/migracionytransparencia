@@ -9,8 +9,8 @@ p.info{color:#333333;font-size:15px;}
 .fusion-sharing-box {padding: 0;}
 .fusion-social-networks .fusion-social-network-icon {margin-right: 13px;}
 .fusion-sharing-box .fusion-social-networks {text-align: left;}
-.fusion-sharing-box .compartir{display:inline-block;}
-
+.fusion-sharing-box .compartir{display:inline-block;vertical-align: middle;}
+.fusion-sharing-box h4, .fusion-sharing-box .fusion-social-networks {display: inline-block;padding-left: 9px;vertical-align: middle;}
 
 
 
