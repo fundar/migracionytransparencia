@@ -74,13 +74,33 @@
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
 				<div id="text-15" class="widget widget_text">
 					<div class="textwidget">
-						<p>Dependencia</p>
-						<p>Folio</p>
-						<p>Fecha de solicitud</p>
-						<p>Tipo de documentos</p>
-						<p>Calidad de respuesta</p>
-						<p>Recurso de revisi&oacute;n</p>						
-						<p>Organizaci&oacute;n</p>						
+						<div class="seccion">
+						<p class="titulo">Dependencia</p>
+						<p class="info"></p>
+						</div>
+						<div class="seccion">
+						<p class="titulo">Folio</p>
+						<p class="info"></p>
+						</div>
+						<div class="seccion">
+						<p class="titulo">Fecha de solicitud</p>
+						<p class="info"></p>
+						</div>
+						<div class="seccion">
+						<p class="titulo">Tipo de documentos</p>
+						<p class="info"></p>
+						</div>
+						<div class="seccion">
+						<p class="titulo">Calidad de respuesta</p>
+						<p class="info"></p>
+						</div>
+						<div class="seccion">
+						<p class="titulo">Recurso de revisi&oacute;n</p>
+						<p class="info"></p>
+						<div class="seccion">
+						<p class="titulo">Organizaci&oacute;n</p>
+						<p class="info"></p>
+						</div>
 					</div>
 				</div>
 		
@@ -100,9 +120,8 @@
 					'pinterest_image'	=> rawurlencode( $full_image[0] ),
 				);
 				?>
-				<div class="fusion-sharing-box share-box">
-					
-					<?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
+				<div class="fusion-sharing-box share-box">					
+				<p>Compartir:</p><?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
 				</div>
 			<?php endif; ?>
 	
