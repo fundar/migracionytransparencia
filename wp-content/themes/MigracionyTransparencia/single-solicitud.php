@@ -48,7 +48,7 @@
 			<span class="entry-title"><?php the_title(); ?></span>
 			<?php endif; ?>
 			<div class="post-content">
-				<div class="divisor-1"></div>
+				<div class="divisor-3"></div>
 				<div class="post-content">
                                 <p>r234t543y</p>
                                 </div>
