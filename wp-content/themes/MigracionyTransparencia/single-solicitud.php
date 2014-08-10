@@ -50,7 +50,10 @@
 			<div class="post-content">
 				<div class="divisor-3"></div>
 				<div class="post-content">
-                                <p>r234t543y</p>
+                                <p>Pregunta</p>
+				<div class="divisor-verde"></div>
+				<p>Respuestas</p>
+				<div class="divisor-verde"></div>
                                 </div>
 			</div>
 			<?php if( ! post_password_required($post->ID) ): ?>

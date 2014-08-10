@@ -14,5 +14,6 @@ p.info{color:#4D4D4D;display: inline-block;font-size:15px;margin: 2px 0;}
 #text-15 > .textwidget {background: none repeat scroll 0 0 #fff;box-shadow: 4px 4px 0 0 rgba(224, 224, 224, 1);margin-bottom: 4px;padding: 9px 14px;}
 .entry-title {font-size: 22px;}
 .divisor-3{border-bottom:1px dotted #B5B5B5;margin:8px 0;}
+.divisor-verde{border-bottom:2px solid #48BFC2;margin:8px 0;width:36px;}
 
 
