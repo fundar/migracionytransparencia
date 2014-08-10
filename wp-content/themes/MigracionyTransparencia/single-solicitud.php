@@ -50,9 +50,9 @@
 			<div class="post-content">
 				<div class="divisor-3"></div>
 				<div class="post-content">
-                                <p>Pregunta</p>
+                                <p class="subtitulo-negro">Pregunta</p>
 				<div class="divisor-verde"></div>
-				<p>Respuestas</p>
+				<p class="subtitulo-negro">Respuestas</p>
 				<div class="divisor-verde"></div>
                                 </div>
 			</div>
