@@ -46,21 +46,32 @@
 			<h2 class="entry-title"><?php the_title(); ?></h2>
 			<?php else: ?>
 			<span class="entry-title"><?php the_title(); ?></span>
+			<div class="divisor-3"></div>
 			<?php endif; ?>
-			<div class="post">
-				<div class="divisor-3"></div>
-				<p class="subtitulo-negro">Pregunta</p>
-				<div class="divisor-verde"></div>
-			        <div class="post-content el-contenido">
-				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet arcu malesuada, molestie leo et, semper felis.</p>	
-				</div>
+			<div class="post">				
+				<div class="post-content>
+					<p class="subtitulo-negro">Pregunta</p>
+					<div class="divisor-verde"></div>
+					<div class="el-contenido">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet arcu malesuada, molestie leo et, semper felis.</p>	
+					</div>				
+					<p class="subtitulo-negro">Respuestas</p>
+					<div class="divisor-verde"></div>
+					<div class="el-contenido">
+						<p>Vestibulum placerat condimentum nibh, a vulputate mi fermentum in. Nulla laoreet libero id felis rhoncus consectetur. Aliquam erat volutpat. Fusce volutpat erat sem, sit amet feugiat ipsum cursus sit amet. Duis in est mauris. Aenean sodales, tortor id tempor pellentesque, lectus felis tincidunt eros, ac tempus massa leo non ipsum.</p> 
+					</div>
+			        </div>
 				
 				
-				<p class="subtitulo-negro">Respuestas</p>
-				<div class="divisor-verde"></div>
-				<div class="post-content el-contenido">
-					<p>Vestibulum placerat condimentum nibh, a vulputate mi fermentum in. Nulla laoreet libero id felis rhoncus consectetur. Aliquam erat volutpat. Fusce volutpat erat sem, sit amet feugiat ipsum cursus sit amet. Duis in est mauris. Aenean sodales, tortor id tempor pellentesque, lectus felis tincidunt eros, ac tempus massa leo non ipsum.</p> 
-                                </div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
 			</div>
 			<?php if( ! post_password_required($post->ID) ): ?>
 			<?php if($smof_data['post_meta'] && ( (!$smof_data['post_meta_author']) || (!$smof_data['post_meta_date']) || (!$smof_data['post_meta_cats']) || (!$smof_data['post_meta_comments']) || (!$smof_data['post_meta_tags']) ) ): ?>
