@@ -61,7 +61,9 @@
 						<p>Vestibulum placerat condimentum nibh, a vulputate mi fermentum in. Nulla laoreet libero id felis rhoncus consectetur. Aliquam erat volutpat. Fusce volutpat erat sem, sit amet feugiat ipsum cursus sit amet. Duis in est mauris. Aenean sodales, tortor id tempor pellentesque, lectus felis tincidunt eros, ac tempus massa leo non ipsum.</p> 
 					</div>
 					
-				<div class="fusion-one-third one_third fusion-column"></div>
+				<div class="fusion-one-third one_third fusion-column">
+					<a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="http://themeforest.net/item/avada-responsive-multipurpose-theme/2833226?ref=ThemeFusion" title="" target="_blank" type="button">
+				</div>
 				<div class="fusion-one-third one_third fusion-column"></div>
 				<div class="fusion-one-third one_third fusion-column last"></div>
 			        </div>
