@@ -62,10 +62,10 @@
 					</div>
 				<div class="avada-row">	
 				<div class="fusion-one-third one_third fusion-column">
-					<a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver respuesta</a>
+					<a class="fusion-button button-16 " href="" title="" target="_blank" type="button">Ver respuesta</a><span style="padding-right: 1px;"></span>
 				</div>
-				<div class="fusion-one-third one_third fusion-column">					<a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver resoluci&oacute;n</a></div>
-				<div class="fusion-one-third one_third fusion-column last">					<a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver cumplimiento</a></div>
+				<div class="fusion-one-third one_third fusion-column">					<a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver resoluci&oacute;n</a><span style="padding-right: 1px;"></span></div>
+				<div class="fusion-one-third one_third fusion-column last"><a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver cumplimiento</a></div>
 			        </div>
 			</div>
 		
