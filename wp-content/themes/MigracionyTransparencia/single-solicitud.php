@@ -64,7 +64,7 @@
 				<div class="fusion-one-third one_third fusion-column">
 					<a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver respuesta</a>
 				</div>
-				<div class="fusion-one-third one_third fusion-column">					<a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver resolución</a></div>
+				<div class="fusion-one-third one_third fusion-column">					<a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver resoluci&oacuete;n</a></div>
 				<div class="fusion-one-third one_third fusion-column last">					<a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver cumplimiento</a></div>
 			        </div>
 				
