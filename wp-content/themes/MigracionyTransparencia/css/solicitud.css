@@ -17,3 +17,13 @@ p.info{color:#4D4D4D;display: inline-block;font-size:15px;margin: 2px 0;}
 .divisor-verde {border-bottom: 2px solid #48bfc2;margin: 2px 0 10px;width: 36px;}
 p.subtitulo-negro{color:#000; margin:0;}
 .el-contenido {margin-bottom: 40px;}
+.fusion-button.button-16 {
+    background: none repeat scroll 0 0 #aa3c3f;
+}
+.fusion-button.button-16 {
+    border-color: rgba(255, 255, 255, 0.7);
+    border-width: 0;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: none;}
+
