@@ -20,7 +20,8 @@
  * @author		MilkZoft Developer Team
  * @link		http://www.zanphp.com/documentation/en/classes/db_class
  */
- 
+
+/*driver mysqli*/
 include_once "mysqli_db.php";
 
 class Db  {

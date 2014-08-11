@@ -35,6 +35,14 @@
 		$sidebar_exists = false;
 	}
 	?>
+	
+	<?php
+		//include de arhivode manejo de base de datos
+		
+		include_once "class/search.php";
+		include_once "class/functions/string.php";
+	?>
+	
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
 		<?php if(have_posts()): the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
@@ -68,37 +76,8 @@
 				<div class="fusion-one-third one_third fusion-column last"><a class="button medium button custom fusion-button button-flat button-round button-medium button-custom button-16 buttonshadow-no" href="" title="" target="_blank" type="button">Ver cumplimiento</a></div>
 			        </div>
 			</div>
-		
-				
-				
-	
-				
-				
-				
-				
-				
-				
-				
-				
 				
 			</div>
-			<?php if( ! post_password_required($post->ID) ): ?>
-			<?php if($smof_data['post_meta'] && ( (!$smof_data['post_meta_author']) || (!$smof_data['post_meta_date']) || (!$smof_data['post_meta_cats']) || (!$smof_data['post_meta_comments']) || (!$smof_data['post_meta_tags']) ) ): ?>
-			<div class="meta-info">
-				<div class="vcard">
-					<?php if(!$smof_data['post_meta_author']): ?><?php echo __('By', 'Avada'); ?> <span class="fn"><?php the_author_posts_link(); ?></span><span class="sep">|</span><?php endif; ?><?php if(!$smof_data['post_meta_date']): ?><span class="updated" style="display:none;"><?php the_modified_time( 'c' ); ?></span><span class="published"><?php the_time($smof_data['date_format']); ?></span><span class="sep">|</span><?php endif; ?><?php if(!$smof_data['post_meta_cats']): ?><?php if(!$smof_data['post_meta_tags']){ echo __('Categories:', 'Avada') . ' '; } ?><?php the_category(', '); ?><span class="sep">|</span><?php endif; ?><?php if(!$smof_data['post_meta_tags']): ?><span class="meta-tags"><?php echo __('Tags:', 'Avada') . ' '; the_tags( '' ); ?></span><span class="sep">|</span><?php endif; ?><?php if(!$smof_data['post_meta_comments']): ?><?php comments_popup_link(__('0 Comments', 'Avada'), __('1 Comment', 'Avada'), '% '.__('Comments', 'Avada')); ?><?php endif; ?>
-				</div>
-			</div>
-			<?php endif; ?>
-
-
-			<?php if($smof_data['blog_comments']): ?>
-				<?php
-				wp_reset_query();
-				comments_template();
-				?>
-			<?php endif; ?>
-			<?php endif; ?>
 		</div>
 		<?php endif; ?>
 	</div>
