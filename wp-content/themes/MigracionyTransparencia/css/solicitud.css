@@ -19,4 +19,4 @@ p.subtitulo-negro{color:#000; margin:0;}
 .el-contenido {margin-bottom: 40px;}
 .fusion-button.button-16 {line-height: 38px;background:#BB3835;border-color: rgba(255, 255, 255, 0.7);border-width: 0;box-shadow: none;color: rgba(255, 255, 255, 0.7);text-shadow: none;height:38px;padding:0 23px;width:75%;}
 .fusion-button { border-radius: 2px; box-sizing: content-box;cursor: pointer;display: inline-block;font-weight: bold;outline: 0 none;overflow: hidden;position: relative; text-align: center;text-shadow: 0 1px 0 #fff;text-transform: uppercase;transition: all 0.2s ease 0s;}
-.fusion-button.button-16:hover  .button-16:focus .fusion-button.button-16:active{background:#E34F42;}
+.button-16:hover  .button-16:focus .button-16:active{background:#E34F42;}
