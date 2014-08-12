@@ -240,12 +240,11 @@
 				<p class="formahome2">Por por a&ntilde;o</p>
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
-					<div class="search-field">						
+					<div class="search-field">
 						<select class="search-field search-table" name="lista1">
-                                                                    <option>Valor 1
-                                                                    <option>Valor 2
-                                                                    <option>Valor 3
-								    <option>Valor 4
+                                                                   <option selected="" value="1">Valor 1</option>
+                                                                   <option value="2">Valor 2</option>
+                                                                   <option value="3">Valor 3</option>
 						</select>
 					</div>
 	
