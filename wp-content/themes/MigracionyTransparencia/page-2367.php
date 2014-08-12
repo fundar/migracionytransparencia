@@ -159,7 +159,7 @@
 			<?php endif; // password check ?>
 			<div class="post-content" style="margin: -29px 0px 0px;">
 				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
-				<p>B&aacute;squeda por palabra</p>
+				<p>B&uacute;squeda por palabra</p>
 				<form action="http://migracionytransparencia.org/" method="get" role="search" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
@@ -170,8 +170,8 @@
 					</div>
 				</div>
 			        </form>
-				<p>B&aacute;squeda por folio</p>
-								<form action="http://migracionytransparencia.org/" method="get" role="search" class="seach-form" id="searchform">
+				<p>B&uacute;squeda por folio</p>
+				<form action="http://migracionytransparencia.org/" method="get" role="search" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
 						<input type="text" placeholder="Search ..." id="s" name="s" value="">
@@ -182,6 +182,16 @@
 				</div>
 			        </form>
 				<p>Por categor&iacute;a</p>
+				<form action="" method="get" role="search" class="seach-form" id="searchform">
+				<div class="search-table">
+					<div class="search-field">
+						<input type="text" placeholder="Search ..." id="s" name="s" value="">
+					</div>
+					<div class="search-button">
+						<input type="submit" value="" id="searchsubmit">
+					</div>
+				</div>
+			        </form>				
 				<p>Por dependencia</p>
 				<p>Por organizaci&oacute;n</p>
 				<p>Por tipo de respuesta</p>
