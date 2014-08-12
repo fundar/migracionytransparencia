@@ -185,8 +185,8 @@
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
-						<input type="text" id="s" name="s" value="">
-						<select name="lista1">
+						
+						<select class="search-field" name="lista1">
                                                                     <option>Valor 1
                                                                     <option>Valor 2
                                                                     <option>Valor 3
