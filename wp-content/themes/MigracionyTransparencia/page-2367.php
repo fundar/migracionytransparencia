@@ -158,8 +158,14 @@
 			<?php endif; ?>
 			<?php endif; // password check ?>
 			<div class="post-content">
-				<div class="heading"><h3 class="titulo-post">Numeralia</h3></div>
-				
+				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
+				<p>Búsqueda por palabra</p>
+				<p>Búsqueda por folio</p>
+				<p>Búsqueda por categor&iacute;a</p>
+				<p>Búsqueda por dependencia</p>
+				<p>Búsqueda por organizaci&oacute;n</p>
+				<p>Búsqueda por tipo de respuesta</p>
+				<p>Búsqueda por a&ntilde;o</p>				
 			</div>
 			<?php if( ! post_password_required($post->ID) ): ?>
 			<?php if(class_exists('Woocommerce')): ?>
