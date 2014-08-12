@@ -34,7 +34,7 @@
 	<div class="divisor-gris-dotted"></div>
 				
 	
-</div> /** fin content **/
+</div>
 </div>
 
 <?php get_footer(); ?>
