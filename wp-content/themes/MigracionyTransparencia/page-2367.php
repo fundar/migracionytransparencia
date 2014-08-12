@@ -186,10 +186,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-                                                                    <option>Valor 1
-                                                                    <option>Valor 2
-                                                                    <option>Valor 3
-								    <option>Valor 4
+                                                                    <option>Valor 1</option>
+                                                                    <option>Valor 2</option>
+                                                                    <option>Valor 3</option>
+								    <option>Valor 4</option>
 						</select>
 					</div>
 	
@@ -200,10 +200,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-                                                                    <option>Valor 1
-                                                                    <option>Valor 2
-                                                                    <option>Valor 3
-								    <option>Valor 4
+                                                                    <option>Valor 1</option>
+                                                                    <option>Valor 2</option>
+                                                                    <option>Valor 3</option>
+								    <option>Valor 4</option>
 						</select>
 					</div>
 	
@@ -214,10 +214,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-                                                                    <option>Valor 1
-                                                                    <option>Valor 2
-                                                                    <option>Valor 3
-								    <option>Valor 4
+                                                                    <option>Valor 1</option>
+                                                                    <option>Valor 2</option>
+                                                                    <option>Valor 3</option>
+								    <option>Valor 4</option>
 						</select>
 					</div>
 	
@@ -228,10 +228,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-                                                                    <option>Valor 1
-                                                                    <option>Valor 2
-                                                                    <option>Valor 3
-								    <option>Valor 4
+                                                                    <option>Valor 1</option>
+                                                                    <option>Valor 2</option>
+                                                                    <option>Valor 3</option>
+								    <option>Valor 4</option>
 						</select>
 					</div>
 	
@@ -252,7 +252,7 @@
 			        </form>
 				<div class="avada-row" style="margin-top: 30px;">	
 					<input id="submit" class="button-flat busquedas-boton" type="submit" value="Submit Form" tabindex="5" name="Buscar">
-                                        <a type="button" href="" class="boton-solicitudes">Ver todas las solicitudes</a>
+                                        <a type="button" href="http://migracionytransparencia.org/solicitudes/" class="boton-solicitudes">Ver todas las solicitudes</a>
 				</div>
 			</div> <!--fin post content div -->
 			

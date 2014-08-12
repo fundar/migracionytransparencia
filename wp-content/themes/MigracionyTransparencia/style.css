@@ -76,7 +76,6 @@ a.boton-solicitudes {
     height: 38px;
     padding: 0 17px;
     text-shadow: none;
-    width: 215px;
 }
 .busquedas-boton {
     background: none repeat scroll 0 0 #bb3835;
@@ -88,7 +87,6 @@ a.boton-solicitudes {
     line-height: 38px;
     padding: 0 23px;
     text-shadow: none;
-    width: 114px;
     font-family: 'blanchcondensed' !important;
     font-size: 28px;
     vertical-align: middle;
