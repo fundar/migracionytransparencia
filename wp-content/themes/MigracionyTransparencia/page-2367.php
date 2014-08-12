@@ -171,6 +171,16 @@
 				</div>
 			        </form>
 				<p>B&aacute;squeda por folio</p>
+								<form action="http://migracionytransparencia.org/" method="get" role="search" class="seach-form" id="searchform">
+				<div class="search-table">
+					<div class="search-field">
+						<input type="text" placeholder="Search ..." id="s" name="s" value="">
+					</div>
+					<div class="search-button">
+						<input type="submit" value="&#xf002;" id="searchsubmit">
+					</div>
+				</div>
+			        </form>
 				<p>Por categor&iacute;a</p>
 				<p>Por dependencia</p>
 				<p>Por organizaci&oacute;n</p>
