@@ -186,7 +186,7 @@
 				<div class="search-table">
 					<div class="search-field">
 						
-						<select class="search-field" name="lista1">
+						<select class="search-field search-table" name="lista1" style="height: 33px; border: 1px solid rgb(210, 210, 210);">
                                                                     <option>Valor 1
                                                                     <option>Valor 2
                                                                     <option>Valor 3
@@ -194,9 +194,7 @@
 						</select>
 
 					</div>
-					<div class="search-button">
-						<input type="submit" value="" id="searchsubmit">
-					</div>
+	
 				</div>
 			        </form>				
 				<p>Por dependencia</p>
