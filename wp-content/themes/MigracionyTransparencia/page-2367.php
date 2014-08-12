@@ -112,7 +112,7 @@
 						<div class="full-video">
 							<?php echo get_post_meta($post->ID, 'pyre_video', true); ?>
 						</div>
-					</li>
+					</li>  
 					<?php elseif(has_post_thumbnail() ): ?>
 					<?php $attachment_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); ?>
 					<?php $full_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); ?>
@@ -160,6 +160,11 @@
 			<div class="post-content">
 				<?php the_content(); ?>
 				<?php wp_link_pages(); ?>
+				<div id="content" class="inicio" style="float:left;">
+					 <div class="heading">
+                                             <h3>Buscar solicitud</h3>
+                                         </div>
+				</div>
 			</div>
 			<?php if( ! post_password_required($post->ID) ): ?>
 			<?php if(class_exists('Woocommerce')): ?>
