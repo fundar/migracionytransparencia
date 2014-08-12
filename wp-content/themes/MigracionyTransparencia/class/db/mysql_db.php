@@ -23,7 +23,7 @@
  * @author		MilkZoft Developer Team
  * @link		http://www.zanphp.com/documentation/en/classes/mysql_db_class
  */
-class ZP_MySQL_Db extends ZP_Load {
+class ZP_MySQL_Db {
 
 	/**
 	 * Contains the connection of the database
