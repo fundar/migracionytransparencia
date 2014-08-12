@@ -20,6 +20,6 @@ class Search {
 		$query = "select * from requests";
 		$data  = $this->mysql->query($query);
 		
-		die(var_dump($data));
+		return $data;
 	}
 }
