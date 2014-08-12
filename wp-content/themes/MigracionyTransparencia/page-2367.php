@@ -182,13 +182,20 @@
 				</div>
 			        </form>
 				<p>Por categor&iacute;a</p>
-				<form action="" method="get" role="search" class="seach-form" id="searchform">
+				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
 						<input type="text" id="s" name="s" value="">
+						<select name="lista1">
+                                                                    <option>Valor 1
+                                                                    <option>Valor 2
+                                                                    <option>Valor 3
+								    <option>Valor 4
+						</select>
+
 					</div>
 					<div class="search-button">
-						<input type="submit" value="<i class="fa fa-caret-down"></i>" id="searchsubmit">
+						<input type="submit" value="" id="searchsubmit">
 					</div>
 				</div>
 			        </form>				
