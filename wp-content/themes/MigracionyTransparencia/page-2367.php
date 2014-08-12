@@ -196,9 +196,61 @@
 				</div>
 			        </form>				
 				<p>Por dependencia</p>
+				<form action="" method="post" class="seach-form" id="searchform">
+				<div class="search-table">
+					<div class="search-field">						
+						<select class="search-field search-table" name="lista1">
+                                                                    <option>Valor 1
+                                                                    <option>Valor 2
+                                                                    <option>Valor 3
+								    <option>Valor 4
+						</select>
+					</div>
+	
+				</div>
+			        </form>	
 				<p>Por organizaci&oacute;n</p>
+				<form action="" method="post" class="seach-form" id="searchform">
+				<div class="search-table">
+					<div class="search-field">						
+						<select class="search-field search-table" name="lista1">
+                                                                    <option>Valor 1
+                                                                    <option>Valor 2
+                                                                    <option>Valor 3
+								    <option>Valor 4
+						</select>
+					</div>
+	
+				</div>
+			        </form>					
 				<p>Por tipo de respuesta</p>
-				<p>Por por a&ntilde;o</p>				
+				<form action="" method="post" class="seach-form" id="searchform">
+				<div class="search-table">
+					<div class="search-field">						
+						<select class="search-field search-table" name="lista1">
+                                                                    <option>Valor 1
+                                                                    <option>Valor 2
+                                                                    <option>Valor 3
+								    <option>Valor 4
+						</select>
+					</div>
+	
+				</div>
+			        </form>					
+				<p>Por por a&ntilde;o</p>
+				<form action="" method="post" class="seach-form" id="searchform">
+				<div class="search-table">
+					<div class="search-field">						
+						<select class="search-field search-table" name="lista1">
+                                                                    <option>Valor 1
+                                                                    <option>Valor 2
+                                                                    <option>Valor 3
+								    <option>Valor 4
+						</select>
+					</div>
+	
+				</div>
+			        </form>					
 			</div>
 			
 			
