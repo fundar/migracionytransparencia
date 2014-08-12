@@ -64,7 +64,7 @@ p.formahome{
 p.formahome2{
     margin: 13px 0 5px !important;
 }
-.boton-solicitudes {
+a.boton-solicitudes {
     background: none repeat scroll 0 0 #bb3835;
     border-color: rgba(255, 255, 255, 0.7);
     border-width: 0;
@@ -74,7 +74,10 @@ p.formahome2{
     line-height: 38px;
     padding: 0 23px;
     text-shadow: none;
-    width: 75%;
+    width: 150px;
+    display:inline-block;
+    font-family: 'blanchcondensed' !important;
+    font-size: 28px;
 }
 .busquedas-boton {
     background: none repeat scroll 0 0 #bb3835;
@@ -86,7 +89,9 @@ p.formahome2{
     line-height: 38px;
     padding: 0 23px;
     text-shadow: none;
-    width: 75%;
+    width: 114px;
+    font-family: 'blanchcondensed' !important;
+    font-size: 28px;
 }
 /*
 Needed Styles From Bootstrap
