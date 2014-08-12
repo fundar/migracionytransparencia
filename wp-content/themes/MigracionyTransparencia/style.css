@@ -61,7 +61,9 @@ h3.titulo-post {
 p.formahome{
     margin: 0 0 5px !important;
 }
-
+p.formahome2{
+    margin: 25px 0 5px !important;
+}
 /*
 Needed Styles From Bootstrap
 -----------------------------------------------------------------------------*/
