@@ -158,7 +158,7 @@
 			<?php endif; ?>
 			<?php endif; // password check ?>
 			<div class="post-content">
-				<div class="heading"><h3>Numeralia</h3></div>
+				<div class="heading"><h3 class="titulo-post">Numeralia</h3></div>
 				
 			</div>
 			<?php if( ! post_password_required($post->ID) ): ?>

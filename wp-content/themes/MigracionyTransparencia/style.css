@@ -28,6 +28,12 @@ html { -webkit-font-smoothing: antialiased; }
     font-size: 40px;
     text-transform: lowercase !important;
 }
+h3.titulo-post {
+    color: #48bfc2;
+    font-family: 'blanchcondensed' !important;
+    font-size: 40px;
+    text-transform: lowercase !important;
+}
 /*
 Needed Styles From Bootstrap
 -----------------------------------------------------------------------------*/
