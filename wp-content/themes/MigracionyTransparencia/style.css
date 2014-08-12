@@ -58,6 +58,9 @@ h3.titulo-post {
     padding: 8px 2%;
     width: 100%;
 }
+p.formahome{
+    margin: 0 0 5px;
+}
 
 /*
 Needed Styles From Bootstrap

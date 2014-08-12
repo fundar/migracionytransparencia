@@ -159,7 +159,7 @@
 			<?php endif; // password check ?>
 			<div class="post-content" style="margin: -29px 0px 0px;">
 				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
-				<p>B&uacute;squeda por palabra</p>
+				<p class="formahome">B&uacute;squeda por palabra</p>
 				<form action="" method="get" role="search" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 			        </form>
-				<p>B&uacute;squeda por folio</p>
+				<p class="formahome">B&uacute;squeda por folio</p>
 				<form action="" method="get" role="search" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
@@ -181,7 +181,7 @@
 					</div>
 				</div>
 			        </form>
-				<p>Por categor&iacute;a</p>
+				<p class="formahome">Por categor&iacute;a</p>
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
@@ -195,7 +195,7 @@
 	
 				</div>
 			        </form>				
-				<p>Por dependencia</p>
+				<p class="formahome">Por dependencia</p>
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
@@ -209,7 +209,7 @@
 	
 				</div>
 			        </form>	
-				<p>Por organizaci&oacute;n</p>
+				<p class="formahome">Por organizaci&oacute;n</p>
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
@@ -223,7 +223,7 @@
 	
 				</div>
 			        </form>					
-				<p>Por tipo de respuesta</p>
+				<p class="formahome">Por tipo de respuesta</p>
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
@@ -237,7 +237,7 @@
 	
 				</div>
 			        </form>					
-				<p>Por por a&ntilde;o</p>
+				<p class="formahome">Por por a&ntilde;o</p>
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
