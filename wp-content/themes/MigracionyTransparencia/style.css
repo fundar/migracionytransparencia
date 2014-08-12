@@ -64,6 +64,18 @@ p.formahome{
 p.formahome2{
     margin: 13px 0 5px !important;
 }
+.buton-solicitudes {
+    background: none repeat scroll 0 0 #bb3835;
+    border-color: rgba(255, 255, 255, 0.7);
+    border-width: 0;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.7);
+    height: 38px;
+    line-height: 38px;
+    padding: 0 23px;
+    text-shadow: none;
+    width: 75%;
+}
 /*
 Needed Styles From Bootstrap
 -----------------------------------------------------------------------------*/
