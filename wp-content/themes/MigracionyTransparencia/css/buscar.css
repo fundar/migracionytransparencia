@@ -1,0 +1,46 @@
+/**
+ * buscar specific CSS
+ 
+/*
+-------------------------------------------------------------- */
+.busca {
+    color: #48bfc2;
+    float: left;
+    text-align: right;
+}
+.busca .la-busqueda{
+    font-size: 48px;
+    font-family: 'blanchcondensed';	
+}
+.meta, .meta a {
+    color: #C6C6C6;
+}
+.meta {   
+    float: left;
+    font-size: 14px;
+    text-align: right;
+    color: #C6C6C6;
+}
+.meta .date .year {
+    font-size: 64px;
+    font-family: 'blanchcondensed';
+}
+.meta .date .month {
+    border-bottom: 2px solid #48BFC2;
+    font-size: 27px;
+    font-family: 'blanchcondensed';
+    margin: 0;
+    padding: 10px 10px 0 0;
+    color:#000;
+}
+h2.entry-title {
+    color: #48bfc2;
+    display: block;
+    font-family: 'lato' !important;
+    font-size: 22px !important;
+    margin-top: 0;
+    text-transform: none !important;
+}
+h2.entry-title > a {color: #48bfc2;}
+h2.entry-title > a:hover {color: #297a7c;}
+.divisor-gris-dotted {border-bottom: 1px dotted #B5B5B5;}
