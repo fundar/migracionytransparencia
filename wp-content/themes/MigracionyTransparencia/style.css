@@ -59,7 +59,7 @@ h3.titulo-post {
     width: 100%;
 }
 p.formahome{
-    margin: 0 0 5px;
+    margin: 0 0 5px !important;
 }
 
 /*
