@@ -29,9 +29,9 @@ html { -webkit-font-smoothing: antialiased; }
     text-transform: lowercase !important;
 }
 h3.titulo-post {
-    color: #48bfc2;
+    color: #48bfc2 !important;
     font-family: 'blanchcondensed' !important;
-    font-size: 40px;
+    font-size: 40px !important;
     text-transform: lowercase !important;
 }
 /*
