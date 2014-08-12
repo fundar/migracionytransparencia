@@ -138,7 +138,7 @@ class Db  {
      * @return void
      */
 	public function __construct() {
-		$this->Database = new PgSQL_Db();
+		$this->Database = new MySQLi_Db();
 	}
 			
 	/**
