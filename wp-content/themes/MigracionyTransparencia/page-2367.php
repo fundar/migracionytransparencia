@@ -185,7 +185,7 @@
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
-						<select class="search-field search-table" name="lista1" style="height: 33px; border: 1px solid rgb(210, 210, 210);">
+						<select class="search-field search-table" name="lista1">
                                                                     <option>Valor 1
                                                                     <option>Valor 2
                                                                     <option>Valor 3

@@ -34,6 +34,30 @@ h3.titulo-post {
     font-size: 40px !important;
     text-transform: lowercase !important;
 }
+#wrapper .search-table .search-field input {
+    background-color: #ffffff;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) inset;
+    box-sizing: border-box;
+    color: #747474;
+    font-size: 13px;
+    height: 33px;
+    margin: 0;
+    padding: 8px 2%;
+    width: 100%;
+}
+#wrapper .search-table .search-field select {
+    background-color: #ffffff;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) inset;
+    box-sizing: border-box;
+    color: #747474;
+    font-size: 13px;
+    height: 33px;
+    margin: 0;
+    padding: 8px 2%;
+    width: 100%;
+}
 
 /*
 Needed Styles From Bootstrap
