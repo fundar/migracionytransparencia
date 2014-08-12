@@ -165,8 +165,8 @@
 					<div class="search-field">
 						<input type="text" placeholder="Search ..." id="s" name="s" value="">
 					</div>
-					<div class="search-button">
-						<input type="submit" value="?" id="searchsubmit">
+					<div class="search-buton">
+						<input type="submit" value="&#xf002;" id="searchsubmit">
 					</div>
 				</div>
 			        </form>
