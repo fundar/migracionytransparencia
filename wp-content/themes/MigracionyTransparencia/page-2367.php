@@ -158,13 +158,10 @@
 			<?php endif; ?>
 			<?php endif; // password check ?>
 			<div class="post-content">
-				<?php the_content(); ?>
-				<?php wp_link_pages(); ?>
-				<div id="content" class="inicio" style="float:left;">
-					 <div class="heading">
-                                             <h3>Buscar solicitud</h3>
-                                         </div>
-				</div>
+				<div class="heading">
+                                <h3>Buscar solicitud</h3>
+                                </div>
+			</div>
 			</div>
 			<?php if( ! post_password_required($post->ID) ): ?>
 			<?php if(class_exists('Woocommerce')): ?>
