@@ -158,8 +158,8 @@
 			<?php endif; ?>
 			<?php endif; // password check ?>
 			<div class="post-content">
-				<?php the_content(); ?>
-				<?php wp_link_pages(); ?>
+			789
+				
 			</div>
 			<?php if( ! post_password_required($post->ID) ): ?>
 			<?php if(class_exists('Woocommerce')): ?>
