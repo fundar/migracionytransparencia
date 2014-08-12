@@ -11,13 +11,6 @@
  * @link		http://www.zanphp.com
  * @version		1.0
  */
- 
-/**
- * Access from index.php
- */
-if(!defined("_access")) {
-	die("Error: You don't have permission to access here...");
-}
 
 /**
  * ZanPHP mysql_Db Class

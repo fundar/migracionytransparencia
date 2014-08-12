@@ -13,13 +13,6 @@
  */
  
 /**
- * Access from index.php
- */
-if(!defined("_access")) {
-	die("Error: You don't have permission to access here...");
-}
-
-/**
  * ZanPHP MySQLi_Db Class
  *
  * This class is responsible for interacting directly with the database
