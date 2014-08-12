@@ -20,6 +20,14 @@ html { -webkit-font-smoothing: antialiased; }
 .group:after {
   clear: both;
 }
+
+/** home custom **/
+.heading h3 {
+    color: #48bfc2;
+    font-family: 'blanchcondensed' !important;
+    font-size: 40px;
+    text-transform: lowercase !important;
+}
 /*
 Needed Styles From Bootstrap
 -----------------------------------------------------------------------------*/
