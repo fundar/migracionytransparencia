@@ -165,7 +165,7 @@
 					<div class="search-field">
 						<input type="text" placeholder="Search ..." id="s" name="s" value="">
 					</div>
-					<div class="search-buton">
+					<div class="search-button">
 						<input type="submit" value="&#xf002;" id="searchsubmit">
 					</div>
 				</div>
@@ -177,6 +177,9 @@
 				<p>Por tipo de respuesta</p>
 				<p>Por por a&ntilde;o</p>				
 			</div>
+			
+			
+			
 			<?php if( ! post_password_required($post->ID) ): ?>
 			<?php if(class_exists('Woocommerce')): ?>
 			<?php if($smof_data['comments_pages'] && !is_cart() && !is_checkout() && !is_account_page() && !is_page(get_option('woocommerce_thanks_page_id'))): ?>
