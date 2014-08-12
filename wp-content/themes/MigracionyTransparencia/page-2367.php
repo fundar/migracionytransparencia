@@ -252,8 +252,10 @@
 				</div>
 			        </form>
 				<div class="avada-row" style="margin-top: 30px;">	
-				<a type="button" href="" class="fusion-button button-16 ">Buscar</a><span style="padding-right: 1px;"></span>
-                                <a type="button" href="" class="buton-solicitudes">Ver todas las solicitudes</a></div>
+				<div>
+					<input id="submit" class="button-flat busquedas-boton" type="submit" value="Submit Form" tabindex="5" name="submit">
+				</div>
+                                <a type="button" href="" class="boton-solicitudes">Ver todas las solicitudes</a></div>
 				
 			        </div>
 			</div> <!--fin post content div -->
