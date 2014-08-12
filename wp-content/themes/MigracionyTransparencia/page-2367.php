@@ -157,7 +157,7 @@
 			<?php endif; ?>
 			<?php endif; ?>
 			<?php endif; // password check ?>
-			<div class="post-content">
+			<div class="post-content" style="margin: -29px 0px 0px;">
 				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
 				<p>B&aacute;squeda por palabra</p>
 				<form action="http://migracionytransparencia.org/" method="get" role="search" class="seach-form" id="searchform">
