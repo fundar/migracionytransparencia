@@ -42,7 +42,7 @@
 		include_once "class/functions/string.php";
 		
 		$slug = getSlug();
-		
+		die(var_dump($slug));
 		if($slug) {
 			$Search  = new Search();
 			$request = $Search->getBySlug($slug);
