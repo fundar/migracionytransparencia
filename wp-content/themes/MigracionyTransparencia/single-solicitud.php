@@ -119,11 +119,11 @@
 						</div>
 						<div class="seccion">
 						<p class="titulo">Folio</p>
-						<p class="info">0411100082710</p>
+						<p class="info"><?php echo utf8_encode($request["folio"]);?></p>
 						</div>
 						<div class="seccion">
 						<p class="titulo">Fecha de solicitud</p>
-						<p class="info">8 de diciembre de 2013</p>
+						<p class="info"><?php echo $request["date_published"];?></p>
 						</div>
 						<div class="seccion">
 						<p class="titulo">Tipo de documentos</p>
