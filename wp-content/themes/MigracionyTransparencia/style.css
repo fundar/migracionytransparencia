@@ -74,8 +74,12 @@ a.boton-solicitudes {
     font-family: 'blanchcondensed' !important;
     font-size: 28px;
     height: 38px;
-    padding: 0 17px;
+    padding: 0 23px;
     text-shadow: none;
+}
+a:hover.boton-solicitudes {
+    background: none repeat scroll 0 0 #E34F42;
+    color: #fff;
 }
 .busquedas-boton {
     background: none repeat scroll 0 0 #bb3835;
@@ -84,12 +88,10 @@ a.boton-solicitudes {
     box-shadow: none;
     color: rgba(255, 255, 255, 0.7);
     height: 38px;
-    line-height: 38px;
     padding: 0 23px;
     text-shadow: none;
     font-family: 'blanchcondensed' !important;
     font-size: 28px;
-    vertical-align: middle;
 }
 /*
 Needed Styles From Bootstrap
