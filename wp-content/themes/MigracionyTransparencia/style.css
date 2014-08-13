@@ -76,6 +76,10 @@ a.boton-solicitudes {
     height: 38px;
     padding: 0 23px;
     text-shadow: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
 a:hover.boton-solicitudes {
     background: none repeat scroll 0 0 #E34F42;
@@ -93,10 +97,6 @@ a:hover.boton-solicitudes {
     text-shadow: none;
     font-family: 'blanchcondensed' !important;
     font-size: 28px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
 }
 a:hover.boton-solicitudes {
     background: none repeat scroll 0 0 #E34F42;
