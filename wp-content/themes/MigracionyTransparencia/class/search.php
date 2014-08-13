@@ -15,9 +15,7 @@ class Search {
 	}
 	
 	/*bucar solicitudes por slug*/
-	public function getBySlug($slug) {
-		die(var_dump($slug));
-		
+	public function getBySlug($slug) {		
 		$query = "select * from requests where slug='" . $slug ."'";
 		$data  = $this->mysql->query($query);
 		die(var_dump($data));
