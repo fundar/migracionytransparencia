@@ -42,10 +42,14 @@
 		include_once "class/functions/string.php";
 		
 		$route = getRoute();
-		die(var_dump($route));
 		
-		$Search  = new Search();
-		$results = $Search->getBySlug();
+		if(is_array($route) and isset($route[1])) {
+			$slug	 = $route[1];
+			$Search  = new Search($slug);
+			$results = $Search->getBySlug();
+		} else {
+			header('Location: ' . home_url());
+		}
 	?>
 	
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
