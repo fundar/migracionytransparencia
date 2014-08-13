@@ -57,11 +57,11 @@
 
 			<?php if((has_post_thumbnail() || get_post_meta($post->ID, 'pyre_video', true))): ?>
 				<h2 class="entry-title">
-					<?php echo $request["short_name"]; ?>
+					<?php echo utf8_encode($request["short_name"]); ?>
 				</h2>
 			<?php else: ?>			
 				<span class="entry-title">
-					<?php echo $request["short_name"]; ?>
+					<?php echo utf8_encode($request["short_name"]); ?>
 				</span>
 				<div class="divisor-3"></div>
 			<?php endif; ?>
