@@ -45,7 +45,7 @@
 		
 		if($slug) {
 			$Search  = new Search();
-			$results = $Search->getBySlug($slug);
+			$request = $Search->getBySlug($slug);
 		} else {
 			header('Location: ' . home_url());
 		}
@@ -55,15 +55,17 @@
 		<?php if(have_posts()): the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
 
-			<?php
-			if((has_post_thumbnail() || get_post_meta($post->ID, 'pyre_video', true))):
-			?>
-		
-			<h2 class="entry-title"><?php the_title(); ?></h2>
-			<?php else: ?>
-			<span class="entry-title"><?php the_title(); ?></span>
-			<div class="divisor-3"></div>
+			<?php if((has_post_thumbnail() || get_post_meta($post->ID, 'pyre_video', true))): ?>
+				<h2 class="entry-title">
+					<?php echo $request["short_name"]; ?>
+				</h2>
+			<?php else: ?>			
+				<span class="entry-title">
+					<?php echo $request["short_name"]; ?>
+				</span>
+				<div class="divisor-3"></div>
 			<?php endif; ?>
+			
 			<div class="post">				
 				<div class="post-content>
 					<p class="subtitulo-negro">Pregunta</p>
