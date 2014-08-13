@@ -23,7 +23,7 @@
                                </div>
                        </div>
 			<div class="excerpt-container strip-html">
-                                 <h2 class="entry-title"><a href="">Titulo</a></h2>	
+                                 <h2 class="entry-title"><a href="">pruebaaaaaaaaaaaaaaaaaaaaaaa</a></h2>	
                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu posuere urna. Nullam sapien nulla, posuere ut lectus a, aliquet gravida justo. Phasellus et venenatis orci. Suspendisse vestibulum lorem leo, at euismod metus vehicula sed. Sed ornare semper facilisis... </p>
                         </div>					
 		</div>
