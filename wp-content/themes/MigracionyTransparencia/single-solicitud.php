@@ -46,8 +46,8 @@
 			$Search  = new Search();
 			$request = $Search->getBySlug($slug);
 		} else {
-			die(var_dump(site_url()));
 			header('Location: ' . site_url());
+			exit;
 		}
 	?>
 	
