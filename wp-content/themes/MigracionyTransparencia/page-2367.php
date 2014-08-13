@@ -160,10 +160,14 @@
 			
 			<?php
 				//include de arhivode manejo de base de datos
-				include_once "class/search.php";
+				include_once "class/catalogos.php";
 				
-				$Search     = new Search();
-				$categories = $Search->categories();
+				$Catalogos      = new Catalogos();
+				$categories     = $Catalogos->categories();
+				$answers_types  = $Catalogos->answersTypes();
+				$organizations  = $Catalogos->organizations();
+				$dependencies   = $Catalogos->dependencies();
+				$years		    = $Catalogos->years();
 			?>
 			
 			<div class="post-content" style="margin: -29px 0px 0px;">
@@ -195,7 +199,7 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="category">
-							<option value="0">Selecciona una categoría</option>
+							<option value="0">Selecciona una categor&iacute;a</option>
 							<?php foreach($categories as $category) { ?>
 								<option value="<?php echo $category["id_category"];?>"><?php echo utf8_encode($category["name"]);?></option>
 							<?php } ?>
@@ -209,10 +213,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-							<option>Valor 1</option>
-							<option>Valor 2</option>
-							<option>Valor 3</option>
-							<option>Valor 4</option>
+							<option>Selecciona una dependencia</option>
+							<?php foreach($dependencies as $dependeny) { ?>
+								<option value="<?php echo $dependeny["id_dependecy"];?>"><?php echo utf8_encode($dependeny["name"]);?></option>
+							<?php } ?>
 						</select>
 					</div>
 	
@@ -223,10 +227,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-							<option>Valor 1</option>
-							<option>Valor 2</option>
-							<option>Valor 3</option>
-							<option>Valor 4</option>
+							<option>Selecciona una organizaci&oacute;n</option>
+							<?php foreach($organizations as $organization) { ?>
+								<option value="<?php echo $organization["id_organization"];?>"><?php echo utf8_encode($organization["name"]);?></option>
+							<?php } ?>
 						</select>
 					</div>
 	
@@ -237,10 +241,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-							<option>Valor 1</option>
-							<option>Valor 2</option>
-							<option>Valor 3</option>
-							<option>Valor 4</option>
+							<option>Selecciona un tipo de respuesta</option>
+							<?php foreach($answers_types as $answer) { ?>
+								<option value="<?php echo $answer["id_type_answer"];?>"><?php echo utf8_encode($answer["name"]);?></option>
+							<?php } ?>
 						</select>
 					</div>
 	
@@ -251,9 +255,10 @@
 				<div class="search-table">
 					<div class="search-field">
 						<select class="search-field search-table" name="lista1">
-                                                                   <option selected="" value="1">Valor 1</option>
-                                                                   <option value="2">Valor 2</option>
-                                                                   <option value="3">Valor 3</option>
+						   <option value="0">Selecciona un a&ntilde;o</option>
+						   <?php foreach($years as $year) { ?>
+								<option value="<?php echo $year["year"];?>"><?php echo utf8_encode($year["year"]);?></option>
+							<?php } ?>
 						</select>
 					</div>
 	

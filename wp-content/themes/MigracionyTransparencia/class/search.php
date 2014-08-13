@@ -13,21 +13,4 @@ class Search {
 		$this->mysql = new Db();
 		$this->mysql->connect($db);
 	}
-	
-	/*test method*/
-	public function example() {
-		/*query*/
-		$query = "select * from requests";
-		$data  = $this->mysql->query($query);
-		
-		return $data;
-	}
-	
-	public function categories() {
-		/*query*/
-		$query = "select * from categories";
-		$data  = $this->mysql->query($query);
-		
-		return $data;
-	}
 }

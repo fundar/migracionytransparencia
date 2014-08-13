@@ -41,7 +41,7 @@
 		include_once "class/search.php";
 		
 		$Search  = new Search();
-		$results = $Search->example();
+		//$results = $Search->example();
 	?>
 	
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
