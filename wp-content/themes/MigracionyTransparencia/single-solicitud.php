@@ -1,3 +1,19 @@
+<?php
+	//include de arhivode manejo de base de datos
+	include_once "class/search.php";
+	include_once "class/functions/string.php";
+	
+	$slug = getSlug();
+	
+	if($slug) {
+		$Search  = new Search();
+		$request = $Search->getBySlug($slug);
+	} else {
+		header('Location: ' . site_url());
+		die();
+	}
+?>
+	
 <?php get_header(); ?>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/solicitud.css" />
 
@@ -34,21 +50,6 @@
 		$content_class= 'full-width';
 		$sidebar_exists = false;
 	}
-	?>
-	
-	<?php
-		//include de arhivode manejo de base de datos
-		include_once "class/search.php";
-		include_once "class/functions/string.php";
-		
-		$slug = getSlug();
-		if($slug) {
-			$Search  = new Search();
-			$request = $Search->getBySlug($slug);
-		} else {
-			header('Location: ' . site_url());
-			exit;
-		}
 	?>
 	
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
