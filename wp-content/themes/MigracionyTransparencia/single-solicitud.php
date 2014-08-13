@@ -39,9 +39,13 @@
 	<?php
 		//include de arhivode manejo de base de datos
 		include_once "class/search.php";
+		include_once "class/functions/string.php";
+		
+		$route = getRoute();
+		die(var_dump($route));
 		
 		$Search  = new Search();
-		//$results = $Search->example();
+		$results = $Search->getBySlug();
 	?>
 	
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
