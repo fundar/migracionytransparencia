@@ -1384,39 +1384,6 @@ function avada_auto_updater() {
 }
 add_action( 'admin_init', 'avada_auto_updater' );
 
-/**
- * Custom Post Type "Solicitudes"
- */
-add_action( 'init', 'create_post_type_solicitudes' );
-function create_post_type_solicitudes() {
-    register_post_type( 'solicitud',
-        array(
-            'labels' => array(
-                'name' => __( 'Solicitudes' ),
-                'singular_name' => __( 'Solicitud' ),
-                'singular_label' => __( 'Solicitud' ),		
-                'all_items' => __('Solicitudes'),
-                'add_new_item' => __('Añadir una solicitud nueva'),
-                'edit_item' => __('Editar solicitud'),
-		'search_items'       => __( 'Buscar Solicitudes' ),
-		'not_found'          => __( 'No solicitudes encontradas' ),
-		'not_found_in_trash' => __( 'No solicitudes encontradas en basura' ),
-		'menu_name'          => 'Solicitudes'
-            ),
-        'public' => true,
-        'has_archive' => true,
-        'capability_type' => 'post',
-        'hierarchical' => true,
-        'query_var' => true,
-        'menu_position' => 5,
-        'menu_icon' => get_stylesheet_directory_uri() . '/images/solicitud_icon.png',
-        'rewrite' => array('slug' => 'solicitudes'),
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'comments' )	
-        )
-    );
-    
-}
-
 function my_taxonomies_solicitud() {
   $labels = array(
     'name'              => _x( 'Solicitud Categories', 'taxonomy general name' ),
