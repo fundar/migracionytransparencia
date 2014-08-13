@@ -8,6 +8,11 @@
 	if($slug) {
 		$Search  = new Search();
 		$request = $Search->getBySlug($slug);
+		
+		if(!$request) {
+			header('Location: ' . site_url());
+			die();
+		}
 	} else {
 		header('Location: ' . site_url());
 		die();
