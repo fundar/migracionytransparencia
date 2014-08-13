@@ -176,7 +176,7 @@
 				<form action="" method="get" role="search" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
-						<input type="text" placeholder="Search ..." id="s" name="s" value="">
+						<input type="text" placeholder="Buscar ..." id="s" name="search_query" value="">
 					</div>
 					<div class="search-button">
 						<input type="submit" value="&#xf002;" id="searchsubmit">
@@ -187,7 +187,7 @@
 				<form action="" method="get" role="search" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
-						<input type="text" placeholder="Search ..." id="s" name="s" value="">
+						<input type="text" placeholder="Buscar ..." id="s" name="search_folio" value="">
 					</div>
 					<div class="search-button">
 						<input type="submit" value="&#xf002;" id="searchsubmit">
@@ -212,7 +212,7 @@
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
-						<select class="search-field search-table" name="lista1">
+						<select class="search-field search-table" name="dependencies">
 							<option>Selecciona una dependencia</option>
 							<?php foreach($dependencies as $dependeny) { ?>
 								<option value="<?php echo $dependeny["id_dependecy"];?>"><?php echo utf8_encode($dependeny["name"]);?></option>
@@ -226,7 +226,7 @@
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
-						<select class="search-field search-table" name="lista1">
+						<select class="search-field search-table" name="organizations">
 							<option>Selecciona una organizaci&oacute;n</option>
 							<?php foreach($organizations as $organization) { ?>
 								<option value="<?php echo $organization["id_organization"];?>"><?php echo utf8_encode($organization["name"]);?></option>
@@ -240,7 +240,7 @@
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
-						<select class="search-field search-table" name="lista1">
+						<select class="search-field search-table" name="answers_types">
 							<option>Selecciona un tipo de respuesta</option>
 							<?php foreach($answers_types as $answer) { ?>
 								<option value="<?php echo $answer["id_type_answer"];?>"><?php echo utf8_encode($answer["name"]);?></option>
@@ -254,7 +254,7 @@
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
-						<select class="search-field search-table" name="lista1">
+						<select class="search-field search-table" name="years">
 						   <option value="0">Selecciona un a&ntilde;o</option>
 						   <?php foreach($years as $year) { ?>
 								<option value="<?php echo $year["year"];?>"><?php echo utf8_encode($year["year"]);?></option>
@@ -265,8 +265,12 @@
 				</div>
 			        </form>
 				<div class="avada-row" style="margin-top: 30px;">	
-					<div style="float: left; margin-right: 5px;"><input type="submit" id="submit" class="button-flat busquedas-boton" value="Buscar" tabindex="5" name="Buscar"></div>
-                                        <div style="float: left;"><a class="boton-solicitudes" href="http://migracionytransparencia.org/solicitudes/" type="button">Ver todas las solicitudes</a></div>                                       
+					<div style="float: left; margin-right: 5px;">
+						<input type="submit" id="submit" class="button-flat busquedas-boton" value="Buscar" tabindex="5" name="Buscar">
+					</div>
+                    <div style="float: left;">
+						<a class="boton-solicitudes" href="http://migracionytransparencia.org/solicitudes/" type="button">Ver todas las solicitudes</a>
+					</div>
 				</div>
 			</div> <!--fin post content div -->
 			
