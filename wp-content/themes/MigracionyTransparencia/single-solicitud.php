@@ -42,7 +42,7 @@
 		include_once "class/functions/string.php";
 		
 		$route = getRoute();
-		
+		die(var_dump($route));
 		if(is_array($route) and isset($route[2])) {
 			$slug	 = $route[2];
 			
