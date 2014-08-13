@@ -33,3 +33,11 @@ function getRoute($pos = false) {
 	
 	return $route;
 }
+
+function getSlug() {
+	if(isset($_GET["slug"])) {
+		return $_GET["slug"];
+	} else {
+		return false;
+	}
+}
