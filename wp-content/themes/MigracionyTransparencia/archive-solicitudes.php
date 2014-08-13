@@ -112,6 +112,7 @@
 				}
 				endif;
 				?>
+				
 				<div class="post-content-container">
 					<?php if($smof_data['blog_archive_layout'] == 'Timeline'): ?>
 					<div class="timeline-circle"></div>

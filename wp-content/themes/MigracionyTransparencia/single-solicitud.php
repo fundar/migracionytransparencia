@@ -43,10 +43,11 @@
 		
 		$route = getRoute();
 		
-		if(is_array($route) and isset($route[1])) {
-			$slug	 = $route[1];
-			$Search  = new Search($slug);
-			$results = $Search->getBySlug();
+		if(is_array($route) and isset($route[2])) {
+			$slug	 = $route[2];
+			
+			$Search  = new Search();
+			$results = $Search->getBySlug($slug);
 		} else {
 			header('Location: ' . home_url());
 		}

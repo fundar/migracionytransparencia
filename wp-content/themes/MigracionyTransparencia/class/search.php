@@ -13,4 +13,13 @@ class Search {
 		$this->mysql = new Db();
 		$this->mysql->connect($db);
 	}
+	
+	/*bucar solicitudes por slug*/
+	public function getBySlug($slug) {
+		$query = "select * from requests where slug='" . $slug ."'";
+		$data  = $this->mysql->query($query);
+		die(var_dump($data));
+		
+		return $data;
+	}
 }
