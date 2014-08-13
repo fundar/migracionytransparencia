@@ -87,11 +87,20 @@ a:hover.boton-solicitudes {
     border-width: 0;
     box-shadow: none;
     color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
     height: 38px;
     padding: 0 23px;
     text-shadow: none;
     font-family: 'blanchcondensed' !important;
     font-size: 28px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+a:hover.boton-solicitudes {
+    background: none repeat scroll 0 0 #E34F42;
+    color: #fff;
 }
 /*
 Needed Styles From Bootstrap
