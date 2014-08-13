@@ -42,9 +42,8 @@
 		include_once "class/functions/string.php";
 		
 		$slug = getSlug();
+		
 		if($slug) {
-			$slug	 = $route[2];
-			
 			$Search  = new Search();
 			$results = $Search->getBySlug($slug);
 		} else {
