@@ -170,10 +170,10 @@
 				$years		    = $Catalogos->years();
 			?>
 			
+		<form action="" method="get" role="search" class="seach-form" id="searchform">
 			<div class="post-content" style="margin: -29px 0px 0px;">
 				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
 				<p class="formahome">B&uacute;squeda por palabra</p>
-				<form action="" method="get" role="search" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
 						<input type="text" placeholder="Buscar ..." id="s" name="search_query" value="">
@@ -182,9 +182,7 @@
 						<input type="submit" value="&#xf002;" id="searchsubmit">
 					</div>
 				</div>
-			        </form>
 				<p class="formahome2">B&uacute;squeda por folio</p>
-				<form action="" method="get" role="search" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
 						<input type="text" placeholder="Buscar ..." id="s" name="search_folio" value="">
@@ -195,7 +193,6 @@
 				</div>
 			        </form>
 				<p class="formahome2">Por categor&iacute;a</p>
-				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="category">
@@ -207,9 +204,7 @@
 					</div>
 	
 				</div>
-			        </form>				
 				<p class="formahome2">Por dependencia</p>
-				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="dependencies">
@@ -221,9 +216,7 @@
 					</div>
 	
 				</div>
-			        </form>	
 				<p class="formahome2">Por organizaci&oacute;n</p>
-				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="organizations">
@@ -233,11 +226,8 @@
 							<?php } ?>
 						</select>
 					</div>
-	
 				</div>
-			        </form>					
 				<p class="formahome2">Por tipo de respuesta</p>
-				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="answers_types">
@@ -247,11 +237,8 @@
 							<?php } ?>
 						</select>
 					</div>
-	
 				</div>
-			        </form>					
 				<p class="formahome2">Por por a&ntilde;o</p>
-				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">
 						<select class="search-field search-table" name="years">
@@ -261,9 +248,7 @@
 							<?php } ?>
 						</select>
 					</div>
-	
 				</div>
-			        </form>
 				<div class="avada-row" style="margin-top: 30px;">	
 					<div style="float: left; margin-right: 5px;">
 						<input type="submit" id="submit" class="button-flat busquedas-boton" value="Buscar" tabindex="5" name="Buscar">
@@ -273,7 +258,7 @@
 					</div>
 				</div>
 			</div> <!--fin post content div -->
-			
+		</form>
 			
 			
 			<?php if( ! post_password_required($post->ID) ): ?>
