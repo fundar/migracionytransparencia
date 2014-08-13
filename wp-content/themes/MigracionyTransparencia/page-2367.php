@@ -197,8 +197,7 @@
 						<select class="search-field search-table" name="category">
 							<option value="0">Selecciona una categoría</option>
 							<?php foreach($categories as $category) { ?>
-								<?php die(var_dump($category));?>
-								<option>Valor 2</option>
+								<option value="<?php echo $category["id_category"];?>"><?php echo $category["name"];?></option>
 							<?php } ?>
 						</select>
 					</div>
