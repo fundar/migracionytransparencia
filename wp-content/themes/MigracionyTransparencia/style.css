@@ -69,17 +69,19 @@ a.boton-solicitudes {
     border-color: rgba(255, 255, 255, 0.7);
     border-width: 0;
     box-shadow: none;
+    clear: both;
     color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
     display: inline-block;
     font-family: 'blanchcondensed' !important;
     font-size: 28px;
     height: 38px;
-    padding: 0 23px;
-    text-shadow: none;
+    line-height: 38px;
     overflow: hidden;
+    padding: 0 23px;
     position: relative;
     text-align: center;
-    cursor: pointer;
+    text-shadow: none;
 }
 a:hover.boton-solicitudes {
     background: none repeat scroll 0 0 #E34F42;
@@ -97,6 +99,7 @@ a:hover.boton-solicitudes {
     text-shadow: none;
     font-family: 'blanchcondensed' !important;
     font-size: 28px;
+    line-height:38px;
 }
 a:hover.boton-solicitudes {
     background: none repeat scroll 0 0 #E34F42;
