@@ -105,6 +105,10 @@ a:hover.busquedas-boton {
     background: none repeat scroll 0 0 #E34F42;
     color: #fff;
 }
+.busquedas-boton:hover {
+    background: none repeat scroll 0 0 #E34F42;
+    color: #fff;
+}
 /*
 Needed Styles From Bootstrap
 -----------------------------------------------------------------------------*/
