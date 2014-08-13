@@ -22,4 +22,12 @@ class Search {
 		
 		return $data;
 	}
+	
+	public function categories() {
+		/*query*/
+		$query = "select * from categories";
+		$data  = $this->mysql->query($query);
+		
+		return $data;
+	}
 }

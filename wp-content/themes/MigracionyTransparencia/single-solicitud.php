@@ -38,9 +38,7 @@
 	
 	<?php
 		//include de arhivode manejo de base de datos
-		
 		include_once "class/search.php";
-		include_once "class/functions/string.php";
 		
 		$Search  = new Search();
 		$results = $Search->example();

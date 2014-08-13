@@ -157,6 +157,15 @@
 			<?php endif; ?>
 			<?php endif; ?>
 			<?php endif; // password check ?>
+			
+			<?php
+				//include de arhivode manejo de base de datos
+				include_once "class/search.php";
+				
+				$Search     = new Search();
+				$categories = $Search->categories();
+			?>
+			
 			<div class="post-content" style="margin: -29px 0px 0px;">
 				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
 				<p class="formahome">B&uacute;squeda por palabra</p>
@@ -185,11 +194,12 @@
 				<form action="" method="post" class="seach-form" id="searchform">
 				<div class="search-table">
 					<div class="search-field">						
-						<select class="search-field search-table" name="lista1">
-                                                                    <option>Valor 1</option>
-                                                                    <option>Valor 2</option>
-                                                                    <option>Valor 3</option>
-								    <option>Valor 4</option>
+						<select class="search-field search-table" name="category">
+							<option value="0">Selecciona una categoría</option>
+							<?php foreach($categories as $category) { ?>
+								<?php die(var_dump($category));?>
+								<option>Valor 2</option>
+							<?php } ?>
 						</select>
 					</div>
 	
@@ -200,10 +210,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-                                                                    <option>Valor 1</option>
-                                                                    <option>Valor 2</option>
-                                                                    <option>Valor 3</option>
-								    <option>Valor 4</option>
+							<option>Valor 1</option>
+							<option>Valor 2</option>
+							<option>Valor 3</option>
+							<option>Valor 4</option>
 						</select>
 					</div>
 	
@@ -214,10 +224,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-                                                                    <option>Valor 1</option>
-                                                                    <option>Valor 2</option>
-                                                                    <option>Valor 3</option>
-								    <option>Valor 4</option>
+							<option>Valor 1</option>
+							<option>Valor 2</option>
+							<option>Valor 3</option>
+							<option>Valor 4</option>
 						</select>
 					</div>
 	
@@ -228,10 +238,10 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="lista1">
-                                                                    <option>Valor 1</option>
-                                                                    <option>Valor 2</option>
-                                                                    <option>Valor 3</option>
-								    <option>Valor 4</option>
+							<option>Valor 1</option>
+							<option>Valor 2</option>
+							<option>Valor 3</option>
+							<option>Valor 4</option>
 						</select>
 					</div>
 	
