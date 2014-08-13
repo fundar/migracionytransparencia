@@ -19,6 +19,7 @@ class Search {
 		$query = "select * from requests where slug='" . $slug ."'";
 		$data  = $this->mysql->query($query);
 		
-		return $data;
+		if($data and is_array($data)) return $data[0];
+		else return false;
 	}
 }
