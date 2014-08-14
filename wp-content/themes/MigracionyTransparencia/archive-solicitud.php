@@ -71,6 +71,7 @@
 					<?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
 				</div>						
 			</div>
+			<div class="divisor-gris-dotted"></div>
 		<?php } ?>
 	</div>
 	
@@ -80,7 +81,6 @@
 		</a>
 	<?php } ?>
 	
-	<div class="divisor-gris-dotted"></div>
 </div>
 </div>
 
