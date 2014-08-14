@@ -31,16 +31,16 @@
     line-height: 45px;
 }
 
+
 .meta .date .month {
     border-bottom: 2px solid #48bfc2;
     color: #000;
-    font-family: 'blanchcondensed';
-    font-size: 28px;
+    font-family: lato;
+    font-size: 21px;
     font-style: normal !important;
-    line-height: 12px;
-    margin: -17px 0 0;
-    padding: 10px 0;
-    text-align: center;
+    font-weight: bold;
+    line-height: 26px;
+    margin: -18px 0 0;
 }
 h2.entry-title {
     color: #48bfc2;
