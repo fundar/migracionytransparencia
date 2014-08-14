@@ -74,7 +74,7 @@ function getPages($limit, $count) {
 }
 
 /*obtiene la pgina actual*/
-public function getPage() {
+function getPage() {
 	if(isset($_GET["page"]) and is_numeric($_GET["page"])) {
 		return $_GET["page"];
 	} else {
