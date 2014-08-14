@@ -46,3 +46,15 @@ function getURL(){
 	$url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 	return $url;
 }
+
+/*funciones de fecha - obtiene el año*/
+function getYear($date) {
+	$explode = explode("-", $date);
+	return $explode[0];
+}
+
+/*funciones de fecha - obtiene el mes*/
+function getMonth($date) {
+	$explode = explode("-", $date);
+	return $explode[1];
+}

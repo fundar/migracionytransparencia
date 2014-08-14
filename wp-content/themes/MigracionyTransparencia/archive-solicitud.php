@@ -31,8 +31,16 @@
 			<div class="post-content">
 				<div class="meta">
 					<div class="date">
-						<p class="year"><span>2013</span></p>
-						<p class="month">11</p>
+						<p class="year">
+							<span>
+								<?php echo getYear($request["date_published"]);?>
+							</span>
+						</p>
+						<p class="month">
+							<span>
+								<?php echo getMonth($request["date_published"]);?>
+							</span>
+						</p>
 					</div>
 				</div>
 				<div class="excerpt-container strip-html">
