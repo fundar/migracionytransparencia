@@ -54,6 +54,7 @@ class Catalogos {
 		return $data;
 	}
 	
+	/*
 	public function fixed() {
 		$query = "select * from requests where slug is NULL";
 		$data  = $this->mysql->query($query);
@@ -66,4 +67,5 @@ class Catalogos {
 		
 		return $data;
 	}
+	*/
 }

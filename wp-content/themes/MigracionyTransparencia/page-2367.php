@@ -160,10 +160,6 @@
 			
 			<?php
 				//include de arhivode manejo de base de datos
-				include_once "class/functions/string.php";
-				
-				
-				
 				include_once "class/catalogos.php";
 				
 				$Catalogos      = new Catalogos();
@@ -172,9 +168,6 @@
 				$organizations  = $Catalogos->organizations();
 				$dependencies   = $Catalogos->dependencies();
 				$years		    = $Catalogos->years();
-				
-				/*solo una vez*/
-				$fixed		    = $Catalogos->fixed();
 			?>
 			
 		<form action="/solicitudes" method="get" role="search" class="seach-form" id="searchform">
