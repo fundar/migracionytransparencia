@@ -74,9 +74,9 @@
 	</div>
 	
 	<?php for($page=1; $page<=$pages; $page++) { ?>
-		<span>
+		<a href="/solicitudes/?page=<?php echo $page; ?>" title="Paginación de solicitudes">
 			<?php echo $page; ?>
-		</span>
+		</a>
 	<?php } ?>
 	
 	<div class="divisor-gris-dotted"></div>
