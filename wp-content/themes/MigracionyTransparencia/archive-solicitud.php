@@ -73,7 +73,7 @@
 		<?php } ?>
 	</div>
 	
-	<?php foreach($page=1; $page++; $page<=$pages) { ?>
+	<?php foreach($page=1; $page++; $page<=$pages;) { ?>
 		<span>
 			<?php echo $page; ?>
 		</span>
