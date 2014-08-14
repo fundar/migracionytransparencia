@@ -15,6 +15,7 @@
 		}
 		
 		$response = $Search->getResponse($request["id_request"]);
+		$quality  = $Search->getQualityResponse($response["id_response"]);
 	} else {
 		header('Location: ' . site_url());
 		die();
@@ -133,11 +134,17 @@
 						</div>
 						<div class="seccion">
 							<p class="titulo">Tipo de respuesta</p>
-							<p class="info"><?php echo $request["type_answer"];?></p>
+							<p class="info"><?php echo $response["type_answer"];?></p>
 						</div>
 						<div class="seccion">
 							<p class="titulo">Calidad de respuesta</p>
-							<p class="info">Completa, Legible</p>
+							<p class="info">
+								<?php 
+								$string = "";
+								foreach($quality as $qua) $string .= $qua["name"] . ",";
+								echo rtrim($string, ",");
+								?>
+							</p>
 						</div>
 						<div class="seccion">
 							<p class="titulo">Recurso de revisi&oacute;n</p>

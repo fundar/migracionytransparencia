@@ -23,11 +23,21 @@ class Search {
 		else return false;
 	}
 	
+	/*obtiene la respuesta de una solicitud*/
 	public function getResponse($id_request) {
 		$query = "select responses.*, answers_types.name as type_answer from responses left join answers_types on responses.id_type_answer=answers_types.id_type_answer where id_request=$id_request";
 		$data  = $this->mysql->query($query);
 		
 		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
+	
+	/*obtiene la calidad de la respuesta de una solicitud*/
+	public function getQualityResponse($id_response) {
+		$query = "select * from quality where id_quality in (select id_quality from responses2quality where id_response=$id_response)";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data;
 		else return false;
 	}
 }
