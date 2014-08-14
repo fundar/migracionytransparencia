@@ -67,4 +67,22 @@ class Search {
 		if($data and is_array($data)) return $data;
 		else return false;
 	}
+	
+	/*obtiene la resolución de una solicitud*/
+	public function getResolution($id_request) {
+		$query = "select * from resolutions where id_request=$id_request";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
+	
+	/*obtiene el cumplimineto de una solicitud*/
+	public function getCumplimiento($id_request) {
+		$query = "select * from cumplimiento where id_request=$id_request";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
 }

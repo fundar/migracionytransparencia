@@ -14,11 +14,12 @@
 			die();
 		}
 		
-		$response  = $Search->getResponse($request["id_request"]);
-		$quality   = $Search->getQualityResponse($response["id_response"]);
-		$doc_types = $Search->getDocumentsTypeResponse($response["id_response"]);
-		
-		$review    = $Search->getReview($request["id_request"]);
+		$response     = $Search->getResponse($request["id_request"]);
+		$quality      = $Search->getQualityResponse($response["id_response"]);
+		$doc_types    = $Search->getDocumentsTypeResponse($response["id_response"]);
+		$resolution   = $Search->getResolution($request["id_request"]);
+		$cumplimiento = $Search->getCumplimiento($request["id_request"]);
+		$review 	  = $Search->getReview($request["id_request"]);
 		
 		if($review) {
 			$turn_acts = $Search->getActsReviews($review["id_review"]);
@@ -101,17 +102,23 @@
 					</a>
 					<span style="padding-right: 1px;"></span>
 				</div>
-				<div class="fusion-one-third one_third fusion-column">
-					<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $request["file_url"]?>" title="Documento resolución" target="_blank" type="button">
-						Ver resoluci&oacute;n
-					</a>
-					<span style="padding-right: 1px;"></span>
-				</div>
-				<div class="fusion-one-third one_third fusion-column last">
-					<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $request["file_url"]?>" title="Documento cumplimiento" target="_blank" type="button">
-						Ver cumplimiento
-					</a>
-				</div>
+				
+				<?php if($resolution) { ?>
+					<div class="fusion-one-third one_third fusion-column">
+						<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $resolution["file_url"]?>" title="Documento resolución" target="_blank" type="button">
+							Ver resoluci&oacute;n
+						</a>
+						<span style="padding-right: 1px;"></span>
+					</div>
+				<?php } ?>
+				
+				<?php if($cumplimiento) { ?>
+					<div class="fusion-one-third one_third fusion-column last">
+						<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $cumplimiento["file_url"]?>" title="Documento cumplimiento" target="_blank" type="button">
+							Ver cumplimiento
+						</a>
+					</div>
+				<?php } ?>
 			</div>
 			</div>
 				
