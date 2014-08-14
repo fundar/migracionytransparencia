@@ -36,7 +36,6 @@ class Search {
 	public function getQualityResponse($id_response) {
 		$query = "select * from quality where id_quality in (select id_quality from responses2quality where id_response=$id_response)";
 		$data  = $this->mysql->query($query);
-		die(var_dump($query));
 		
 		if($data and is_array($data)) return $data;
 		else return false;
