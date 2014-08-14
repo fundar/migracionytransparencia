@@ -62,7 +62,7 @@ class Catalogos {
 		foreach($data as $value) {
 			$slug  = slug($value["name"]);
 			die(var_dump($slug));
-			$query = "update requests slug='$slug' where id_request" = $value["id_request"];
+			$query = "update requests slug='$slug' where id_request" . $value["id_request"];
 			$data  = $this->mysql->query($query);
 		}
 		
