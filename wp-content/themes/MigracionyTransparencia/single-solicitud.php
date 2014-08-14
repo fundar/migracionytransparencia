@@ -14,8 +14,9 @@
 			die();
 		}
 		
-		$response = $Search->getResponse($request["id_request"]);
-		$quality  = $Search->getQualityResponse($response["id_response"]);
+		$response  = $Search->getResponse($request["id_request"]);
+		$quality   = $Search->getQualityResponse($response["id_response"]);
+		$doc_types = $Search->getDocumentsTypeResponse($response["id_response"]);
 	} else {
 		header('Location: ' . site_url());
 		die();
@@ -130,7 +131,13 @@
 						</div>
 						<div class="seccion">
 							<p class="titulo">Tipo de documentos</p>
-							<p class="info">Leyes, Protocolos, Circulares</p>
+							<p class="info">
+								<?php 
+								$string = "";
+								foreach($doc_types as $type) $string .= $type["name"] . ",";
+								echo utf8_encode(rtrim($string, ","));
+								?>
+							</p>
 						</div>
 						<div class="seccion">
 							<p class="titulo">Tipo de respuesta</p>

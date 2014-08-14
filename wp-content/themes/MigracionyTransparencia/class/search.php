@@ -32,9 +32,18 @@ class Search {
 		else return false;
 	}
 	
-	/*obtiene la calidad de la respuesta de una solicitud*/
+	/*obtiene la calidad de la respuesta de una respuesta*/
 	public function getQualityResponse($id_response) {
 		$query = "select * from quality where id_quality in (select id_quality from responses2quality where id_response=$id_response)";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data;
+		else return false;
+	}
+	
+	/*obtiene los tipos de documentos de una respuesta*/
+	public function getDocumentsTypeResponse($id_response) {
+		$query = "select * from documents_types where id_type_document in (select id_type_document from responses2documentstypes where id_response=$id_response)";
 		$data  = $this->mysql->query($query);
 		
 		if($data and is_array($data)) return $data;
