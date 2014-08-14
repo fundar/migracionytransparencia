@@ -97,7 +97,8 @@ class Search {
 	
 	/*total de registros*/
 	public function countAll() {
-		$data = $this->mysql->countAll("requests");
+		$query = "select count(*) as total from requests";
+		$data  = $this->mysql->query($query);
 		
 		if($data and is_array($data)) return $data[0];
 		else return false;

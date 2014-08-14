@@ -12,7 +12,7 @@
 		die();
 	}
 	
-	$count    = $Search->countAll();
+	$count = $Search->countAll();
 	die(var_dump($count));
 ?>
 
