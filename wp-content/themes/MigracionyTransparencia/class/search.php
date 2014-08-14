@@ -14,6 +14,15 @@ class Search {
 		$this->mysql->connect($db);
 	}
 	
+	/*obtiene todas las solicitudes*/
+	public function all() {
+		$query = "select requests.*, organizations.name as organization, dependencies.name as dependecy, categories.name as category from requests left join organizations on requests.id_organization=organizations.id_organization left join dependencies on requests.id_dependecy=dependencies.id_dependecy left join categories on categories.id_category=requests.id_category";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data;
+		else return false;
+	}
+	
 	/*bucar solicitudes por slug*/
 	public function getBySlug($slug) {		
 		$query = "select requests.*, organizations.name as organization, dependencies.name as dependecy, categories.name as category from requests left join organizations on requests.id_organization=organizations.id_organization left join dependencies on requests.id_dependecy=dependencies.id_dependecy left join categories on categories.id_category=requests.id_category where requests.slug='" . $slug ."'";

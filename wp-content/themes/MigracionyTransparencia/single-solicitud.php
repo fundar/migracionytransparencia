@@ -84,17 +84,42 @@
 			<?php endif; ?>
 			
 			<div class="post">				
-				<div class="post-content>
+				<div class="post-content">
 					<p class="subtitulo-negro">Pregunta</p>
 					<div class="divisor-verde"></div>
 					<div class="el-contenido">
 						<p><?php echo utf8_encode($request["question"]);?></p>	
-					</div>				
+					</div>
+					
 					<p class="subtitulo-negro">Respuesta</p>
 					<div class="divisor-verde"></div>
 					<div class="el-contenido">
 						<p><?php echo utf8_encode($response["answer"]);?></p>	
 					</div>
+
+					<p class="subtitulo-negro">Recurso de revisi&oacute;n</p>
+					<div class="divisor-verde"></div>
+					<div class="el-contenido">
+						<p>
+							<?php
+								$string = "";
+								if(!$review) echo "No";
+								else foreach($turn_acts as $act) $string .= $act["name"] . ",";
+								echo utf8_encode(rtrim($string, ","));
+							?>
+						</p>	
+					</div>
+					
+					<?php if($cumplimiento) { ?>
+						<p class="subtitulo-negro">Cumplimiento</p>
+						<div class="divisor-verde"></div>
+						<div class="el-contenido">
+							<p>
+								<?php echo utf8_encode($cumplimiento["description"]);?>
+							</p>	
+						</div>
+					<?php } ?>
+					
 				<div class="avada-row">	
 				<div class="fusion-one-third one_third fusion-column">
 					<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $request["file_url"];?>" title="Documento respuesta" target="_blank" type="button">
@@ -102,6 +127,7 @@
 					</a>
 					<span style="padding-right: 1px;"></span>
 				</div>
+				
 				
 				<?php if($resolution and !is_null($resolution["file_url"])) { ?>
 					<div class="fusion-one-third one_third fusion-column">
@@ -162,17 +188,6 @@
 								<?php 
 								$string = "";
 								foreach($quality as $qua) $string .= $qua["name"] . ",";
-								echo utf8_encode(rtrim($string, ","));
-								?>
-							</p>
-						</div>
-						<div class="seccion">
-							<p class="titulo">Recurso de revisi&oacute;n</p>
-							<p class="info">
-								<?php
-								$string = "";
-								if(!$review) echo "No";
-								else foreach($turn_acts as $act) $string .= $act["name"] . ",";
 								echo utf8_encode(rtrim($string, ","));
 								?>
 							</p>

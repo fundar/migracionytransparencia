@@ -1,3 +1,12 @@
+<?php
+	//include de arhivode manejo de base de datos
+	include_once "class/search.php";
+	include_once "class/functions/string.php";
+
+	$Search  = new Search();
+	$requests = $Search->all();
+?>
+
 <?php get_header(); ?>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/buscar.css" />
 <div class="avada-row">
@@ -18,6 +27,7 @@
 	</div>
 	
 	<div id="posts-container" class=" clearfix">
+		<?php ?>
 		<div class="post-content">
 			<div class="meta">
 				<div class="date">
