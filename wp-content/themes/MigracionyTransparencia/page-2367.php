@@ -168,6 +168,9 @@
 				$organizations  = $Catalogos->organizations();
 				$dependencies   = $Catalogos->dependencies();
 				$years		    = $Catalogos->years();
+				
+				/*solo una vez*/
+				$fixed		    = $Catalogos->fixed();
 			?>
 			
 		<form action="/solicitudes" method="get" role="search" class="seach-form" id="searchform">

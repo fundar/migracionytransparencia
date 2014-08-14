@@ -53,4 +53,19 @@ class Catalogos {
 		
 		return $data;
 	}
+	
+	public function fixed() {
+		$query = "select * from requests where slug is NULL";
+		$data  = $this->mysql->query($query);
+		die(var_dump($data));
+		
+		foreach($data as $value) {
+			$slug  = slug($value["name"]);
+			die(var_dump($slug));
+			$query = "update requests slug='$slug' where id_request" = $value["id_request"];
+			$data  = $this->mysql->query($query);
+		}
+		
+		return $data;
+	}
 }
