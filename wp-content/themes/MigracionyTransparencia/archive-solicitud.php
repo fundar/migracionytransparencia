@@ -19,8 +19,6 @@
 	/*paginación*/
 	$count = $Search->countAll();
 	$pages = getPages($limit, $count);
-	
-	die(var_dump($pages));
 ?>
 
 <?php get_header(); ?>
