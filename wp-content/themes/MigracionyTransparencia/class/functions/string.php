@@ -60,7 +60,7 @@ function getMonth($date) {
 }
 
 /*obtiene los limites de la paginación*/
-public function getPage() {
+function getPage() {
 	if(isset($_GET["page"]) and is_numeric($_GET["page"]))) {
 		return $_GET["page"] * 15 - 15;
 	} else {
