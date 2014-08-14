@@ -15,11 +15,12 @@
 .meta, .meta a {
     color: #C6C6C6;
 }
-.meta {   
+.meta {
+    color: #c6c6c6;
     float: left;
     font-size: 14px;
+    margin-right: 30px;
     text-align: right;
-    color: #C6C6C6;
 }
 .meta .date .year {
     color: #c6c6c6;
@@ -29,13 +30,14 @@
     line-height: 45px;
 }
 .meta .date .month {
-    border-bottom: 2px solid #48BFC2;
-    font-size: 27px;
+    border-bottom: 2px solid #48bfc2;
+    color: #000;
     font-family: 'blanchcondensed';
-    margin: 0;
-    padding: 10px 10px 0 0;
-    color:#000;
-    font-style:normal !important;
+    font-size: 28px;
+    font-style: normal !important;
+    line-height: 12px;
+    margin: -23px 0 0;
+    padding: 10px 10px 10px 2px;
 }
 h2.entry-title {
     color: #48bfc2;
