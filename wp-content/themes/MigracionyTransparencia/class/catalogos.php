@@ -57,7 +57,6 @@ class Catalogos {
 	public function fixed() {
 		$query = "select * from requests where slug is NULL";
 		$data  = $this->mysql->query($query);
-		die(var_dump($data));
 		
 		foreach($data as $value) {
 			$slug  = slug($value["name"]);
