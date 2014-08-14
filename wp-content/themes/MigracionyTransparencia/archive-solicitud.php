@@ -13,7 +13,6 @@
 	}
 	
 	$count = $Search->countAll();
-	die(var_dump($count));
 ?>
 
 <?php get_header(); ?>
