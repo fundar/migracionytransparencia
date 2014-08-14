@@ -15750,11 +15750,24 @@ table {
 
 /** custom pagination **/
 a.active-page {
-    background:#48BFC2;
-    border-radius: 44px;
+    background: none repeat scroll 0 0 #48bfc2;
+    border-radius: 13px;
     color: #fff;
-    height: 5px;
-    margin: 8px;
-    padding: 6px;
-    width: 75px;
+    display: inline-block;
+    font-weight: bold;
+    height: 25px;
+    margin: 6px;
+    padding: 3px 8px;
+    width: 25px;
+}
+a.active-page:hover {
+    background: none repeat scroll 0 0 #39abae;
+    border-radius: 13px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    height: 25px;
+    margin: 6px;
+    padding: 3px 8px;
+    width: 25px;
 }
