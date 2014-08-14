@@ -251,7 +251,7 @@
 				</div>
 				<div class="avada-row" style="margin-top: 30px;">	
 					<div style="float: left; margin-right: 5px;">
-						<input type="submit" id="submit" class="button-flat busquedas-boton" value="Buscar" tabindex="5" name="Buscar">
+						<input type="submit" id="submit" class="button-flat busquedas-boton" value="buscar" tabindex="5" name="buscar">
 					</div>
                     <div style="float: left;">
 						<a class="boton-solicitudes" href="http://migracionytransparencia.org/solicitudes/" type="button">Ver todas las solicitudes</a>
