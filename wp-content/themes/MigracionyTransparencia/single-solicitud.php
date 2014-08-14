@@ -114,31 +114,36 @@
 				<div id="text-15" class="widget widget_text">
 					<div class="textwidget">
 						<div class="seccion">
-						<p class="titulo">Dependencia</p>
-						<p class="info">Instituto Nacional de Migracion</p>
+							<p class="titulo">Dependencia</p>
+							<p class="info"><?php echo utf8_encode($request["dependecy"]);?></p>
 						</div>
 						<div class="seccion">
-						<p class="titulo">Folio</p>
-						<p class="info"><?php echo utf8_encode($request["folio"]);?></p>
+							<p class="titulo">Folio</p>
+							<p class="info"><?php echo utf8_encode($request["folio"]);?></p>
 						</div>
 						<div class="seccion">
-						<p class="titulo">Fecha de solicitud</p>
-						<p class="info"><?php echo $request["date_published"];?></p>
+							<p class="titulo">Fecha de solicitud</p>
+							<p class="info"><?php echo $request["date_published"];?></p>
 						</div>
 						<div class="seccion">
-						<p class="titulo">Tipo de documentos</p>
-						<p class="info">Leyes, Protocolos, Circulares</p>
+							<p class="titulo">Tipo de documentos</p>
+							<p class="info">Leyes, Protocolos, Circulares</p>
 						</div>
 						<div class="seccion">
-						<p class="titulo">Calidad de respuesta</p>
-						<p class="info">Completa, Legible</p>
+							<p class="titulo">Calidad de respuesta</p>
+							<p class="info">Completa, Legible</p>
 						</div>
 						<div class="seccion">
-						<p class="titulo">Recurso de revisi&oacute;n</p>
-						<p class="info">No</p>
+							<p class="titulo">Recurso de revisi&oacute;n</p>
+							<p class="info">No</p>
+						</div>
 						<div class="seccion">
-						<p class="titulo">Organizaci&oacute;n</p>
-						<p class="info">Fundar, Centro de Analisis e Investigacion</p>
+							<p class="titulo">Categor&iacute;a</p>
+							<p class="info"><?php echo utf8_encode($request["category"]);?></p>
+						</div>
+						<div class="seccion">
+							<p class="titulo">Organizaci&oacute;n</p>
+							<p class="info"><?php echo utf8_encode($request["organization"]);?></p>
 						</div>
 					</div>
 				</div>
