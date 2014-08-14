@@ -22,21 +22,24 @@
     margin-right: 30px;
     text-align: right;
 }
+
 .meta .date .year {
     color: #c6c6c6;
     font-family: 'blanchcondensed';
-    font-size: 58px;
+    font-size: 60px;
     font-style: normal !important;
     line-height: 45px;
 }
+
 .meta .date .month {
+    border-bottom: 2px solid #48bfc2;
     color: #000;
-    font-family: lato;
-    font-size: 21px;
+    font-family: 'blanchcondensed';
+    font-size: 28px;
     font-style: normal !important;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    line-height: 22px;
+    line-height: 12px;
+    margin: -17px 0 0;
+    padding: 10px 0;
     text-align: center;
 }
 h2.entry-title {
