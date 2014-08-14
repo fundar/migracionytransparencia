@@ -59,6 +59,12 @@ function getMonth($date) {
 	return $explode[1];
 }
 
+/*funciones de fecha - obtiene el día*/
+function getDay($date) {
+	$explode = explode("-", $date);
+	return $explode[2];
+}
+
 /*obtiene los limites offset de la pagina*/
 function getOffset($limit) {
 	if(isset($_GET["page"]) and is_numeric($_GET["page"])) {

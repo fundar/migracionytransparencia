@@ -52,9 +52,7 @@
 								</span>
 							</p>
 							<p class="month">
-								<span>
-									<?php echo getMonth($request["date_published"]);?>
-								</span>
+								<span><?php echo getMonth($request["date_published"]);?>/<?php echo getDay($request["date_published"]);?></span>
 							</p>
 						</div>
 					</div>
