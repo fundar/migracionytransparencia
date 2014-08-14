@@ -15,8 +15,8 @@ class Search {
 	}
 	
 	/*obtiene todas las solicitudes*/
-	public function all($offset) {
-		$query = "select requests.*, organizations.name as organization, dependencies.name as dependecy, categories.name as category from requests left join organizations on requests.id_organization=organizations.id_organization left join dependencies on requests.id_dependecy=dependencies.id_dependecy left join categories on categories.id_category=requests.id_category limit 15 offset $offset";
+	public function all($limit, $offset) {
+		$query = "select requests.*, organizations.name as organization, dependencies.name as dependecy, categories.name as category from requests left join organizations on requests.id_organization=organizations.id_organization left join dependencies on requests.id_dependecy=dependencies.id_dependecy left join categories on categories.id_category=requests.id_category limit $limit offset $offset";
 		$data  = $this->mysql->query($query);
 		
 		if($data and is_array($data)) return $data;

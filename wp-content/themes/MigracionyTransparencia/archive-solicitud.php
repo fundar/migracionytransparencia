@@ -3,9 +3,11 @@
 	include_once "class/search.php";
 	include_once "class/functions/string.php";
 	
-	$offset   = getOffset();
+	$limit    = 10;
+	$offset   = getOffset($limit);
+	
 	$Search   = new Search();
-	$requests = $Search->all($offset);
+	$requests = $Search->all($limit, $offset);
 
 	if(!$requests) {
 		header('Location: ' . site_url());
