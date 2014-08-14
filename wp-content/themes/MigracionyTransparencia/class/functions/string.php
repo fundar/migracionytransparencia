@@ -73,3 +73,11 @@ function getPages($limit, $count) {
 	return round($count/$limit);
 }
 
+/*obtiene la pgina actual*/
+public function getPage() {
+	if(isset($_GET["page"]) and is_numeric($_GET["page"])) {
+		return $_GET["page"];
+	} else {
+		return 1;
+	}
+}

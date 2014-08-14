@@ -4,8 +4,9 @@
 	include_once "class/functions/string.php";
 	
 	/*limit offset*/
-	$limit    = 10;
-	$offset   = getOffset($limit);
+	$limit       = 10;
+	$offset      = getOffset($limit);
+	$currentPage = getPage();
 	
 	/*buscar todas las solicitudes*/
 	$Search   = new Search();
@@ -74,7 +75,7 @@
 	</div>
 	
 	<?php for($page=1; $page<=$pages; $page++) { ?>
-		<a href="/solicitudes/?page=<?php echo $page; ?>" title="Paginación de solicitudes">
+		<a href="/solicitudes/?page=<?php echo $page; ?>" title="Paginación de solicitudes" <?php echo ($current==$page) ? echo 'class="active"' : '';?>>
 			<?php echo $page; ?>
 		</a>
 	<?php } ?>
