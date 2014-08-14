@@ -208,7 +208,7 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="dependencies">
-							<option>Selecciona una dependencia</option>
+							<option value="0">Selecciona una dependencia</option>
 							<?php foreach($dependencies as $dependeny) { ?>
 								<option value="<?php echo $dependeny["id_dependecy"];?>"><?php echo utf8_encode($dependeny["name"]);?></option>
 							<?php } ?>
@@ -220,7 +220,7 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="organizations">
-							<option>Selecciona una organizaci&oacute;n</option>
+							<option value="0">Selecciona una organizaci&oacute;n</option>
 							<?php foreach($organizations as $organization) { ?>
 								<option value="<?php echo $organization["id_organization"];?>"><?php echo utf8_encode($organization["name"]);?></option>
 							<?php } ?>
@@ -231,7 +231,7 @@
 				<div class="search-table">
 					<div class="search-field">						
 						<select class="search-field search-table" name="answers_types">
-							<option>Selecciona un tipo de respuesta</option>
+							<option value="0">Selecciona un tipo de respuesta</option>
 							<?php foreach($answers_types as $answer) { ?>
 								<option value="<?php echo $answer["id_type_answer"];?>"><?php echo utf8_encode($answer["name"]);?></option>
 							<?php } ?>
@@ -251,7 +251,7 @@
 				</div>
 				<div class="avada-row" style="margin-top: 30px;">	
 					<div style="float: left; margin-right: 5px;">
-						<input type="submit" id="submit" class="button-flat busquedas-boton" value="Buscar" tabindex="5" name="Buscar">
+						<input type="submit" id="submit" class="button-flat busquedas-boton" value="buscar" tabindex="5" name="buscar">
 					</div>
                     <div style="float: left;">
 						<a class="boton-solicitudes" href="http://migracionytransparencia.org/solicitudes/" type="button">Ver todas las solicitudes</a>
