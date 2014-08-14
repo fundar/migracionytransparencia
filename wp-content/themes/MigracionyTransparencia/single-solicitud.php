@@ -97,7 +97,7 @@
 					</div>
 				<div class="avada-row">	
 				<div class="fusion-one-third one_third fusion-column">
-					<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $request["file_url"]?>" title="Documento respuesta" target="_blank" type="button">
+					<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $request["file_url"];?>" title="Documento respuesta" target="_blank" type="button">
 						Ver respuesta
 					</a>
 					<span style="padding-right: 1px;"></span>
@@ -105,7 +105,7 @@
 				
 				<?php if($resolution) { ?>
 					<div class="fusion-one-third one_third fusion-column">
-						<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $resolution["file_url"]?>" title="Documento resolución" target="_blank" type="button">
+						<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $resolution["file_url"];?>" title="Documento resolución" target="_blank" type="button">
 							Ver resoluci&oacute;n
 						</a>
 						<span style="padding-right: 1px;"></span>
@@ -114,7 +114,7 @@
 				
 				<?php if($cumplimiento) { ?>
 					<div class="fusion-one-third one_third fusion-column last">
-						<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $cumplimiento["file_url"]?>" title="Documento cumplimiento" target="_blank" type="button">
+						<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $cumplimiento["file_url"];?>" title="Documento cumplimiento" target="_blank" type="button">
 							Ver cumplimiento
 						</a>
 					</div>
