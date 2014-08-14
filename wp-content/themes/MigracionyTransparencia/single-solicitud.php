@@ -4,7 +4,7 @@
 	include_once "class/functions/string.php";
 	
 	$slug = getSlug();
-	
+	getURL();
 	if($slug) {
 		$Search  = new Search();
 		$request = $Search->getBySlug($slug);
