@@ -27,25 +27,26 @@
 	</div>
 	
 	<div id="posts-container" class=" clearfix">
-		<?php ?>
-		<div class="post-content">
-			<div class="meta">
-				<div class="date">
-					<p class="year"><span>2013</span></p>
-					<p class="month">11/02</p>
+		<?php foreach($requests as $request) { ?>
+			<div class="post-content">
+				<div class="meta">
+					<div class="date">
+						<p class="year"><span>2013</span></p>
+						<p class="month">11</p>
+					</div>
 				</div>
+				<div class="excerpt-container strip-html">
+					<h2 class="entry-title">
+						<a href=""><?php echo utf8_encode($request["short_name"]);?></a>
+					</h2>
+					<p><?php echo utf8_encode($request["question"]);?></p>
+				</div>
+				
+				<div class="fusion-sharing-box share-box">					
+					<?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
+				</div>						
 			</div>
-			<div class="excerpt-container strip-html">
-				<h2 class="entry-title">
-					<a href="">adasdasdsad</a>
-				</h2>
-				<p>Prueba</p>
-			</div>
-			
-			<div class="fusion-sharing-box share-box">					
-				<?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
-			</div>						
-		</div>
+		<?php } ?>
 	</div>
 	
 	<div class="divisor-gris-dotted"></div>
