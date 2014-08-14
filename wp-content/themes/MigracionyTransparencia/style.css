@@ -15771,3 +15771,7 @@ a.active-page:hover {
     padding: 3px 8px;
     width: 25px;
 }
+a.pag {
+    color: #424242;
+    margin: 0 10px;
+}

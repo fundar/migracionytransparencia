@@ -92,7 +92,7 @@
 		</div>
 		
 		<?php for($page=1; $page<=$pages; $page++) { ?>
-			<a href="/solicitudes/?page=<?php echo $page; ?>" title="Paginación de solicitudes"<?php echo ($currentPage==$page) ? ' class="active-page"' : '';?>>
+			<a class="pag" href="/solicitudes/?page=<?php echo $page; ?>" title="Paginación de solicitudes"<?php echo ($currentPage==$page) ? ' class="active-page"' : '';?>>
 				<?php echo $page; ?>
 			</a>
 		<?php } ?>
