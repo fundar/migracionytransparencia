@@ -3,9 +3,9 @@
 	include_once "class/search.php";
 	include_once "class/functions/string.php";
 	
-	$page    = getPage();
-	$Search  = new Search();
-	$requests = $Search->all($page);
+	$offset   = getOffset();
+	$Search   = new Search();
+	$requests = $Search->all($offset);
 
 	if(!$requests) {
 		header('Location: ' . site_url());
