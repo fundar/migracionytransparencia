@@ -24,7 +24,8 @@
 .meta .date .year {
     font-size: 64px;
     font-family: 'blanchcondensed';
-    font-style:normal;
+    font-style:normal !important;
+    color: #C6C6C6;
 }
 .meta .date .month {
     border-bottom: 2px solid #48BFC2;
@@ -33,7 +34,7 @@
     margin: 0;
     padding: 10px 10px 0 0;
     color:#000;
-    font-style:normal;
+    font-style:normal !important;
 }
 h2.entry-title {
     color: #48bfc2;
