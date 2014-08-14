@@ -22,10 +22,11 @@
     color: #C6C6C6;
 }
 .meta .date .year {
-    font-size: 64px;
+    color: #c6c6c6;
     font-family: 'blanchcondensed';
-    font-style:normal !important;
-    color: #C6C6C6;
+    font-size: 45px;
+    font-style: normal !important;
+    line-height: 45px;
 }
 .meta .date .month {
     border-bottom: 2px solid #48BFC2;
