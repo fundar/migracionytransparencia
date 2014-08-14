@@ -15,8 +15,8 @@ class Search {
 	}
 	
 	/*obtiene todas las solicitudes*/
-	public function all() {
-		$query = "select requests.*, organizations.name as organization, dependencies.name as dependecy, categories.name as category from requests left join organizations on requests.id_organization=organizations.id_organization left join dependencies on requests.id_dependecy=dependencies.id_dependecy left join categories on categories.id_category=requests.id_category";
+	public function all($offset) {
+		$query = "select requests.*, organizations.name as organization, dependencies.name as dependecy, categories.name as category from requests left join organizations on requests.id_organization=organizations.id_organization left join dependencies on requests.id_dependecy=dependencies.id_dependecy left join categories on categories.id_category=requests.id_category limit 15 offset $offset";
 		$data  = $this->mysql->query($query);
 		
 		if($data and is_array($data)) return $data;
@@ -90,6 +90,14 @@ class Search {
 	public function getCumplimiento($id_request) {
 		$query = "select * from cumplimiento where id_request=$id_request";
 		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
+	
+	/*total de registros*/
+	public function countAll() {
+		$data = $this->mysql->countAll("requests");
 		
 		if($data and is_array($data)) return $data[0];
 		else return false;

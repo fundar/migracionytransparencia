@@ -58,3 +58,12 @@ function getMonth($date) {
 	$explode = explode("-", $date);
 	return $explode[1];
 }
+
+/*obtiene los limites de la paginación*/
+public function getPage() {
+	if(isset($_GET["page"]) and is_numeric($_GET["page"]))) {
+		return $_GET["page"] * 15 - 15;
+	} else {
+		return 0;
+	}
+}

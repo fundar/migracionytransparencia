@@ -2,9 +2,18 @@
 	//include de arhivode manejo de base de datos
 	include_once "class/search.php";
 	include_once "class/functions/string.php";
-
+	
+	$page    = getPage();
 	$Search  = new Search();
-	$requests = $Search->all();
+	$requests = $Search->all($page);
+
+	if(!$requests) {
+		header('Location: ' . site_url());
+		die();
+	}
+	
+	$count    = $Search->countAll();
+	die(var_dump($count));
 ?>
 
 <?php get_header(); ?>
