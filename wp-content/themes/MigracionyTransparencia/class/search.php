@@ -100,7 +100,7 @@ class Search {
 		$query = "select count(*) as total from requests";
 		$data  = $this->mysql->query($query);
 		
-		if($data and is_array($data)) return $data[0];
+		if($data and is_array($data)) return $data[0]["total"];
 		else return false;
 	}
 }
