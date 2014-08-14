@@ -3,9 +3,11 @@
 	include_once "class/search.php";
 	include_once "class/functions/string.php";
 	
+	/*limit offset*/
 	$limit    = 10;
 	$offset   = getOffset($limit);
 	
+	/*buscar todas las solicitudes*/
 	$Search   = new Search();
 	$requests = $Search->all($limit, $offset);
 
@@ -14,7 +16,11 @@
 		die();
 	}
 	
+	/*paginación*/
 	$count = $Search->countAll();
+	$pages = getPages($limit, $count);
+	
+	die(var_dump($pages));
 ?>
 
 <?php get_header(); ?>

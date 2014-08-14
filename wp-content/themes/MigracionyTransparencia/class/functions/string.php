@@ -59,7 +59,7 @@ function getMonth($date) {
 	return $explode[1];
 }
 
-/*obtiene los limites de la paginación*/
+/*obtiene los limites offset de la pagina*/
 function getOffset($limit) {
 	if(isset($_GET["page"]) and is_numeric($_GET["page"])) {
 		return $_GET["page"] * $limit - $limit;
@@ -67,3 +67,9 @@ function getOffset($limit) {
 		return 0;
 	}
 }
+
+/*obtiene el numero de paginas totales*/
+function getPages($limit, $count) {
+	return round($count/$limit);
+}
+
