@@ -134,7 +134,7 @@
 						</div>
 						<div class="seccion">
 							<p class="titulo">Tipo de respuesta</p>
-							<p class="info"><?php echo $response["type_answer"];?></p>
+							<p class="info"><?php echo utf8_encode($response["type_answer"]);?></p>
 						</div>
 						<div class="seccion">
 							<p class="titulo">Calidad de respuesta</p>
@@ -142,7 +142,7 @@
 								<?php 
 								$string = "";
 								foreach($quality as $qua) $string .= $qua["name"] . ",";
-								echo rtrim($string, ",");
+								echo utf8_encode(rtrim($string, ","));
 								?>
 							</p>
 						</div>
