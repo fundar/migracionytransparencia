@@ -15747,3 +15747,14 @@ table {
 .fusion-vimeo.center-video .video-shortcode {
   margin: 0 auto;
 }
+
+/** custom pagination **/
+a.active-page {
+    background: none repeat scroll 0 0 red;
+    border-radius: 44px;
+    color: #fff;
+    height: 5px;
+    margin: 8px;
+    padding: 6px;
+    width: 75px;
+}
