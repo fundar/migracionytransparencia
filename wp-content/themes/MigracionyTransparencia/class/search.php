@@ -22,4 +22,12 @@ class Search {
 		if($data and is_array($data)) return $data[0];
 		else return false;
 	}
+	
+	public function getResponse($id_request) {
+		$query = "select responses.*, answers_types.name as type_answer from responses left join answers_types on responses.id_type_answer=answers_types.id_type_answer where id_request=$id_request";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
 }

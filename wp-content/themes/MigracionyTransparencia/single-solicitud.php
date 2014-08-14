@@ -13,6 +13,8 @@
 			header('Location: ' . site_url());
 			die();
 		}
+		
+		$response = $Search->getResponse($request["id_request"]);
 	} else {
 		header('Location: ' . site_url());
 		die();
@@ -82,7 +84,7 @@
 					<p class="subtitulo-negro">Respuesta</p>
 					<div class="divisor-verde"></div>
 					<div class="el-contenido">
-						<p><?php echo utf8_encode($request["question"]);?></p>	
+						<p><?php echo utf8_encode($response["answer"]);?></p>	
 					</div>
 				<div class="avada-row">	
 				<div class="fusion-one-third one_third fusion-column">
@@ -128,6 +130,10 @@
 						<div class="seccion">
 							<p class="titulo">Tipo de documentos</p>
 							<p class="info">Leyes, Protocolos, Circulares</p>
+						</div>
+						<div class="seccion">
+							<p class="titulo">Tipo de respuesta</p>
+							<p class="info"><?php echo $request["type_answer"];?></p>
 						</div>
 						<div class="seccion">
 							<p class="titulo">Calidad de respuesta</p>
