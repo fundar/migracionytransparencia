@@ -7,19 +7,24 @@
 	$limit       = 10;
 	$offset      = getOffset($limit);
 	$currentPage = getPage();
+	$Search      = new Search();
 	
-	/*buscar todas las solicitudes*/
-	$Search   = new Search();
-	$requests = $Search->all($limit, $offset);
-
-	if(!$requests) {
-		header('Location: ' . site_url());
-		die();
+	/*Comprueba si se hizo una busqueda o del home*/
+	if(isSearch()) {
+		$requests = $Search->all($limit, $offset);
+	} else {
+		/*Busca todas las solicitudes*/
+		$requests = $Search->all($limit, $offset);
+		
+		if(!$requests) {
+			header('Location: ' . site_url());
+			die();
+		}
+		
+		/*paginación*/
+		$count = $Search->countAll();
+		$pages = getPages($limit, $count);
 	}
-	
-	/*paginación*/
-	$count = $Search->countAll();
-	$pages = getPages($limit, $count);
 ?>
 
 <?php get_header(); ?>
