@@ -4,7 +4,7 @@
 	include_once "class/functions/string.php";
 	
 	$slug = getSlug();
-	getURL();
+	
 	if($slug) {
 		$Search  = new Search();
 		$request = $Search->getBySlug($slug);
@@ -191,9 +191,9 @@
 					'icon_boxed_radius' => $smof_data['sharing_social_links_boxed_radius'],
 					'tooltip_placement'	=> $smof_data['sharing_social_links_tooltip_placement'],
 					'linktarget'		=> '_blank',
-					'title'				=> rawurlencode( $post->post_title ),
-					'description'		=> get_the_title( $post->ID ),
-					'link'				=> get_permalink( $post->ID ),
+					'title'				=> rawurlencode(utf8_encode($request["short_name"])),
+					'description'		=> utf8_encode($request["short_name"]),
+					'link'				=> getURL(),
 					'pinterest_image'	=> rawurlencode( $full_image[0] ),
 				);
 				?>

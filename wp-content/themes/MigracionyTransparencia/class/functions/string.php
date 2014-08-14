@@ -44,6 +44,5 @@ function getSlug() {
 
 function getURL(){
 	$url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-	die(var_dump($url));
 	return $url;
 }
