@@ -15750,7 +15750,7 @@ table {
 
 /** custom pagination **/
 a.active-page {
-    background: none repeat scroll 0 0 red;
+    background:#48BFC2;
     border-radius: 44px;
     color: #fff;
     height: 5px;
