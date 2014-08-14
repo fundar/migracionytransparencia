@@ -160,6 +160,10 @@
 			
 			<?php
 				//include de arhivode manejo de base de datos
+				include_once "class/functions/string.php";
+				
+				
+				
 				include_once "class/catalogos.php";
 				
 				$Catalogos      = new Catalogos();
