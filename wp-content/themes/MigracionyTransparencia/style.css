@@ -89,17 +89,17 @@ a:hover.boton-solicitudes {
 }
 .busquedas-boton {
     background: none repeat scroll 0 0 #bb3835;
-    border-color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.7) !important;
     border-width: 0;
     box-shadow: none;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7) !important;
     display: inline-block;
     height: 38px;
-    padding: 0 23px;
+    padding: 0 23px !important;
     text-shadow: none;
     font-family: 'blanchcondensed' !important;
-    font-size: 28px;
-    line-height:38px;
+    font-size: 28px !important;
+    text-indent:0px !important;
 }
 a:hover.busquedas-boton {
     background: none repeat scroll 0 0 #E34F42;
@@ -15746,4 +15746,32 @@ table {
 .fusion-youtube.center-video .video-shortcode,
 .fusion-vimeo.center-video .video-shortcode {
   margin: 0 auto;
+}
+
+/** custom pagination **/
+a.active-page {
+    background: none repeat scroll 0 0 #48bfc2;
+    border-radius: 13px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    height: 25px;
+    margin: 6px;
+    padding: 3px 8px;
+    width: 25px;
+}
+a.active-page:hover {
+    background: none repeat scroll 0 0 #39abae;
+    border-radius: 13px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    height: 25px;
+    margin: 6px;
+    padding: 3px 8px;
+    width: 25px;
+}
+a.pag {
+    color: #424242;
+    margin: 0 10px;
 }
