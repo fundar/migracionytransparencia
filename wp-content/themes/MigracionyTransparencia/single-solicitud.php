@@ -103,7 +103,7 @@
 					<span style="padding-right: 1px;"></span>
 				</div>
 				
-				<?php if($resolution) { ?>
+				<?php if($resolution and !is_null($resolution["file_url"])) { ?>
 					<div class="fusion-one-third one_third fusion-column">
 						<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $resolution["file_url"];?>" title="Documento resolución" target="_blank" type="button">
 							Ver resoluci&oacute;n
@@ -112,7 +112,7 @@
 					</div>
 				<?php } ?>
 				
-				<?php if($cumplimiento) { ?>
+				<?php if($cumplimiento and !is_null($cumplimiento["file_url"])) { ?>
 					<div class="fusion-one-third one_third fusion-column last">
 						<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $cumplimiento["file_url"];?>" title="Documento cumplimiento" target="_blank" type="button">
 							Ver cumplimiento

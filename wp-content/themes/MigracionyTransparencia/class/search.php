@@ -81,7 +81,7 @@ class Search {
 	public function getCumplimiento($id_request) {
 		$query = "select * from cumplimiento where id_request=$id_request";
 		$data  = $this->mysql->query($query);
-		die(var_dump($data));
+		
 		if($data and is_array($data)) return $data[0];
 		else return false;
 	}
