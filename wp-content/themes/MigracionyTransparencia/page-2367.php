@@ -170,7 +170,7 @@
 				$years		    = $Catalogos->years();
 			?>
 			
-		<form action="" method="get" role="search" class="seach-form" id="searchform">
+		<form action="/solicitudes" method="get" role="search" class="seach-form" id="searchform">
 			<div class="post-content" style="margin: -29px 0px 0px;">
 				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
 				<p class="formahome">B&uacute;squeda por palabra</p>
