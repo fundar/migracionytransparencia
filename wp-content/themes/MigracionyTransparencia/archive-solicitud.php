@@ -27,7 +27,7 @@
 			</div>
 			<div class="excerpt-container strip-html">
 				<h2 class="entry-title">
-					<a href="">Prueba</a>
+					<a href="">adasdasdsad</a>
 				</h2>
 				<p>Prueba</p>
 			</div>
