@@ -17,6 +17,12 @@
 		$response  = $Search->getResponse($request["id_request"]);
 		$quality   = $Search->getQualityResponse($response["id_response"]);
 		$doc_types = $Search->getDocumentsTypeResponse($response["id_response"]);
+		
+		$review    = $Search->getReview($request["id_request"]);
+		
+		if($review) {
+			$turn_acts = $Search->getActsReviews($review["id_review"]);
+		}
 	} else {
 		header('Location: ' . site_url());
 		die();
@@ -155,7 +161,14 @@
 						</div>
 						<div class="seccion">
 							<p class="titulo">Recurso de revisi&oacute;n</p>
-							<p class="info">No</p>
+							<p class="info">
+								<?php
+								$string = "";
+								if(!$review) echo "No";
+								else foreach($turn_acts as $act) $string .= $act["name"] . ",";
+								echo utf8_encode(rtrim($string, ","));
+								?>
+							</p>
 						</div>
 						<div class="seccion">
 							<p class="titulo">Categor&iacute;a</p>

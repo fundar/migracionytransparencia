@@ -49,4 +49,22 @@ class Search {
 		if($data and is_array($data)) return $data;
 		else return false;
 	}
+	
+	/*obtiene el recurso de revisión de la solitud*/
+	public function getReview($id_request) {
+		$query = "select * from reviews where id_request=$id_request";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
+	
+	/*obtiene los actos que se recurrieron de un recurso de revisión*/
+	public function getActsReviews($id_review) {
+		$query = "select * from turn_acts where id_act in (select id_act from acts2reviews where id_review=$id_review)";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data;
+		else return false;
+	}
 }
