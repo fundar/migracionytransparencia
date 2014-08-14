@@ -73,6 +73,12 @@
 		<?php } ?>
 	</div>
 	
+	<?php foreach($page=1; $page++; $page<=$pages) { ?>
+		<span>
+			<?php echo $page; ?>
+		</span>
+	<?php } ?>
+	
 	<div class="divisor-gris-dotted"></div>
 </div>
 </div>
