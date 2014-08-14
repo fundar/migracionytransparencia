@@ -98,7 +98,7 @@ a:hover.boton-solicitudes {
     padding: 0 23px;
     text-shadow: none;
     font-family: 'blanchcondensed' !important;
-    font-size: 28px;
+    font-size: 28px !important;
 }
 a:hover.busquedas-boton {
     background: none repeat scroll 0 0 #E34F42;
