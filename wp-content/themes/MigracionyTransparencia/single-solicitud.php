@@ -154,76 +154,78 @@
 	</div>
 	
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
-				<div id="text-15" class="widget widget_text">
-					<div class="textwidget">
-						<div class="seccion">
-							<p class="titulo">Dependencia</p>
-							<p class="info"><?php echo utf8_encode($request["dependecy"]);?></p>
-						</div>
-						<div class="seccion">
-							<p class="titulo">Folio</p>
-							<p class="info"><?php echo utf8_encode($request["folio"]);?></p>
-						</div>
-						<div class="seccion">
-							<p class="titulo">Fecha de solicitud</p>
-							<p class="info"><?php echo $request["date_published"];?></p>
-						</div>
-						<div class="seccion">
-							<p class="titulo">Tipo de documentos</p>
-							<p class="info">
-								<?php 
-								$string = "";
-								foreach($doc_types as $type) $string .= $type["name"] . ",";
-								echo utf8_encode(rtrim($string, ","));
-								?>
-							</p>
-						</div>
-						<div class="seccion">
-							<p class="titulo">Tipo de respuesta</p>
-							<p class="info"><?php echo utf8_encode($response["type_answer"]);?></p>
-						</div>
-						<div class="seccion">
-							<p class="titulo">Calidad de respuesta</p>
-							<p class="info">
-								<?php 
-								$string = "";
-								foreach($quality as $qua) $string .= $qua["name"] . ",";
-								echo utf8_encode(rtrim($string, ","));
-								?>
-							</p>
-						</div>
-						<div class="seccion">
-							<p class="titulo">Categor&iacute;a</p>
-							<p class="info"><?php echo utf8_encode($request["category"]);?></p>
-						</div>
-						<div class="seccion">
-							<p class="titulo">Organizaci&oacute;n</p>
-							<p class="info"><?php echo utf8_encode($request["organization"]);?></p>
-						</div>
-					</div>
+		<div id="text-15" class="widget widget_text">
+			<div class="textwidget">
+				<div class="seccion">
+					<p class="titulo">Dependencia</p>
+					<p class="info"><?php echo utf8_encode($request["dependecy"]);?></p>
 				</div>
-		
-				<?php if( $smof_data['social_sharing_box'] ):
-				$full_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-				$sharingbox_soical_icon_options = array (
-					'sharingbox'		=> 'yes',
-					'icon_colors' 		=> $smof_data['sharing_social_links_icon_color'],
-					'box_colors' 		=> $smof_data['sharing_social_links_box_color'],
-					'icon_boxed' 		=> $smof_data['sharing_social_links_boxed'],
-					'icon_boxed_radius' => $smof_data['sharing_social_links_boxed_radius'],
-					'tooltip_placement'	=> $smof_data['sharing_social_links_tooltip_placement'],
-					'linktarget'		=> '_blank',
-					'title'				=> rawurlencode(utf8_encode($request["short_name"])),
-					'description'		=> utf8_encode($request["short_name"]),
-					'link'				=> getURL(),
-					'pinterest_image'	=> rawurlencode( $full_image[0] ),
-				);
-				?>
-				<div class="fusion-sharing-box share-box">					
-				<div class="compartir"><p>Compartir:</p></div><?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
+				<div class="seccion">
+					<p class="titulo">Folio</p>
+					<p class="info"><?php echo utf8_encode($request["folio"]);?></p>
 				</div>
-			<?php endif; ?>
-	
+				<div class="seccion">
+					<p class="titulo">Fecha de solicitud</p>
+					<p class="info"><?php echo $request["date_published"];?></p>
+				</div>
+				<div class="seccion">
+					<p class="titulo">Tipo de documentos</p>
+					<p class="info">
+						<?php 
+						$string = "";
+						foreach($doc_types as $type) $string .= $type["name"] . ",";
+						echo utf8_encode(rtrim($string, ","));
+						?>
+					</p>
+				</div>
+				<div class="seccion">
+					<p class="titulo">Tipo de respuesta</p>
+					<p class="info"><?php echo utf8_encode($response["type_answer"]);?></p>
+				</div>
+				<div class="seccion">
+					<p class="titulo">Calidad de respuesta</p>
+					<p class="info">
+						<?php 
+						$string = "";
+						foreach($quality as $qua) $string .= $qua["name"] . ",";
+						echo utf8_encode(rtrim($string, ","));
+						?>
+					</p>
+				</div>
+				<div class="seccion">
+					<p class="titulo">Categor&iacute;a</p>
+					<p class="info"><?php echo utf8_encode($request["category"]);?></p>
+				</div>
+				<div class="seccion">
+					<p class="titulo">Organizaci&oacute;n</p>
+					<p class="info"><?php echo utf8_encode($request["organization"]);?></p>
+				</div>
+			</div>
+		</div>
+
+		<?php if( $smof_data['social_sharing_box'] ) {
+			$full_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+			
+			$sharingbox_soical_icon_options = array (
+				'sharingbox'		=> 'yes',
+				'icon_colors' 		=> $smof_data['sharing_social_links_icon_color'],
+				'box_colors' 		=> $smof_data['sharing_social_links_box_color'],
+				'icon_boxed' 		=> $smof_data['sharing_social_links_boxed'],
+				'icon_boxed_radius' => $smof_data['sharing_social_links_boxed_radius'],
+				'tooltip_placement'	=> $smof_data['sharing_social_links_tooltip_placement'],
+				'linktarget'		=> '_blank',
+				'title'				=> rawurlencode(utf8_encode($request["short_name"])),
+				'description'		=> utf8_encode($request["short_name"]),
+				'link'				=> getURL(),
+				'pinterest_image'	=> rawurlencode( $full_image[0] ),
+			);
+		?>
+			<div class="fusion-sharing-box share-box">					
+				<div class="compartir">
+					<p>Compartir:</p>
+				</div>
+				<?php echo $social_icons->render_social_icons( $sharingbox_soical_icon_options ); ?>
+			</div>
+		<?php } ?>
 	</div>
-	
 <?php get_footer(); ?>
