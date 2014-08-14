@@ -37,7 +37,9 @@
 				</div>
 				<div class="excerpt-container strip-html">
 					<h2 class="entry-title">
-						<a href=""><?php echo utf8_encode($request["short_name"]);?></a>
+						<a href="/solicitudes/solicitud/?slug=<?php echo $request["slug"];?>" title="<?php echo utf8_encode($request["short_name"]);?>">
+							<?php echo utf8_encode($request["short_name"]);?>
+						</a>
 					</h2>
 					<p><?php echo utf8_encode($request["question"]);?></p>
 				</div>
