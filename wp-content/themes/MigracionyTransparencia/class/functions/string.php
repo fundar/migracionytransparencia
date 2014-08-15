@@ -195,5 +195,7 @@ function clean($string) {
 
 function isError() {
 	$route = getRoute();
-	die(var_dump($route));
+	
+	if(is_array($route) and $route[0] == "?error=not-found") return true;
+	else return false;
 }
