@@ -125,23 +125,23 @@ function isSearch() {
 		}
 		
 		if(isset($_GET["category"]) and $_GET["category"] != "0") {
-			$where[2] = "id_category=" . clean($_GET["category"]);
+			$where[2] = "requests.id_category=" . clean($_GET["category"]);
 		}
 		
 		if(isset($_GET["dependency"]) and $_GET["dependency"] != "0") {
-			$where[3] = "id_dependecy=" . clean($_GET["dependency"]);
+			$where[3] = "requests.id_dependecy=" . clean($_GET["dependency"]);
 		}
 		
 		if(isset($_GET["organization"]) and $_GET["organization"] != "0") {
-			$where[4] = "id_organization=" . clean($_GET["organization"]);
+			$where[4] = "requests.id_organization=" . clean($_GET["organization"]);
 		}
 		
 		if(isset($_GET["answer_type"]) and $_GET["answer_type"] != "0") {
-			$where[4] = "id_request in (select id_request from responses where id_type_answer=" . clean($_GET["answer_type"]) . ")";
+			$where[4] = "requests.id_request in (select id_request from responses where id_type_answer=" . clean($_GET["answer_type"]) . ")";
 		}
 		
 		if(isset($_GET["ano"]) and $_GET["ano"] != "0") {
-			$where[5] = "year(date_published)=" . clean($_GET["ano"]);
+			$where[5] = "year(requests.date_published)=" . clean($_GET["ano"]);
 		}
 		
 		if(count($where) > 0) {
