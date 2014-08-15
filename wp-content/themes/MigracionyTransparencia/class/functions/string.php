@@ -152,18 +152,20 @@ function isSearch() {
 				unset($where[0]);
 				
 				foreach($where as $wher) {
-					$query .= " or " . $wher;
+					$query .= " and " . $wher;
 				}
 			} elseif(isset($where[1])) {
 				$query .= "where " . $where[1];
 				
 				unset($where[1]);
 				foreach($where as $wher) {
-					$query .= " or " . $wher;
+					$query .= " and " . $wher;
 				}
 			} else {
-				foreach($where as $i => $wher) {
-					die(var_dump($i));
+				$i=0;
+				foreach($where as $wher) {
+					if($i==0) $query .= "where " . $wher;
+					else $query .= " and " . $wher;
 				}
 			}
 			
