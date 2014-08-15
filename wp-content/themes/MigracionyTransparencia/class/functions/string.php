@@ -140,8 +140,6 @@ function isSearch() {
 			$where[5] = "year(date_published)=" . clean($_GET["year"]);
 		}
 		
-		die(var_dump(count($where)));
-		
 		if(count($where) > 1) {
 			if(isset($where[0])) {
 				$query .= "where " . $where[0];
