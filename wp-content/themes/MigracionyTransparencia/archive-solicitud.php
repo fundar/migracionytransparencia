@@ -41,7 +41,7 @@
         <div class="search-page-search-form">
 			<div class="busca">
 				<p class="la-busqueda">
-					<span>Resultado de la busqueda</span>
+					<span>Resultado de la busqueda</span><span class="min">&nbsp;&nbsp;<?php echo $count;?> solicitudes encontradas</span>
 				</p>
 			</div>
 			<a class="link" href="/#busqueda" title="Regrear a la busqueda">

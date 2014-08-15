@@ -249,7 +249,7 @@
 						</select>
 					</div>
 				</div>
-				<p class="formahome2">Por por a&ntilde;o</p>
+				<p class="formahome2">Por a&ntilde;o</p>
 				<div class="search-table">
 					<div class="search-field">
 						<select class="search-field search-table" name="ano">
