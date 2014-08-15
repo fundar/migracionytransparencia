@@ -174,7 +174,7 @@
 		<form action="/solicitudes" method="get" role="search" class="seach-form" id="searchform">
 			<div class="post-content" style="margin: -29px 0px 0px;">
 				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
-				
+				<a name="busqueda"></a>
 				<?php if(isError()) { ?>
 					<p class="search-error">No se encontró ningún resultado para los términos buscados</p>
 				<?php } ?>

@@ -44,7 +44,7 @@
 					<span>Resultado de la busqueda</span>
 				</p>
 			</div>
-			<a class="link" href="/" title="Regrear a la busqueda">
+			<a class="link" href="/#busqueda" title="Regrear a la busqueda">
 				Regresar al formulario de busqueda
 			</a>
 		</div>
