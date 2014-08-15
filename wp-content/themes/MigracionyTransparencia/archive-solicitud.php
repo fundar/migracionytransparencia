@@ -10,8 +10,11 @@
 	$Search      = new Search();
 	
 	/*Comprueba si se hizo una busqueda o del home*/
-	if(isSearch()) {
-		$requests = $Search->all($limit, $offset);
+	$query = isSearch();
+	die(var_dump($query));
+	
+	if($query) {
+		die(var_dump($query));
 	} else {
 		/*Busca todas las solicitudes*/
 		$requests = $Search->all($limit, $offset);

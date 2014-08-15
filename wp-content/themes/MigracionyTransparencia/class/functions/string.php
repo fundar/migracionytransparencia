@@ -109,3 +109,63 @@ function slug($string) {
 	return $string;
 }
 
+function isSearch() {
+	if(isset($_GET["buscar"])) {
+		
+		/*values form*/
+		$where = Array();
+		$query = "";
+		
+		if(isset($_GET["search_query"]) and $_GET["search_query"] != "") {
+			$where[0] = "id_request in (select id_request from keywords2requests where id_keyword in (select id_keyword from keywords where value like '%" . clean($_GET["search_query"]) ."%')) ";
+		}
+		
+		if(isset($_GET["search_folio"]) and $_GET["search_folio"] != "") {
+			$where[1] = "folio='" . clean($_GET["search_folio"]) ."'";
+		}
+		
+		if(isset($_GET["category"]) and $_GET["category"] != "0") {
+			$where[2] = "id_category=" . clean($_GET["category"]);
+		}
+		
+		if(isset($_GET["dependency"]) and $_GET["dependency"] != "0") {
+			$where[3] = "id_dependecy=" . clean($_GET["dependency"]);
+		}
+		
+		if(isset($_GET["organization"]) and $_GET["organization"] != "0") {
+			$where[4] = "id_organization=" . clean($_GET["organization"]);
+		}
+		
+		if(isset($_GET["year"]) and $_GET["year"] != "0") {
+			$where[5] = "year(date_published)=" . clean($_GET["year"]);
+		}
+		
+		if(count($where) > 1) {
+			if(isset($where[0])) {
+				$query .= "where " . $where[0];
+				
+				if(isset($where[1])) {
+					$query .= "or " . $where[1];
+				}
+			} elseif(isset($where[1])) {
+				$query .= "where " . $where[1];
+			} else {
+				foreach($where as $i => $wh) {
+					die(var_dump($wh));
+				}
+			}
+		} else {
+			return false;
+		}
+	} else {
+		return false;
+	}
+}
+
+function clean($string) {
+	$string = str_replace("'", "", $string);
+	$string = str_replace("\'", "", $string);
+	$string = str_replace("''", "", $string);
+	
+	return $string;
+}

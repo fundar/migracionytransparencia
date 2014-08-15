@@ -207,7 +207,7 @@
 				<p class="formahome2">Por dependencia</p>
 				<div class="search-table">
 					<div class="search-field">						
-						<select class="search-field search-table" name="dependencies">
+						<select class="search-field search-table" name="dependency">
 							<option value="0">Selecciona una dependencia</option>
 							<?php foreach($dependencies as $dependeny) { ?>
 								<option value="<?php echo $dependeny["id_dependecy"];?>"><?php echo utf8_encode($dependeny["name"]);?></option>
@@ -219,7 +219,7 @@
 				<p class="formahome2">Por organizaci&oacute;n</p>
 				<div class="search-table">
 					<div class="search-field">						
-						<select class="search-field search-table" name="organizations">
+						<select class="search-field search-table" name="organization">
 							<option value="0">Selecciona una organizaci&oacute;n</option>
 							<?php foreach($organizations as $organization) { ?>
 								<option value="<?php echo $organization["id_organization"];?>"><?php echo utf8_encode($organization["name"]);?></option>
@@ -230,7 +230,7 @@
 				<p class="formahome2">Por tipo de respuesta</p>
 				<div class="search-table">
 					<div class="search-field">						
-						<select class="search-field search-table" name="answers_types">
+						<select class="search-field search-table" name="answer_type">
 							<option value="0">Selecciona un tipo de respuesta</option>
 							<?php foreach($answers_types as $answer) { ?>
 								<option value="<?php echo $answer["id_type_answer"];?>"><?php echo utf8_encode($answer["name"]);?></option>
@@ -241,7 +241,7 @@
 				<p class="formahome2">Por por a&ntilde;o</p>
 				<div class="search-table">
 					<div class="search-field">
-						<select class="search-field search-table" name="years">
+						<select class="search-field search-table" name="year">
 						   <option value="0">Selecciona un a&ntilde;o</option>
 						   <?php foreach($years as $year) { ?>
 								<option value="<?php echo $year["year"];?>"><?php echo utf8_encode($year["year"]);?></option>
