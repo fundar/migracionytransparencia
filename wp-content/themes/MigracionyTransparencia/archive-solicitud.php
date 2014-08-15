@@ -16,7 +16,7 @@
 		$requests = $Search->byQuery($query);
 		
 		if(!$requests) {
-			header('Location: ' . site_url() . "?error=not-found#buscar");
+			header('Location: ' . site_url() . "?error=not-found#busqueda");
 			die();
 		}
 	} else {
