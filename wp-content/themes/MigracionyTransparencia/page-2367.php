@@ -241,7 +241,7 @@
 				<p class="formahome2">Por por a&ntilde;o</p>
 				<div class="search-table">
 					<div class="search-field">
-						<select class="search-field search-table" name="year">
+						<select class="search-field search-table" name="ano">
 						   <option value="0">Selecciona un a&ntilde;o</option>
 						   <?php foreach($years as $year) { ?>
 								<option value="<?php echo $year["year"];?>"><?php echo utf8_encode($year["year"]);?></option>

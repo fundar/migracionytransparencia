@@ -136,8 +136,12 @@ function isSearch() {
 			$where[4] = "id_organization=" . clean($_GET["organization"]);
 		}
 		
-		if(isset($_GET["year"]) and $_GET["year"] != "0") {
-			$where[5] = "year(date_published)=" . clean($_GET["year"]);
+		if(isset($_GET["answer_type"]) and $_GET["answer_type"] != "0") {
+			$where[4] = "id_organization=" . clean($_GET["answer_type"]);
+		}
+		
+		if(isset($_GET["ano"]) and $_GET["ano"] != "0") {
+			$where[5] = "year(date_published)=" . clean($_GET["ano"]);
 		}
 		
 		if(count($where) > 0) {
