@@ -19,6 +19,8 @@
 			header('Location: ' . site_url() . "?error=not-found#busqueda");
 			die();
 		}
+		
+		$count = $Search->countByQuery($query);
 	} else {
 		/*Busca todas las solicitudes*/
 		$requests = $Search->all($limit, $offset);
