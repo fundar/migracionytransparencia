@@ -237,15 +237,6 @@
 	<script>
 		var url_ref = document.referrer;
 		var aSplit  = url_ref.split("?search_query");
-		
-		console.log(aSplit.length);
-		
-		if(aSplit.length == 2) { }
-		var myvar = myarr[1] + ":" + myarr[2];
-		
-		if(history.length) {
-		} else {
-			$("#history-back").hide();
-		}
+		if(aSplit.length != 2) $("#history-back").hide();
 	</script>
 <?php get_footer(); ?>
