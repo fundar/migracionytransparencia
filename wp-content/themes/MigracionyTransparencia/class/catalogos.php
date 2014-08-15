@@ -54,6 +54,35 @@ class Catalogos {
 		return $data;
 	}
 	
+	/*Metodos para la numeralia*/
+	
+	/* Total de solicitudes */
+	public function countRequests() {
+		$query = "select count(*) as total from requests";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0]["total"];
+		else return 0;
+	}
+	
+	/* Total de solicitudes por dependecia - default: "INSTITUTO NACIONAL DE MIGRACIÓN" - 189 */
+	public function countDepedency($id_dependecy = 189) {
+		$query = "select count(*) as total from requests where id_dependecy=$id_dependecy";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0]["total"];
+		else return 0;
+	}
+	
+	/* Total de respuestas por tipo de respuesta - default: "Incompleta" - 4 */
+	public function countAnswerType($id_type_answer = 4) {
+		$query = "select count(*) as total from responses where id_response in (select id_response from responses2quality where id_quality=$id_type_answer)";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0]["total"];
+		else return 0;
+	}
+	
 	/*
 	public function fixed() {
 		$query = "select * from requests where slug is NULL";
