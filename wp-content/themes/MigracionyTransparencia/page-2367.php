@@ -1,3 +1,6 @@
+<?php
+die(var_dump($_GET));
+?>
 <?php get_header(); ?>
 	<?php
 	$content_css = '';
