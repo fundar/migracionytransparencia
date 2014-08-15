@@ -40,12 +40,14 @@
 	<div id="content" class="full-width" style="width:100%">
         <div class="search-page-search-form">
 			<div class="busca">
-				<p class="la-busqueda"><span>Resultado de la busqueda</span></p>
+				<p class="la-busqueda">
+					<span>Resultado de la busqueda</span>
+				</p>
+				
+				<a class="link" href="/" title="Regrear a la busqueda">
+					Regresar al formulario de busqueda
+				</a>
 			</div>
-		
-			<a class="fusion-button button-16" href="/" title="Regrear a la busqueda" type="link">
-				Regresar al formulario de busqueda
-			</a>
 		</div>
 		
 		<div id="posts-container" class=" clearfix">
