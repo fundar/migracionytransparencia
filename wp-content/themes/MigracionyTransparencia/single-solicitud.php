@@ -149,8 +149,8 @@
 			</div>
 			
 			<!-- Boton de regresar (solo se muestra cuando se hizo una busqueda) -->
-			<div class="fusion-one-third one_third fusion-column last" id="history-back">
-				<a class="fusion-button button-16" href="javascript:history.back();" title="Regrear a la busqueda" type="button">
+			<div class="fusion-one-third one_third fusion-column last">
+				<a class="fusion-button button-16" href="javascript:history.back();" id="history-back" title="Regrear a la busqueda" type="button">
 					Regresar
 				</a>
 			</div>
@@ -240,7 +240,6 @@
 		var number  = url_ref.search("search_query");
 		
 		if(number == -1) {
-			console.log(document.getElementById("history-back").href);
 			document.getElementById("history-back").href = "/solicitudes";
 		}
 	</script>
