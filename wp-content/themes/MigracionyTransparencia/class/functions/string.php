@@ -116,7 +116,7 @@ function isSearch() {
 		$where = Array();
 		$query = "";
 		
-		die(var_dump($_GET["search_query"]));
+		die(var_dump($_GET["search_folio"]));
 		
 		if(isset($_GET["search_query"]) and $_GET["search_query"] != "") {
 			$where[0] = "id_request in (select id_request from keywords2requests where id_keyword in (select id_keyword from keywords where value like '%" . clean($_GET["search_query"]) ."%')) ";
