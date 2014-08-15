@@ -238,8 +238,9 @@
 		var url_ref = document.referrer;
 		var aSplit  = url_ref.split("?search_query");
 		
-		console.log(aSplit);
+		console.log(aSplit.length);
 		
+		if(aSplit.length == 2) { }
 		var myvar = myarr[1] + ":" + myarr[2];
 		
 		if(history.length) {
