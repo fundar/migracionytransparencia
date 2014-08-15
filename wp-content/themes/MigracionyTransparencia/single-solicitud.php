@@ -147,7 +147,8 @@
 				<?php } ?>
 			</div>
 			</div>
-				
+			
+			<!-- Boton de regresar (solo se muestra cuando se hizo una busqueda) -->
 			<div class="fusion-one-third one_third fusion-column last" id="history-back">
 				<a class="fusion-button button-16" href="javascript:history.back();" title="Regrear a la busqueda" target="_blank" type="button">
 					Regresar

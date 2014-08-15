@@ -54,6 +54,12 @@
 		-->
 	
 		<div id="posts-container" class=" clearfix">
+			<div class="fusion-one-third one_third fusion-column last" id="history-back">
+				<a class="fusion-button button-16" href="/" title="Regrear a la busqueda" target="_blank" type="button">
+					Buscar
+				</a>
+			</div>
+			
 			<?php foreach($requests as $request) { ?>
 				<div class="post-content">
 					<div class="meta">
