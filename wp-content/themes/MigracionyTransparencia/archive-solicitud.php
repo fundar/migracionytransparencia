@@ -42,11 +42,10 @@
 			<div class="busca">
 				<p class="la-busqueda">
 					<span>Resultado de la busqueda</span>
+					<a class="link" href="/" title="Regrear a la busqueda">
+						Regresar al formulario de busqueda
+					</a>
 				</p>
-				
-				<a class="link" href="/" title="Regrear a la busqueda">
-					Regresar al formulario de busqueda
-				</a>
 			</div>
 		</div>
 		
