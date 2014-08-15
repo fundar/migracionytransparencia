@@ -238,7 +238,7 @@
 		var url_ref = document.referrer;
 		var aSplit  = url_ref.split("?search_query");
 		
-		console.log(typeof aSplit);
+		console.log(aSplit);
 		
 		if(aSplit.length) {
 			if(aSplit.length == 2) {
