@@ -178,18 +178,22 @@
 					<div class="search-field">
 						<input type="text" placeholder="Buscar ..." id="s" name="search_query" value="">
 					</div>
-					<div class="search-button">
-						<input type="submit" value="&#xf002;" id="searchsubmit">
-					</div>
+					<!--
+						<div class="search-button">
+							<input type="submit" value="&#xf002;" id="searchsubmit">
+						</div>
+					-->
 				</div>
 				<p class="formahome2">B&uacute;squeda por folio</p>
 				<div class="search-table">
 					<div class="search-field">
 						<input type="text" placeholder="Buscar ..." id="s" name="search_folio" value="">
 					</div>
-					<div class="search-button">
-						<input type="submit" value="&#xf002;" id="searchsubmit">
-					</div>
+					<!--
+						<div class="search-button">
+							<input type="submit" value="&#xf002;" id="searchsubmit">
+						</div>
+					-->
 				</div>
 			        </form>
 				<p class="formahome2">Por categor&iacute;a</p>
