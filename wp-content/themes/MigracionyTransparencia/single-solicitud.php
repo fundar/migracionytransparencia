@@ -235,7 +235,13 @@
 		<?php } ?>
 	</div>
 	<script>
-		console.log(document.referrer);
+		var url_ref = document.referrer;
+		var aSplit  = url_ref.split("?search_query");
+		
+		console.log(aSplit);
+		
+		var myvar = myarr[1] + ":" + myarr[2];
+		
 		if(history.length) {
 		} else {
 			$("#history-back").hide();
