@@ -240,8 +240,6 @@
 		var number  = url_ref.search("search_query");
 		
 		if(number == -1) {
-			document.getElementById("history-back").style.display = "none";
-		} else {
 			var a = document.getElementById("history-back");
 			a.href = "/solicitudes";
 		}
