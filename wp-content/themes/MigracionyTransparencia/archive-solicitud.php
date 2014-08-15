@@ -38,25 +38,18 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/buscar.css" />
 <div class="avada-row">
 	<div id="content" class="full-width" style="width:100%">
-        <!--
         <div class="search-page-search-form">
 			<div class="busca">
 				<p class="la-busqueda"><span>Buscar</span></p>
 			</div>
 		
-			<form id="searchform" class="seach-form" role="search" method="get" action="<?php echo home_url( '/' ); ?>">
-				<div class="search-table">
-					<div class="search-field"><input type="text" value="" name="s" id="s" placeholder="<?php _e( 'Search ...', 'Avada' ); ?>"/></div>
-					<div class="search-button"><input type="submit" id="searchsubmit" value="&#xf002;" /></div>
-				</div>
-			</form>
+			<div class="fusion-one-third one_third fusion-column last" id="history-back">
+				<a class="fusion-button button-16" href="/" title="Regrear a la busqueda" target="_blank" type="button">
+					Buscar
+				</a>
+			</div>
 		</div>
-		-->
-		<div class="fusion-one-third one_third fusion-column last" id="history-back">
-			<a class="fusion-button button-16" href="/" title="Regrear a la busqueda" target="_blank" type="button">
-				Buscar
-			</a>
-		</div>
+		
 			
 		<div id="posts-container" class=" clearfix">
 			<?php foreach($requests as $request) { ?>
