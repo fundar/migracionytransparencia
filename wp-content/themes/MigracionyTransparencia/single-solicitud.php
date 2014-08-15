@@ -235,7 +235,7 @@
 		<?php } ?>
 	</div>
 	<script>
-		console.log(history.length);
+		console.log(history);
 		if(history.length) {
 		} else {
 			$("#history-back").hide();
