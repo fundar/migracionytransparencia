@@ -163,9 +163,12 @@ function isSearch() {
 				}
 			} else {
 				$i=0;
+				
 				foreach($where as $wher) {
 					if($i==0) $query .= "where " . $wher;
 					else $query .= " and " . $wher;
+					
+					$i++;
 				}
 			}
 			
