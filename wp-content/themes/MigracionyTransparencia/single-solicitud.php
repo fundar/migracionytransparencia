@@ -240,6 +240,7 @@
 		var number  = url_ref.search("search_query");
 		
 		if(number == -1) {
+			console.log(document.getElementById("history-back").href);
 			document.getElementById("history-back").href = "/solicitudes";
 		}
 	</script>
