@@ -176,7 +176,7 @@ function isSearch() {
 				}
 			}
 			
-			die(var_dump($query));
+			return $query;
 		} else {
 			return false;
 		}

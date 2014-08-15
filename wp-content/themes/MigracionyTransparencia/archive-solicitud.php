@@ -14,7 +14,12 @@
 	die(var_dump($query));
 	
 	if($query) {
-		die(var_dump($query));
+		$requests = $Search->byQuery($query);
+		
+		if(!$requests) {
+			header('Location: ' . site_url() . "?error=not-found");
+			die();
+		}
 	} else {
 		/*Busca todas las solicitudes*/
 		$requests = $Search->all($limit, $offset);
@@ -99,10 +104,12 @@
 			<?php } ?>
 		</div>
 		
-		<?php for($page=1; $page<=$pages; $page++) { ?>
-			<a class="pag" href="/solicitudes/?page=<?php echo $page; ?>" title="Paginación de solicitudes"<?php echo ($currentPage==$page) ? ' class="active-page"' : '';?>>
-				<?php echo $page; ?>
-			</a>
+		<?php if(isset($pages)) { ?>
+			<?php for($page=1; $page<=$pages; $page++) { ?>
+				<a class="pag" href="/solicitudes/?page=<?php echo $page; ?>" title="Paginación de solicitudes"<?php echo ($currentPage==$page) ? ' class="active-page"' : '';?>>
+					<?php echo $page; ?>
+				</a>
+			<?php } ?>
 		<?php } ?>
 	</div>
 </div>
