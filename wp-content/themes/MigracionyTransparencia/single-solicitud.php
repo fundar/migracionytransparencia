@@ -240,8 +240,7 @@
 		var number  = url_ref.search("search_query");
 		
 		if(number == -1) {
-			var a = document.getElementById("history-back");
-			a.href = "/solicitudes";
+			document.getElementById("history-back").href = "/solicitudes";
 		}
 	</script>
 <?php get_footer(); ?>
