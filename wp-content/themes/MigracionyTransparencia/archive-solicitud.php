@@ -11,7 +11,6 @@
 	
 	/*Comprueba si se hizo una busqueda o del home*/
 	$query = isSearch();
-	die(var_dump($query));
 	
 	if($query) {
 		$requests = $Search->byQuery($query);
