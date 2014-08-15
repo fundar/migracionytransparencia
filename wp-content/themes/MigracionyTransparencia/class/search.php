@@ -27,7 +27,6 @@ class Search {
 	public function byQuery($queryString) {
 		$query = "select requests.*, organizations.name as organization, dependencies.name as dependecy, categories.name as category from requests left join organizations on requests.id_organization=organizations.id_organization left join dependencies on requests.id_dependecy=dependencies.id_dependecy left join categories on categories.id_category=requests.id_category " . $queryString . " order by requests.date_published";
 		$data  = $this->mysql->query($query);
-		die(var_dump($query));
 		
 		if($data and is_array($data)) return $data;
 		else return false;
