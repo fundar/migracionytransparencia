@@ -236,18 +236,7 @@
 	</div>
 	<script>
 		var url_ref = document.referrer;
-		var aSplit  = url_ref.split("?search_query");
-		
-		console.log(aSplit);
-		
-		if(aSplit.length) {
-			if(aSplit.length == 2) {
-			} else {
-				$("#history-back").hide();
-			}
-		} else { 
-			$("#history-back").hide();
-		}
-		
+		var number  = str.search("?search_query");
+		if(number == -1) $("#history-back").hide();
 	</script>
 <?php get_footer(); ?>
