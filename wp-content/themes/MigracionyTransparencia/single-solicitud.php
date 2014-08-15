@@ -237,6 +237,10 @@
 	<script>
 		var url_ref = document.referrer;
 		var number  = url_ref.search("search_query");
-		if(number == -1) $("#history-back").hide();
+		
+		console.log(number);
+		if(number == -1) {
+			$("#history-back").hide();
+		}
 	</script>
 <?php get_footer(); ?>
