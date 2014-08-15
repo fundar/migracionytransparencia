@@ -235,7 +235,7 @@
 		<?php } ?>
 	</div>
 	<script>
-		console.log(history);
+		console.log(document.referrer);
 		if(history.length) {
 		} else {
 			$("#history-back").hide();
