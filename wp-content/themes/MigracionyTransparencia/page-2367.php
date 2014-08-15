@@ -1,6 +1,3 @@
-<?php
-die(var_dump($_GET));
-?>
 <?php get_header(); ?>
 	<?php
 	$content_css = '';
@@ -164,6 +161,7 @@ die(var_dump($_GET));
 			<?php
 				//include de arhivode manejo de base de datos
 				include_once "class/catalogos.php";
+				include_once "class/functions/string.php";
 				
 				$Catalogos      = new Catalogos();
 				$categories     = $Catalogos->categories();
@@ -177,7 +175,7 @@ die(var_dump($_GET));
 			<div class="post-content" style="margin: -29px 0px 0px;">
 				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
 				
-				<?php if(isset($_GET["error"])) { ?>
+				<?php if(isError()) { ?>
 					<p class="search-error">No se encontró ningún resultado para los términos buscados</p>
 				<?php } ?>
 				

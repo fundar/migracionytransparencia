@@ -192,3 +192,8 @@ function clean($string) {
 	
 	return $string;
 }
+
+function isError() {
+	$route = getRoute();
+	die(var_dump($route));
+}
