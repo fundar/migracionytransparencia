@@ -40,7 +40,7 @@
 	<div id="content" class="full-width" style="width:100%">
         <div class="search-page-search-form">
 			<div class="busca">
-				<p class="la-busqueda"><span>Buscar</span></p>
+				<p class="la-busqueda"><span>Resultado de la busqueda</span></p>
 			</div>
 		
 			<div class="fusion-one-third one_third fusion-column last" id="history-back">
