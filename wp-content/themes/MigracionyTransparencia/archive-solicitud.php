@@ -101,7 +101,7 @@
 		
 		<?php if(isset($pages)) { ?>
 			<?php for($page=1; $page<=$pages; $page++) { ?>
-				<a href="/solicitudes/?page=<?php echo $page; ?>" title="Paginación de solicitudes"<?php echo ($currentPage==$page) ? ' class="current-pag pag"' : ' class="pag"';?>>
+				<a href="/solicitudes/?page=<?php echo $page; ?>" title="Paginación de solicitudes"<?php echo ($currentPage==$page) ? ' class="active-page pag"' : ' class="pag"';?>>
 					<?php echo $page; ?>
 				</a>
 			<?php } ?>
