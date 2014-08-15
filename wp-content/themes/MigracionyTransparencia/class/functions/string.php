@@ -150,8 +150,8 @@ function isSearch() {
 			} elseif(isset($where[1])) {
 				$query .= "where " . $where[1];
 			} else {
-				foreach($where as $i => $wh) {
-					die(var_dump($wh));
+				foreach($where as $wher) {
+					die(var_dump($wher));
 				}
 			}
 		} else {
