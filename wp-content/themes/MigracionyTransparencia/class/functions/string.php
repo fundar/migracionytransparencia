@@ -146,14 +146,28 @@ function isSearch() {
 				
 				if(isset($where[1])) {
 					$query .= "or " . $where[1];
+					unset($where[1]);
+				}
+				
+				unset($where[0]);
+				
+				foreach($where as $wher) {
+					die(var_dump($wher));
 				}
 			} elseif(isset($where[1])) {
 				$query .= "where " . $where[1];
+				
+				unset($where[1]);
+				foreach($where as $wher) {
+					die(var_dump($wher));
+				}
 			} else {
 				foreach($where as $wher) {
 					die(var_dump($wher));
 				}
 			}
+			
+			die(var_dump($query));
 		} else {
 			return false;
 		}
