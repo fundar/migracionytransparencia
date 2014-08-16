@@ -173,7 +173,7 @@
 				</div>
 				<div class="seccion">
 					<p class="titulo">Fecha de solicitud</p>
-					<p class="info"><?php echo date('d-m-Y', $request["date_published"]);?></p>
+					<p class="info"><?php echo $request["date_published"];?></p>
 				</div>
 				<div class="seccion">
 					<p class="titulo">Tipo de documentos</p>
