@@ -47,14 +47,18 @@
 				Regresar al formulario de b&uacute;squeda
 			</a>
 			<div class="criterios">
+				<div class="fusion-three-fourth three_fourth fusion-column">
 				<p class="resultados">
 					<span>Resultado de la b&uacute;squeda</span>
 					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
 				</p>
+				</div>
+				<div class="fusion-one-fourth one_fourth fusion-column last">
 				<p class="criterios-busqueda">
 					Criterios de b&uacute;squeda:<br/>
 					<?php echo $criterios;?>
 				</p>
+				</div>
 			</div>
 		</div>
 		

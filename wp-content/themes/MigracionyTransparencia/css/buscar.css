@@ -6,10 +6,11 @@
 .criterios {
     color: #48bfc2;
 }
-.criterios-busqueda{
-  color:#ccc;
+.criterios-busqueda {
+    color: #aaaaaa;
+    margin: 0;
+    padding: 0;
 }
-
 .busca {
     color: #48bfc2;
     float: left;
