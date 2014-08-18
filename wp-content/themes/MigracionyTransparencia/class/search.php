@@ -125,8 +125,9 @@ class Search {
 	/*recorre el arry para obtener los criterios de busqueda*/
 	public function getCriterios($array = false) {
 		if(is_array($array)) {
+			die(var_dump($array));
 			foreach($array as $value) {
-				die(var_dump($value));
+				die(var_dump($array));
 			}
 		} else {
 			return false;
