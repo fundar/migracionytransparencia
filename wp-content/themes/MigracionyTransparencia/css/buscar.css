@@ -72,3 +72,7 @@ h2.entry-title > a:hover {color: #3aacaf;}
     padding: 20px 20px 20px 0;
     width: 100%;
 }
+a:hover {
+  color: #48BFC2;
+  text-decoration: none;
+}
