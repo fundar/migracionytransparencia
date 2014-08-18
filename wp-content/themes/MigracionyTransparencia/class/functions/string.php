@@ -149,6 +149,8 @@ function isSearch() {
 			$where[5] = "year(requests.date_published)=" . clean($_GET["ano"]);
 		}
 		
+		$data["array"] = $where;
+		
 		if(count($where) > 0) {
 			if(isset($where[0])) {
 				$query .= "where " . $where[0];
@@ -181,7 +183,9 @@ function isSearch() {
 				}
 			}
 			
-			return $query;
+			$data["query"] = $query;
+			
+			return $data;
 		} else {
 			return false;
 		}

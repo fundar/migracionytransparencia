@@ -12,15 +12,16 @@
 	/*Comprueba si se hizo una busqueda o del home*/
 	$query = isSearch();
 	
-	if($query) {
-		$requests = $Search->byQuery($query);
+	if($query and is_array($query)) {
+		$requests  = $Search->byQuery($query["query"]);
+		$criterios = $Search->getCriterios($query["array"]);
 		
 		if(!$requests) {
 			header('Location: ' . site_url() . "?error=not-found#busqueda");
 			die();
 		}
 		
-		$count = $Search->countByQuery($query);
+		$count = $Search->countByQuery($query["query"]);
 	} else {
 		/*Busca todas las solicitudes*/
 		$requests = $Search->all($limit, $offset);

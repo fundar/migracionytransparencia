@@ -121,4 +121,15 @@ class Search {
 		if($data and is_array($data)) return $data[0]["total"];
 		else return false;
 	}
+	
+	/*recorre el arry para obtener los criterios de busqueda*/
+	public function getCriterios($array = false) {
+		if(is_array($array)) {
+			foreach($array as $value) {
+				die(var_dump($value));
+			}
+		} else {
+			return false;
+		}
+	}
 }
