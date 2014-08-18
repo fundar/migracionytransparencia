@@ -6,7 +6,7 @@
 
 	<title>
 	<?php
-	if (defined('_titleSolicitud') && 1 == FOO) {
+	if(defined('_titleSolicitud')) {
 		echo _titleSolicitud;
 	} elseif ( defined('WPSEO_VERSION') ) {
 		wp_title('');
