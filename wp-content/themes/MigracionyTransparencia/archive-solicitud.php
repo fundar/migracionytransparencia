@@ -54,8 +54,8 @@
 				</p>
 			</div>
 			</div>
-			<div class="criterios">
-				<div class="fusion-one-fourth one_fourth fusion-column last">
+                        <div class="fusion-one-fourth one_fourth fusion-column last">
+				<div class="criterios">
  			                 <a class="link" href="/#busqueda" title="Regrear  eda">
 				         Regresar al formulario de b&uacute;squeda
 			                 </a>
