@@ -18,6 +18,6 @@ p.info{color:#4D4D4D;display: inline-block;font-size:15px;margin: 2px 0;}
 p.subtitulo-negro{color:#000; margin:0;}
 .el-contenido {margin-bottom: 40px;}
 .fusion-button.button-16 {line-height: 38px;background:#BB3835;border-color: rgba(255, 255, 255, 0.7);border-width: 0;box-shadow: none;color: rgba(255, 255, 255, 0.7);text-shadow: none;height:38px;padding:0 23px;width:75%;font-family: blanchcondensed;font-size: 23px;font-weight: normal;}
-.fusion-button { border-radius: 2px; box-sizing: content-box;cursor: pointer;display: inline-block;font-weight: bold;outline: 0 none;overflow: hidden;position: relative; text-align: center;text-shadow: 0 1px 0 #fff;text-transform: uppercase;transition: all 0.2s ease 0s;font-family: blanchcondensed;font-size: 23px;font-weight: normal;}
+.fusion-button { border-radius: 0px; box-sizing: content-box;cursor: pointer;display: inline-block;font-weight: bold;outline: 0 none;overflow: hidden;position: relative; text-align: center;text-shadow: 0 1px 0 #fff;text-transform: uppercase;transition: all 0.2s ease 0s;font-family: blanchcondensed;font-size: 23px;font-weight: normal;}
 a.button-16:hover  a.button-16:focus a.button-16:active{background:#E34F42;}
 .fusion-button:hover  .fusion-button:focus .fusion-button:active{background:#E34F42;}
