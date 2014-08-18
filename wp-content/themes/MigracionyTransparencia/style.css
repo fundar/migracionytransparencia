@@ -1648,7 +1648,7 @@ nav#sticky-nav {
 #sticky-nav ul .current_page_item a,
 #sticky-nav ul .current-menu-item a,
 #sticky-nav ul > .current-menu-parent a {
-  color: #a0ce4e;
+  color: #48BFC2;
   text-decoration: none;
   border-color: #a0ce4e;
 }
@@ -2851,7 +2851,7 @@ body .post-content .image-extras .link-icon {
 }
 .pagination .current,
 .woocommerce-pagination .current {
-  border: 1px solid #a0ce4e;
+  border: 1px solid #48BFC2;
   display: inline-block;
   height: 20px;
   line-height: 18px;
@@ -9539,7 +9539,7 @@ body:not(:-moz-handler-blocked) .rtl .myaccount_user_container .view-cart a:befo
   font-size: 22px;
 }
 #toTop:hover {
-  background-color: #A0CE4E;
+  background-color: #48BFC2;
 }
 #toTopHover {
   display: block;
