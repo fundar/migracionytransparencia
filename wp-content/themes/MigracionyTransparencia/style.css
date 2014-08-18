@@ -15783,3 +15783,15 @@ a.pag {
     text-align: right;
 }
 .resultados{font-size:15px;}
+#history-back {
+    border: 1px solid #48bfc2;
+    color: #4d4d4d;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-family: blanchcondensed;
+    font-size: 23px;
+    margin-bottom: 47px !important;
+    padding: 15px;
+    text-align: right;
+}

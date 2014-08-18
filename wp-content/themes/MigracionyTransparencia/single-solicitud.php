@@ -150,7 +150,7 @@
 			
 			<!-- Boton de regresar (solo se muestra cuando se hizo una busqueda) -->
 			<div class="fusion-one-third one_third fusion-column last">
-				<a class="fusion-button button-16" href="javascript:history.back();" id="history-back" title="Regrear a la busqueda" type="button">
+				<a class="" href="javascript:history.back();" id="history-back" title="Regrear a la busqueda" type="button">
 					Regresar
 				</a>
 			</div>
