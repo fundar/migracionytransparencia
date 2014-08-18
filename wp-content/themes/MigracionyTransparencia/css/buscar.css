@@ -93,18 +93,22 @@ a:hover {
     font-size: 15px;
     margin: 0;
 }
+
 .link {
     border: 1px solid #48bfc2;
-    color: #aaa;
+    color: #4d4d4d;
     cursor: pointer;
     display: inline-block;
+    float: left;
     font-family: blanchcondensed;
     font-size: 23px;
+    line-height: 38px;
     margin-bottom: 47px !important;
-    padding: 15px;
-    text-align: center;
+    padding: 0 72px;
+    text-align: right;
     width: 100%;
 }
+
 .link a:hover{
     color: #48BFC2;
 
