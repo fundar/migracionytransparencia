@@ -12,6 +12,7 @@ class Search {
 		/*conexion con base de datos*/
 		$this->mysql = new Db();
 		$this->mysql->connect($db);
+		$this->mysql->query("SET NAMES 'utf8′");
 	}
 	
 	/*obtiene todas las solicitudes*/
@@ -25,9 +26,8 @@ class Search {
 	
 	/*busca las solicitudes por query de busqueda*/
 	public function byQuery($queryString) {
-		$query = "select requests.* from requests " . $queryString . " order by requests.date_published desc";
+		$query = "select requests.*, organizations.name as organization, dependencies.name as dependecy, categories.name as category from requests left join organizations on requests.id_organization=organizations.id_organization left join dependencies on requests.id_dependecy=dependencies.id_dependecy left join categories on categories.id_category=requests.id_category " . $queryString . " order by requests.date_published desc";
 		$data  = $this->mysql->query($query);
-		die(var_dump($query));
 		
 		if($data and is_array($data)) return $data;
 		else return false;
@@ -35,7 +35,7 @@ class Search {
 	
 	/*Cuenta las solicitudes por query de busqueda*/
 	public function countByQuery($queryString) {
-		$query = "select count(*) as total from requests " . $queryString . " order by requests.date_published desc";
+		$query = "select count(*) as total from requests left join organizations on requests.id_organization=organizations.id_organization left join dependencies on requests.id_dependecy=dependencies.id_dependecy left join categories on categories.id_category=requests.id_category " . $queryString . " order by requests.date_published desc";
 		$data  = $this->mysql->query($query);
 		
 		if($data and is_array($data)) return $data[0]["total"];
