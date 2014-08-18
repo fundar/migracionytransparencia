@@ -1160,7 +1160,7 @@ button.close {
   line-height: 20px;
   color: #ffffff;
   text-align: center;
-  background-color: #a0ce4e;
+  background-color: #48BFC2;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -1470,7 +1470,7 @@ a {
   color: #333;
 }
 a:hover {
-  color: #a0ce4e;
+  color: #48BFC2;
   text-decoration: none;
 }
 input,
@@ -15589,7 +15589,7 @@ table {
   font-size: 13px;
 }
 .fusion-accordian .panel-title .active .fa-fusion-box {
-  background-color: #a0ce4e;
+  background-color: #48BFC2;
 }
 .fusion-accordian .panel-title .active .fa-fusion-box:before {
   content: "\e61c";
@@ -15604,7 +15604,7 @@ table {
 }
 .fusion-tooltip {
   cursor: pointer;
-  color: #a0ce4e;
+  color: #48BFC2;
 }
 .fusion-woo-featured-products-slider {
   position: relative;
