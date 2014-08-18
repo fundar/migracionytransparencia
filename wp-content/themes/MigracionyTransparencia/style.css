@@ -15796,3 +15796,7 @@ a.pag {
     text-align: right;
     line-height:38px;
 }
+#history-back:hover {
+    color:#48BFC2;
+
+}
