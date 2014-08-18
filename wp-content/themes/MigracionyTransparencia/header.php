@@ -7,7 +7,7 @@
 	<title>
 	<?php
 	if(defined('_titleSolicitud')) {
-		echo _titleSolicitud;
+		echo _titleSolicitud .  " - Migración y Transparencia";
 	} elseif ( defined('WPSEO_VERSION') ) {
 		wp_title('');
 	} else {
