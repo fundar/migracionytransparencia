@@ -15752,7 +15752,7 @@ table {
 a.active-page {
     background: none repeat scroll 0 0 #48bfc2;
     border-radius: 13px;
-    color: #fff;
+    color: #fff !important;
     display: inline-block;
     font-weight: bold;
     height: 25px;
@@ -15762,16 +15762,10 @@ a.active-page {
 }
 a.active-page:hover {
     background: none repeat scroll 0 0 #39abae;
-    border-radius: 13px;
-    color: #fff;
-    display: inline-block;
-    font-weight: bold;
-    height: 25px;
-    margin: 6px;
-    padding: 3px 8px;
-    width: 25px;
+    color: #f2f2f2;
+
 }
 a.pag {
     color: #424242;
-    margin: 0 10px;
+    margin: 0 8px;
 }
