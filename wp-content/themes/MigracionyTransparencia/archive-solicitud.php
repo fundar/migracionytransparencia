@@ -45,9 +45,9 @@
 				Regresar al formulario de busqueda
 			</a>
 			<div class="busca">
-				<p class="la-busqueda">
+				<p class="resultados">
 					<span>Resultado de la busqueda</span>
-					<span class="min">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
+					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
 				</p>
 			</div>
 		</div>
