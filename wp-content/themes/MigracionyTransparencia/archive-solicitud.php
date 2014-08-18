@@ -50,9 +50,6 @@
 					<span class="min">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
 				</p>
 			</div>
-			<a class="link" href="/#busqueda" title="Regrear a la busqueda">
-				Regresar al formulario de busqueda
-			</a>
 		</div>
 		
 		<div id="posts-container" class=" clearfix">
