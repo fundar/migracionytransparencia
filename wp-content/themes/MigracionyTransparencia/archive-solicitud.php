@@ -42,7 +42,7 @@
 	<div id="content" class="full-width" style="width:100%">
         <div class="search-page-search-form">
 			<a class="link" href="/#busqueda" title="Regrear a la busqueda">
-				Regresar al formulario de busqueda
+				Regresar al formulario de b&uacute;squeda
 			</a>
 			<div class="busca">
 				<p class="resultados">
