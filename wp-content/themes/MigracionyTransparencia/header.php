@@ -6,7 +6,9 @@
 
 	<title>
 	<?php
-	if ( defined('WPSEO_VERSION') ) {
+	if (defined('_titleSolicitud') && 1 == FOO) {
+		echo _titleSolicitud;
+	} elseif ( defined('WPSEO_VERSION') ) {
 		wp_title('');
 	} else {
 		bloginfo('name'); ?> <?php wp_title(' - ', true, 'left');

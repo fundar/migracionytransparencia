@@ -20,6 +20,7 @@
 		$resolution   = $Search->getResolution($request["id_request"]);
 		$cumplimiento = $Search->getCumplimiento($request["id_request"]);
 		$review 	  = $Search->getReview($request["id_request"]);
+		define('_titleSolicitud', utf8_encode($request["short_name"]));
 		
 		if($review) {
 			$turn_acts = $Search->getActsReviews($review["id_review"]);

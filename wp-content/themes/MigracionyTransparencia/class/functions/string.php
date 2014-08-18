@@ -88,6 +88,7 @@ function getPage() {
 	}
 }
 
+/*genera un slug a partir de una cadena*/
 function slug($string) {		
 	$characters = array(
 		"Á" => "A", "Ç" => "c", "É" => "e", "Í" => "i", "Ñ" => "n", "Ó" => "o", "Ú" => "u", 
@@ -109,6 +110,7 @@ function slug($string) {
 	return $string;
 }
 
+/*genera la cadena del query de busqueda*/
 function isSearch() {
 	if(isset($_GET["buscar"])) {
 		
@@ -185,6 +187,7 @@ function isSearch() {
 	}
 }
 
+/*limpia un string*/
 function clean($string) {
 	$string = str_replace("'", "", $string);
 	$string = str_replace("\'", "", $string);
@@ -193,6 +196,7 @@ function clean($string) {
 	return $string;
 }
 
+/*comprueba si hay erroe en la url*/
 function isError() {
 	$route = getRoute();
 	
