@@ -64,3 +64,11 @@ h2.entry-title > a:hover {color: #297a7c;}
     display: inline;
     text-align: left;
 }
+.fusion-sharing-box {
+    background-color: #f6f6f6;
+    display: table;
+    height: 70px;
+    margin-bottom: 55px;
+    padding: 20px 20px 20px 0;
+    width: 100%;
+}
