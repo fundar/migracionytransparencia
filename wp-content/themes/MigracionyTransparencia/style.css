@@ -15782,6 +15782,10 @@ a.pag {
     padding: 15px;
     text-align: right;
 }
+.link :hover{
+    color: ##48BFC2;
+
+}
 .resultados{font-size:15px;}
 #history-back {
     border: 1px solid #48bfc2;
