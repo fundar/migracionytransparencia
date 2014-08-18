@@ -51,7 +51,7 @@
 					<span>Resultado de la b&uacute;squeda</span>
 					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
 				</p>
-				<p>
+				<p class="criterios-busqueda">
 					Criterios de busqueda:<br/>
 					<?php echo $criterios;?>
 				</p>
