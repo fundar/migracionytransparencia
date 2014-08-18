@@ -42,11 +42,11 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/buscar.css" />
 <div class="avada-row">
 	<div id="content" class="full-width" style="width:100%">
-        <div class="search-page-search-form">
-			<a class="link" href="/#busqueda" title="Regrear a la busqueda">
+                <div class="search-page-search-form">
+			<a class="link" href="/#busqueda" title="Regrear  eda">
 				Regresar al formulario de b&uacute;squeda
 			</a>
-			<div class="busca">
+			<div class="criterios">
 				<p class="resultados">
 					<span>Resultado de la b&uacute;squeda</span>
 					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
