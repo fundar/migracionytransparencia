@@ -208,7 +208,7 @@ function clean($string) {
 	$string = str_replace("\'", "", $string);
 	$string = str_replace("''", "", $string);
 	
-	return $string;
+	return utf8_decode($string);
 }
 
 /*comprueba si hay erroe en la url*/
