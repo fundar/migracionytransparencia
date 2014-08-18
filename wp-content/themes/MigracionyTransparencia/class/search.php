@@ -169,19 +169,19 @@ class Search {
 				
 				if($key==2)  {
 					$data = $this->category($value);
-					$string .= "Que contenga la categoría: <strong>"   . $data["name"] . "</strong><br/>";
+					$string .= "Que contenga la categoría: <strong>"   . utf8_encode($data["name"]) . "</strong><br/>";
 				}
 				if($key==3)  {
 					$data = $this->dependency($value);
-					$string .= "De la dependencia: <strong>"   . $data["name"] . "</strong><br/>";
+					$string .= "De la dependencia: <strong>"   . utf8_encode($data["name"]) . "</strong><br/>";
 				}
 				if($key==4)  {
 					$data = $this->organization($value);
-					$string .= "De la organización: <strong>"   . $data["name"] . "</strong><br/>";
+					$string .= "De la organización: <strong>"   . utf8_encode($data["name"]) . "</strong><br/>";
 				}
 				if($key==5)  {
 					$data = $this->answersType($value);
-					$string .= "Que el tipo de respuesta sea: <strong>"   . $data["name"] . "</strong><br/>";
+					$string .= "Que el tipo de respuesta sea: <strong>"   . utf8_encode($data["name"]) . "</strong><br/>";
 				}
 				
 				if($key==6) $string .= "Del año: <strong>"   . $value . "</strong><br/>";
