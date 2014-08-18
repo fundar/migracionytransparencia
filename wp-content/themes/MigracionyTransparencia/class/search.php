@@ -122,13 +122,72 @@ class Search {
 		else return false;
 	}
 	
+	/*categories*/
+	public function category($id_category) {
+		$query = "select * from categories where id_category=$id_category";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
+	
+	/*dependencies*/
+	public function dependency($id_dependency) {
+		$query = "select * from dependencies where id_dependecy=$id_dependecy";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
+	
+	/*organizations*/
+	public function organization($id_organization) {
+		$query = "select * from organizations where id_organization=$id_organization";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
+	
+	/*answersTypes*/
+	public function answersType($id_type_answer) {
+		$query = "select * from answers_types where id_type_answer=$id_type_answer";
+		$data  = $this->mysql->query($query);
+		
+		if($data and is_array($data)) return $data[0];
+		else return false;
+	}
+	
 	/*recorre el arry para obtener los criterios de busqueda*/
 	public function getCriterios($array = false) {
 		if(is_array($array)) {
-			die(var_dump($array));
-			foreach($array as $value) {
-				die(var_dump($array));
+			$string = "";
+			
+			foreach($array as $key => $value) {
+				if($key==0) $string .= "Por la palabra: " . $value . "<br/>";
+				if($key==1) $string .= "Por el folio: "   . $value . "<br/>";
+				
+				if($key==2)  {
+					$data = $this->category($value);
+					$string .= "Y que contenga la categoría: "   . $data["name"] . "<br/>";
+				}
+				if($key==3)  {
+					$data = $this->dependency($value);
+					$string .= "Y de la dependencia: "   . $data["name"] . "<br/>";
+				}
+				if($key==4)  {
+					$data = $this->organization($value);
+					$string .= "Y de la organización: "   . $data["name"] . "<br/>";
+				}
+				if($key==5)  {
+					$data = $this->answersType($value);
+					$string .= "Y que el tipo de respuesta sea: "   . $data["name"] . "<br/>";
+				}
+				
+				if($key==6) $string .= "Y del año: "   . $value . "<br/>";
 			}
+			
+			die(var_dump($string));
 		} else {
 			return false;
 		}
