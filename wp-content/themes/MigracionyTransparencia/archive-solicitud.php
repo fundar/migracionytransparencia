@@ -46,7 +46,7 @@
 			</a>
 			<div class="busca">
 				<p class="resultados">
-					<span>Resultado de la busqueda</span>
+					<span>Resultado de la b&aucute;squeda</span>
 					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
 				</p>
 			</div>
