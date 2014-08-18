@@ -44,26 +44,24 @@
 	<div id="content" class="full-width" style="width:100%">
                 <div class="search-page-search-form">
 			<div class="fusion-three-fourth three_fourth fusion-column">
-			<a class="link" href="/#busqueda" title="Regrear  eda">
-				Regresar al formulario de b&uacute;squeda
-			</a>
-			</div>
-			<div class="criterios">
-				<div class="fusion-one-fourth one_fourth fusion-column last">
 				<p class="resultados">
-					<span>Resultado de la b&uacute;squeda</span>
+				<span>Rsultado de la b&uacute;squeda</span>
 					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
-				</p>
-				</div>
-				
+				</p>			
 				<p class="criterios-busqueda">
 					Criterios de b&uacute;squeda:<br/>
 					<?php echo $criterios;?>
 				</p>
+			</div>
+			</div>
+			<div class="criterios">
+				<div class="fusion-one-fourth one_fourth fusion-column last">
+ 			                 <a class="link" href="/#busqueda" title="Regrear  eda">
+				         Regresar al formulario de b&uacute;squeda
+			                 </a>
 				</div>
 			</div>
-		</div>
-		
+	           
 		<div id="posts-container" class=" clearfix">
 			<?php foreach($requests as $request) { ?>
 				<div class="post-content">
