@@ -169,6 +169,7 @@
 				$organizations  = $Catalogos->organizations();
 				$dependencies   = $Catalogos->dependencies();
 				$years		    = $Catalogos->years();
+				$numeralia      = $Catalogos->getNumeralia();
 			?>
 			
 		<form action="/solicitudes" method="get" role="search" class="seach-form" id="searchform">
@@ -322,6 +323,10 @@
 	
 	
 	<?php endif ;?>
-	
+	<script>
+		jQuery(document).ready( function () {
+			$('.textwidget').prepend("<?php echo $numeralia;?>"); 
+		});
+	</script>
 	
 <?php get_footer(); ?>

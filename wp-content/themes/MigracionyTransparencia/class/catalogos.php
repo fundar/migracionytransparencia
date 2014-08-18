@@ -55,6 +55,29 @@ class Catalogos {
 	}
 	
 	/*Metodos para la numeralia*/
+	public function getNumeralia() {
+		$count = $this->countRequests();
+		$inm   = $this->countDepedency();
+		$incom = $this->countAnswerType();
+		
+		$html = '<div class="shot" style="display: block;">';
+			$html .= '<p class="dato">' . $inm . '</p>';
+			$html .= '<div class="numeralia-info">';
+				$html .= '<p>La base de datos contiene ' . $count . ' solicitudes, de las cuales ' . $inm . ' fueron dirigidas al Instituto Nacional de Migración.</p>';
+			$html .= '</div>';
+		$html .= '</div>';
+		$html .= '<div class="divisor-1"></div>';
+
+		$html .= '<div class="shot" style="display: block;">';
+			$html .= '<p class="dato">' . $incom . '</p>';
+			$html .= '<div class="numeralia-info">';
+				$html .= '<p>En ' . $incom . ' de las ' . $count . ' solicitudes de acceso a información, la respuesta que brinda la dependencia es incompleta.</p>';
+			$html .= '</div>';
+		$html .= '</div>';
+		$html .= '<div class="divisor-1"></div>';
+		
+		return $html;
+	}
 	
 	/* Total de solicitudes */
 	public function countRequests() {
