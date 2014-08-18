@@ -6,6 +6,9 @@
 .criterios {
     color: #48bfc2;
 }
+.criterios-busqueda{
+  color:#ccc;
+}
 
 .busca {
     color: #48bfc2;
@@ -79,4 +82,13 @@ h2.entry-title > a:hover {color: #3aacaf;}
 a:hover {
   color: #48BFC2;
   text-decoration: none;
+}
+.search-page-search-form {
+    border-bottom: 1px solid #e6e5e6;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+}
+.resultados {
+    font-size: 15px;
+    margin: 0;
 }
