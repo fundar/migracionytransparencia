@@ -45,7 +45,7 @@
                 <div class="search-page-search-form">
 			<div class="fusion-two-third two_third fusion-column">
 				<p class="resultados">
-				<span>Rsultado de la b&uacute;squeda</span>
+				<span>Resultado de la b&uacute;squeda</span>
 					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
 				</p>			
 				<p class="criterios-busqueda">
