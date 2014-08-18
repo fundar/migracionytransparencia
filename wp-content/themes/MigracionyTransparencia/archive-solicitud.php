@@ -52,7 +52,7 @@
 					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
 				</p>
 				<p class="criterios-busqueda">
-					Criterios de busqueda:<br/>
+					Criterios de b&uacute;squeda:<br/>
 					<?php echo $criterios;?>
 				</p>
 			</div>
