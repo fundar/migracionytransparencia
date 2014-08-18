@@ -15770,22 +15770,6 @@ a.pag {
     margin: 0 8px;
 }
 
-.link {
-    border: 1px solid #48bfc2;
-    color: #aaa;
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    font-family: blanchcondensed;
-    font-size: 23px;
-    margin-bottom: 47px !important;
-    padding: 15px;
-    text-align: right;
-}
-.link a:hover{
-    color: #48BFC2;
-
-}
 .resultados{font-size:15px;}
 #history-back {
     border: 1px solid #48bfc2;
