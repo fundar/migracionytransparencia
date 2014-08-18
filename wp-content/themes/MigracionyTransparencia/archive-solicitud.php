@@ -43,7 +43,7 @@
 <div class="avada-row">
 	<div id="content" class="full-width" style="width:100%">
                 <div class="search-page-search-form">
-			<div class="fusion-three-fourth three_fourth fusion-column">
+			<div class="fusion-two-third two_third fusion-column">
 				<p class="resultados">
 				<span>Rsultado de la b&uacute;squeda</span>
 					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
@@ -53,7 +53,7 @@
 					<?php echo $criterios;?>
 				</p>
 			</div>			
-                        <div class="fusion-one-fourth one_fourth fusion-column last">
+                        <div class="fusion-one-third one_third fusion-column last">
 				<div class="criterios">
  			                 <a class="link" href="/#busqueda" title="Regrear  eda">
 				         Regresar al formulario de b&uacute;squeda
