@@ -19,6 +19,7 @@ function getTotalArray($text) {
 	return count($data);
 }
 
+/*obtiene la ruta de la url [array]*/
 function getRoute($pos = false) {
 	
 	$route = explode("/", substr($_SERVER["REQUEST_URI"], 1));
@@ -34,6 +35,7 @@ function getRoute($pos = false) {
 	return $route;
 }
 
+/*obtiene el slug de la url por GET*/
 function getSlug() {
 	if(isset($_GET["slug"])) {
 		return $_GET["slug"];
@@ -42,6 +44,7 @@ function getSlug() {
 	}
 }
 
+/*obtiene la url actual*/
 function getURL(){
 	$url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 	return $url;
