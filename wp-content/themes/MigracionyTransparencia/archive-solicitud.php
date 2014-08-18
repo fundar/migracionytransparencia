@@ -8,6 +8,7 @@
 	$offset      = getOffset($limit);
 	$currentPage = getPage();
 	$Search      = new Search();
+	$criterios   = "Todas las solicitudes";
 	
 	/*Comprueba si se hizo una busqueda o del home*/
 	$query = isSearch();
@@ -49,6 +50,10 @@
 				<p class="resultados">
 					<span>Resultado de la b&uacute;squeda</span>
 					<span class="total">&nbsp;-&nbsp;<?php echo $count;?> solicitudes encontradas</span>
+				</p>
+				<p>
+					Criterios de busqueda:<br/>
+					<?php echo $criterios;?>
 				</p>
 			</div>
 		</div>

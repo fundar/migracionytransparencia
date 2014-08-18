@@ -164,30 +164,30 @@ class Search {
 			$string = "";
 			
 			foreach($array as $key => $value) {
-				if($key==0) $string .= "Por la palabra: " . $value . "<br/>";
-				if($key==1) $string .= "Por el folio: "   . $value . "<br/>";
+				if($key==0) $string .= "Por la palabra: <strong>" . $value . "</strong><br/>";
+				if($key==1) $string .= "Por el folio: <strong>"   . $value . "</strong><br/>";
 				
 				if($key==2)  {
 					$data = $this->category($value);
-					$string .= "Y que contenga la categoría: "   . $data["name"] . "<br/>";
+					$string .= "Que contenga la categoría: <strong>"   . $data["name"] . "</strong><br/>";
 				}
 				if($key==3)  {
 					$data = $this->dependency($value);
-					$string .= "Y de la dependencia: "   . $data["name"] . "<br/>";
+					$string .= "De la dependencia: <strong>"   . $data["name"] . "</strong><br/>";
 				}
 				if($key==4)  {
 					$data = $this->organization($value);
-					$string .= "Y de la organización: "   . $data["name"] . "<br/>";
+					$string .= "De la organización: <strong>"   . $data["name"] . "</strong><br/>";
 				}
 				if($key==5)  {
 					$data = $this->answersType($value);
-					$string .= "Y que el tipo de respuesta sea: "   . $data["name"] . "<br/>";
+					$string .= "Que el tipo de respuesta sea: <strong>"   . $data["name"] . "</strong><br/>";
 				}
 				
-				if($key==6) $string .= "Y del año: "   . $value . "<br/>";
+				if($key==6) $string .= "Del año: <strong>"   . $value . "</strong><br/>";
 			}
 			
-			die(var_dump($string));
+			return $string;
 		} else {
 			return false;
 		}
