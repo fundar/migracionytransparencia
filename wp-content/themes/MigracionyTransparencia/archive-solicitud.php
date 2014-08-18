@@ -16,7 +16,7 @@
 	if($query and is_array($query)) {
 		$requests  = $Search->byQuery($query["query"]);
 		$criterios = $Search->getCriterios($query["array"]);
-		die(var_dump($requests));
+		
 		if(!$requests) {
 			header('Location: ' . site_url() . "?error=not-found#busqueda");
 			die();
