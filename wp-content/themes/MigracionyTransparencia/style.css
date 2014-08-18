@@ -15769,3 +15769,14 @@ a.pag {
     color: #424242;
     margin: 0 8px;
 }
+
+.link {
+    border: 1px solid #48bfc2;
+    cursor: pointer;
+    float: right;
+    font-family: blanchcondensed;
+    font-size: 23px;
+    padding: 15px;
+    position: relative;
+    text-align: right;
+}
