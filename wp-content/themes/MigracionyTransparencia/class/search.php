@@ -165,8 +165,8 @@ class Search {
 			$string = "";
 			
 			foreach($array as $key => $value) {
-				if($key==0) $string .= "Por la palabra: <strong>" . $value . "</strong><br/>";
-				if($key==1) $string .= "Por el folio: <strong>"   . $value . "</strong><br/>";
+				if($key==0) $string .= "Por la palabra: <strong>" . utf8_encode($value) . "</strong><br/>";
+				if($key==1) $string .= "Por el folio: <strong>"   . utf8_encode($value) . "</strong><br/>";
 				
 				if($key==2)  {
 					$data = $this->category($value);
