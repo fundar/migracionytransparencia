@@ -52,8 +52,7 @@
 					Criterios de b&uacute;squeda:<br/>
 					<?php echo $criterios;?>
 				</p>
-			</div>
-			</div>
+			</div>			
                         <div class="fusion-one-fourth one_fourth fusion-column last">
 				<div class="criterios">
  			                 <a class="link" href="/#busqueda" title="Regrear  eda">
@@ -61,6 +60,7 @@
 			                 </a>
 				</div>
 			</div>
+		</div>
 	           
 		<div id="posts-container" class=" clearfix">
 			<?php foreach($requests as $request) { ?>
