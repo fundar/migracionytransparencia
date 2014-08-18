@@ -325,7 +325,7 @@
 	<?php endif ;?>
 	<script>
 		jQuery(document).ready( function () {
-			jQuery('.textwidget').prepend('<?php echo $numeralia;?>');
+			jQuery('.SidebarInicio > .widget > .textwidget').prepend('<?php echo $numeralia;?>');
 		});
 	</script>
 	
