@@ -15782,7 +15782,7 @@ a.pag {
     padding: 15px;
     text-align: right;
 }
-a.link :hover{
+.link a:hover{
     color: #48BFC2;
 
 }
