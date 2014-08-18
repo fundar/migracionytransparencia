@@ -27,7 +27,7 @@ class Search {
 	public function byQuery($queryString) {
 		$query = "select requests.* from requests " . $queryString . " order by requests.date_published desc";
 		$data  = $this->mysql->query($query);
-		die(var_dump($data));
+		die(var_dump($query));
 		
 		if($data and is_array($data)) return $data;
 		else return false;
