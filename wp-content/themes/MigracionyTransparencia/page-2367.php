@@ -164,11 +164,15 @@
 				include_once "class/functions/string.php";
 				
 				$Catalogos      = new Catalogos();
+				
+				/*obtiene los catalogos para la busqueda*/
 				$categories     = $Catalogos->categories();
 				$answers_types  = $Catalogos->answersTypes();
 				$organizations  = $Catalogos->organizations();
 				$dependencies   = $Catalogos->dependencies();
 				$years		    = $Catalogos->years();
+				
+				/*obtiene el html de la numeralia*/
 				$numeralia      = $Catalogos->getNumeralia();
 			?>
 			
@@ -328,6 +332,7 @@
 	
 	<?php endif ;?>
 	<script>
+		/*Inserta el html de la numeralia al inicio del sidebar de la numeralia*/
 		jQuery(document).ready( function () {
 			jQuery('.SidebarInicio > .widget > .textwidget').prepend('<?php echo $numeralia;?>');
 		});

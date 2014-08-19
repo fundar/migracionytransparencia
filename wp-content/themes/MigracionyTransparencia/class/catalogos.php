@@ -54,7 +54,7 @@ class Catalogos {
 		return $data;
 	}
 	
-	/*Metodos para la numeralia*/
+	/*Genera el html para la numeralia*/
 	public function getNumeralia() {
 		$count = $this->countRequests();
 		$inm   = $this->countDepedency();
