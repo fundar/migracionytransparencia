@@ -96,20 +96,21 @@ a:hover {
 
 .link {
     border: 1px solid #48bfc2;
-    color: #4d4d4d;
+    color: #48BFC2;
     cursor: pointer;
     display: inline-block;
     float: left;
     font-family: blanchcondensed;
     font-size: 23px;
-    line-height: 38px;
+    line-height: 49px;
     margin-bottom: 47px !important;
-    padding: 0 72px;
-    text-align: right;
+    padding: 0;
+    text-align: center;
     width: 100%;
 }
 
 .link a:hover{
-    color: #48BFC2;
+    border: 1px solid #3cb1b5;
+    color: #3cb1b5;
 
 }
