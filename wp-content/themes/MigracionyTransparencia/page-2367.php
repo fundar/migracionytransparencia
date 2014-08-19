@@ -179,7 +179,8 @@
 				
 				<?php if(isError()) { ?>
 				        <div class="fusion-alert alert error alert-dismissable alert-danger">
-					<p class="search-error">No se encontró ningún resultado para los términos buscados</p>
+					<button aria-hidden="true" data-dismiss="alert" class="close toggle-alert" type="button">×</button>
+                                        <span class="alert-icon"><i class="fa fa-lg fa-exclamation-triangle"></i></span>No se encontró ningún resultado para los términos buscados
 					</div>
 
 				<?php } ?>
