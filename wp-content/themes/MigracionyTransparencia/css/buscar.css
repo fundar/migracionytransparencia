@@ -110,7 +110,7 @@ a:hover {
 }
 
 .link a:hover{
-    border: 1px solid #3cb1b5;
-    color: #3cb1b5;
+    border: 1px solid #3cb1b5 !important;
+    color: #3cb1b5 !important;
 
 }
