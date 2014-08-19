@@ -176,10 +176,11 @@
 			<div class="post-content" style="margin: -29px 0px 0px;">
 				<a name="busqueda"></a>
 				<div class="heading"><h3 class="titulo-post">Buscar solicitud</h3></div>
-				
+				<div class="fusion-alert alert error alert-dismissable alert-danger">
 				<?php if(isError()) { ?>
 					<p class="search-error">No se encontró ningún resultado para los términos buscados</p>
 				<?php } ?>
+				</div>
 				
 				<p class="formahome">B&uacute;squeda por palabra</p>
 				<div class="search-table">
