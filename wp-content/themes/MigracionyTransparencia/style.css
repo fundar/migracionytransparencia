@@ -15785,6 +15785,8 @@ a.pag {
     line-height:38px;
 }
 #history-back:hover {
-    color:#48BFC2;
+    color:#3cb1b5;
+        border: 1px solid #3cb1b5;
+
 
 }
