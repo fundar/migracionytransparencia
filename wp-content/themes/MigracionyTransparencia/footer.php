@@ -108,6 +108,8 @@
 	<!--[if lte IE 8]>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/respond.js"></script>
 	<![endif]-->
+	
+	<!-- Google Analytics -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -118,5 +120,7 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<!-- Google Analytics -->
+	
 </body>
 </html>
