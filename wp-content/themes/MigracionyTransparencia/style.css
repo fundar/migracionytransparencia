@@ -93,6 +93,7 @@ a:hover.boton-solicitudes {
     border-width: 0;
     box-shadow: none;
     color: rgba(255, 255, 255, 0.7) !important;
+    cursor:pointer;
     display: inline-block;
     height: 38px;
     padding: 0 23px !important;
