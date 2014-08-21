@@ -11790,8 +11790,8 @@ h3.fusion-megamenu-title {
   clear: both;
   margin-top: 16px;
   padding: 5px 0;
-  border-bottom: 1px solid #e9eaee;
-  border-top: 1px solid #e9eaee;
+  border-bottom: 1px dotted #ccc !important;
+  border-top: 0px solid #e9eaee;
   font-size: 12px;
 }
 .fusion-blog-medium .entry-meta:before,
