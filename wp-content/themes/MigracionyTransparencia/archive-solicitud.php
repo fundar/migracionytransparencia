@@ -83,7 +83,7 @@
 								<?php echo utf8_encode($request["short_name"]);?>
 							</a>
 						</h2>
-						<p><?php echo utf8_encode($request["question"]);?></p>
+						<p><?php echo utf8_encode($request["description"]);?></p>
 					</div>
 					
 					<?php if( $smof_data['social_sharing_box'] ) {
