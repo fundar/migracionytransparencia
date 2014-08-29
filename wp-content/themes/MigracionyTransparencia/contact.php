@@ -127,7 +127,7 @@ elseif(get_post_meta($post->ID, 'pyre_sidebar_position', true) == 'left') {
 
 						<input type="text" name="contact_name" id="author" value="<?php if(isset($_POST['contact_name']) && !empty($_POST['contact_name'])) { echo wp_filter_kses( $_POST['contact_name'] ); } ?>" placeholder="<?php echo __('Nombre (requiredo)', 'Avada'); ?>" size="22" tabindex="1" aria-required="true" class="input-name">
 
-						<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']) && !empty($_POST['email'])) { echo wp_filter_kses( $_POST['email'] ); } ?>" placeholder="<?php echo __('Email (required)', 'Avada'); ?>" size="22" tabindex="2" aria-required="true" class="input-email">
+						<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']) && !empty($_POST['email'])) { echo wp_filter_kses( $_POST['email'] ); } ?>" placeholder="<?php echo __('Correo electr&oacure;nico (requiredo)', 'Avada'); ?>" size="22" tabindex="2" aria-required="true" class="input-email">
 
 						<input type="text" name="url" id="url" value="<?php if(isset($_POST['url']) && !empty($_POST['url'])) { echo wp_filter_kses( $_POST['url'] ); } ?>" placeholder="<?php echo __('Subject', 'Avada'); ?>" size="22" tabindex="3" class="input-website">
 
