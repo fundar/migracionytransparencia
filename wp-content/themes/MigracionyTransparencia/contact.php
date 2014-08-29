@@ -151,7 +151,7 @@ elseif(get_post_meta($post->ID, 'pyre_sidebar_position', true) == 'left') {
 
 					<div id="comment-submit-container">
 
-						<p><div><input name="submit" type="submit" id="submit" tabindex="5" value="<?php echo __('Submit Form', 'Avada'); ?>" class="<?php echo sprintf( 'comment-submit btn btn-default button default small fusion-button button-small button-default button-%s button-%s', strtolower( $smof_data['button_shape'] ), strtolower( $smof_data['button_type'] ) ); ?>"></div></p>
+						<p><div><input name="submit" type="submit" id="submit" tabindex="5" value="<?php echo __('Enviar', 'Avada'); ?>" class="<?php echo sprintf( 'comment-submit btn btn-default button default small fusion-button button-small button-default button-%s button-%s', strtolower( $smof_data['button_shape'] ), strtolower( $smof_data['button_type'] ) ); ?>"></div></p>
 					</div>
 
 			</form>
