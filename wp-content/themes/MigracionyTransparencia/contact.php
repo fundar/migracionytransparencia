@@ -8,7 +8,7 @@ if( $smof_data['recaptcha_public'] && $smof_data['recaptcha_private'] && !functi
 //If the form is submitted
 if(isset($_POST['submit'])) {
 	//Check to make sure that the name field is not empty
-	if(trim($_POST['contact_name']) == '' || trim($_POST['contact_name']) == 'Nombre (required)') {
+	if(trim($_POST['contact_name']) == '' || trim($_POST['contact_name']) == 'Name (required)') {
 		$hasError = true;
 	} else {
 		$name = trim($_POST['contact_name']);
@@ -125,7 +125,7 @@ elseif(get_post_meta($post->ID, 'pyre_sidebar_position', true) == 'left') {
 
 					<div id="comment-input">
 
-						<input type="text" name="contact_name" id="author" value="<?php if(isset($_POST['contact_name']) && !empty($_POST['contact_name'])) { echo wp_filter_kses( $_POST['contact_name'] ); } ?>" placeholder="<?php echo __('Name (required)', 'Avada'); ?>" size="22" tabindex="1" aria-required="true" class="input-name">
+						<input type="text" name="contact_name" id="author" value="<?php if(isset($_POST['contact_name']) && !empty($_POST['contact_name'])) { echo wp_filter_kses( $_POST['contact_name'] ); } ?>" placeholder="<?php echo __('Nombre (requiredo)', 'Avada'); ?>" size="22" tabindex="1" aria-required="true" class="input-name">
 
 						<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']) && !empty($_POST['email'])) { echo wp_filter_kses( $_POST['email'] ); } ?>" placeholder="<?php echo __('Email (required)', 'Avada'); ?>" size="22" tabindex="2" aria-required="true" class="input-email">
 
