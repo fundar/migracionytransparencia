@@ -33,7 +33,7 @@ if(isset($_POST['submit'])) {
 	}
 
 	//Check to make sure comments were entered
-	if(trim($_POST['msg']) == '' || trim($_POST['msg']) == 'Message') {
+	if(trim($_POST['msg']) == '' || trim($_POST['msg']) == 'Mensaje') {
 		$hasError = true;
 	} else {
 		if(function_exists('stripslashes')) {
