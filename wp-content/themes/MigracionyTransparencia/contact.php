@@ -8,7 +8,7 @@ if( $smof_data['recaptcha_public'] && $smof_data['recaptcha_private'] && !functi
 //If the form is submitted
 if(isset($_POST['submit'])) {
 	//Check to make sure that the name field is not empty
-	if(trim($_POST['contact_name']) == '' || trim($_POST['contact_name']) == 'Name (required)') {
+	if(trim($_POST['contact_name']) == '' || trim($_POST['contact_name']) == 'Nombre (required)') {
 		$hasError = true;
 	} else {
 		$name = trim($_POST['contact_name']);
@@ -33,7 +33,7 @@ if(isset($_POST['submit'])) {
 	}
 
 	//Check to make sure comments were entered
-	if(trim($_POST['msg']) == '' || trim($_POST['msg']) == 'Mensaje') {
+	if(trim($_POST['msg']) == '' || trim($_POST['msg']) == 'Message') {
 		$hasError = true;
 	} else {
 		if(function_exists('stripslashes')) {
