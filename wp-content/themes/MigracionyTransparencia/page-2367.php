@@ -184,7 +184,12 @@
 				<?php if(isError()) { ?>
 				        <div class="fusion-alert alert error alert-dismissable alert-danger">
 					<button aria-hidden="true" data-dismiss="alert" class="close toggle-alert" type="button">×</button>
-                                        <span class="alert-icon"><i class="fa fa-lg fa-exclamation-triangle"></i></span>No se encontró ningún resultado para los términos buscados
+                                        <span class="alert-icon"><i class="fa fa-lg fa-exclamation-triangle"></i></span>
+					<p>Actualmente, la información que buscaste no se encuentra en la base de datos.</p>
+                                        <p>¿Quieres saber cómo solicitar información pública al gobierno?</p>
+                                        <p>Piensa unos minutos sobre qué información necesitas, si ya puede ser pública y disponible en algún lugar, y si no, quién la debería
+					tener. Si la información la tiene el gobierno federal, entonces puedes hacer una solicitud de acceso a información a través del sistema
+					Infomex. No olvides que siempre hay que preguntar por documentos. Para recibir tips, puedes escribirnos a través del formulario de contacto.</p>
 					</div>
 
 				<?php } ?>
