@@ -189,7 +189,8 @@
                                         <p>¿Quieres saber cómo solicitar información pública al gobierno?</p>
                                         <p>Piensa unos minutos sobre qué información necesitas, si ya puede ser pública y disponible en algún lugar, y si no, quién la debería
 					tener. Si la información la tiene el gobierno federal, entonces puedes hacer una solicitud de acceso a información a través del sistema
-					Infomex. No olvides que siempre hay que preguntar por documentos. Para recibir tips, puedes escribirnos a través del formulario de contacto.</p>
+					<a href="https://www.infomex.org.mx/" target="_blank">Infomex</a>. No olvides que siempre hay que preguntar por documentos. Para recibir tips, puedes escribirnos a través
+					del <a href="http://migracionytransparencia.org/contacto/" target="_blank">formulario de contacto</a>.</p>
 					</div>
 
 				<?php } ?>
