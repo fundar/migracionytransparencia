@@ -311,21 +311,11 @@
 	</div>
 	<?php if( $sidebar_exists == true ): ?>
 	<?php wp_reset_query(); ?>
-	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?>
-	we4
-	
-	<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acerca de') ) : ?>
-        <?php endif; ?>
+	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
+							<?php 
+                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acerca de') ) : ?>
+                <?php endif; ?>
 			
-
-
-	
-	
-	
-	
-	
-	
-	</div>
 	
 		
 <!-- inicio #recientes- entradas-->
