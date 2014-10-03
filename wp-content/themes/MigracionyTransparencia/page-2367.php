@@ -343,6 +343,11 @@
 			jQuery('.SidebarInicio > .widget > .textwidget').prepend('<?php echo $numeralia;?>');
 		});
 	</script>
-	<div id="sidebar" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar('Acercade'); ?></div>
+	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
+						<?php 
+                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acercade') ) : ?>
+                <?php endif; ?>
+		
+	</div>
 	
 <?php get_footer(); ?>
