@@ -339,7 +339,29 @@
 	</article> <!-- end .entry -->
        <?php endwhile; // end of the loop. ?>
 		
-	</div><!-- post recientes -->		
+	</div><!-- post recientes -->
+	
+<!-- inicio #organizaciones-->
+        <div id="content" class="full-width">
+		<div class="divisor-2"></div>		
+		
+			
+		<?php 
+	$service_query = new WP_Query('page_id=10531');
+			while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
+
+	<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+
+		<div class="post_content clearfix" style="padding: 3px 0px;">
+			<h3 class="headings"><?php the_title(); ?></h3>
+			
+			<?php the_content(); ?>
+			<?php themefusion_pagination($pages = '', $range = 2); ?>
+		</div> 	<!-- end .post_content -->
+	</article> <!-- end .entry -->
+       <?php endwhile; // end of the loop. ?>
+		
+	</div><!-- organizaciones -->		
 	
 	
 	<?php endif ;?>
