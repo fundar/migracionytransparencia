@@ -337,17 +337,18 @@
 	
 	
 	<?php endif ;?>
+		<div id="sidebar" style="<?php echo $sidebar_css; ?>">
+						<?php 
+                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acercade') ) : ?>
+                <?php endif; ?>
+		
+	</div>
 	<script>
 		/*Inserta el html de la numeralia al inicio del sidebar de la numeralia*/
 		jQuery(document).ready( function () {
 			jQuery('.SidebarInicio > .widget > .textwidget').prepend('<?php echo $numeralia;?>');
 		});
 	</script>
-	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
-						<?php 
-                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acercade') ) : ?>
-                <?php endif; ?>
-		
-	</div>
+
 	
 <?php get_footer(); ?>
