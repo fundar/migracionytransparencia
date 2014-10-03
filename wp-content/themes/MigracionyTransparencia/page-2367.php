@@ -311,7 +311,22 @@
 	</div>
 	<?php if( $sidebar_exists == true ): ?>
 	<?php wp_reset_query(); ?>
-	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
+	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?>
+	we4
+	
+	<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acercade') ) : ?>
+        <?php endif; ?>
+			
+
+
+	
+	
+	
+	
+	
+	
+	</div>
+	
 		
 <!-- inicio #recientes- entradas-->
         <div id="content" class="full-width">
@@ -337,19 +352,11 @@
 	
 	
 	<?php endif ;?>
-		<div id="sidebar" style="<?php echo $sidebar_css; ?>">
-						<?php 
-                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acercade') ) : ?>
-                <?php endif; ?>
-		rt4wty4y6
-		
-	</div>
 	<script>
 		/*Inserta el html de la numeralia al inicio del sidebar de la numeralia*/
 		jQuery(document).ready( function () {
 			jQuery('.SidebarInicio > .widget > .textwidget').prepend('<?php echo $numeralia;?>');
 		});
 	</script>
-
 	
 <?php get_footer(); ?>
