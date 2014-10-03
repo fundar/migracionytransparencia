@@ -314,7 +314,7 @@
 	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?>
 	we4
 	
-	<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acercade') ) : ?>
+	<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acerca de') ) : ?>
         <?php endif; ?>
 			
 
