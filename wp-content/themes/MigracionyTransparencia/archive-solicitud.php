@@ -79,8 +79,7 @@
 					</div>
 					<div class="excerpt-container strip-html">
 						<h2 class="entry-title">
-							<?php die(var_dump($request["short_name"])); ?>
-							<?php if($request["short_name"] != "") { ?>
+							<?php if($request["short_name"] != NULL) { ?>
 								<a href="/solicitudes/solicitud/?slug=<?php echo $request["slug"];?>" title="<?php echo utf8_encode($request["short_name"]);?>">
 									<?php echo utf8_encode($request["short_name"]);?>
 								</a>
