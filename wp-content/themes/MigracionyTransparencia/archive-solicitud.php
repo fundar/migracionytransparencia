@@ -42,7 +42,7 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/buscar.css" />
 <div class="avada-row">
 	<div id="content" class="full-width" style="width:100%">
-                <div class="search-page-search-form">
+        <div class="search-page-search-form">
 			<div class="fusion-two-third two_third fusion-column">
 				<p class="resultados">
 				<span>Resultado de la b&uacute;squeda</span>
@@ -53,11 +53,11 @@
 					<?php echo $criterios;?>
 				</p>
 			</div>			
-                        <div class="fusion-one-third one_third fusion-column last">
+			<div class="fusion-one-third one_third fusion-column last">
 				<div class="criterios">
- 			                 <a class="link" href="/#busqueda" title="Regrear  eda">
-				         Regresar al formulario de b&uacute;squeda
-			                 </a>
+ 			        <a class="link" href="/#busqueda" title="Regresar a la busqueda">
+						Regresar al formulario de b&uacute;squeda
+					</a>
 				</div>
 			</div>
 		</div>
