@@ -75,11 +75,19 @@
 
 			<?php if((has_post_thumbnail() || get_post_meta($post->ID, 'pyre_video', true))): ?>
 				<h2 class="entry-title">
-					<?php echo utf8_encode($request["short_name"]); ?>
+					<?php if($request["short_name"] != NULL) { ?>
+						<?php echo utf8_encode($request["short_name"]); ?>
+					<?php } else { ?>
+						<?php echo utf8_encode($request["name"]); ?>
+					<?php } ?>
 				</h2>
 			<?php else: ?>			
 				<span class="entry-title">
-					<?php echo utf8_encode($request["short_name"]); ?>
+					<?php if($request["short_name"] != NULL) { ?>
+						<?php echo utf8_encode($request["short_name"]); ?>
+					<?php } else { ?>
+						<?php echo utf8_encode($request["name"]); ?>
+					<?php } ?>
 				</span>
 				<div class="divisor-3"></div>
 			<?php endif; ?>
@@ -214,6 +222,12 @@
 		<?php if( $smof_data['social_sharing_box'] ) {
 			$full_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
 			
+			if($request["short_name"] != NULL) {
+				$name = $request["short_name"];
+			} else {
+				$name = $request["name"];
+			}
+			
 			$sharingbox_soical_icon_options = array (
 				'sharingbox'		=> 'yes',
 				'icon_colors' 		=> $smof_data['sharing_social_links_icon_color'],
@@ -222,10 +236,10 @@
 				'icon_boxed_radius' => $smof_data['sharing_social_links_boxed_radius'],
 				'tooltip_placement'	=> $smof_data['sharing_social_links_tooltip_placement'],
 				'linktarget'		=> '_blank',
-				'title'				=> rawurlencode(utf8_encode($request["short_name"])),
-				'description'		=> utf8_encode($request["short_name"]),
+				'title'				=> rawurlencode(utf8_encode($name)),
+				'description'		=> utf8_encode($name),
 				'link'				=> getURL(),
-				'pinterest_image'	=> rawurlencode( $full_image[0] ),
+				'pinterest_image'	=> rawurlencode($full_image[0]),
 			);
 		?>
 			<div class="fusion-sharing-box share-box">					
