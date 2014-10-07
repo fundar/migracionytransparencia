@@ -184,7 +184,13 @@
 				<?php if(isError()) { ?>
 				        <div class="fusion-alert alert error alert-dismissable alert-danger">
 					<button aria-hidden="true" data-dismiss="alert" class="close toggle-alert" type="button">×</button>
-                                        <span class="alert-icon"><i class="fa fa-lg fa-exclamation-triangle"></i></span>No se encontró ningún resultado para los términos buscados
+                                        <span class="alert-icon"><i class="fa fa-lg fa-exclamation-triangle"></i></span>
+					<p>Actualmente, la información que buscaste no se encuentra en la base de datos.</p>
+                                        <p>¿Quieres saber cómo solicitar información pública al gobierno?</p>
+                                        <p>Piensa unos minutos sobre qué información necesitas, si ya puede ser pública y disponible en algún lugar, y si no, quién la debería
+					tener. Si la información la tiene el gobierno federal, entonces puedes hacer una solicitud de acceso a información a través del sistema
+					<a href="https://www.infomex.org.mx/" target="_blank">Infomex</a>. No olvides que siempre hay que preguntar por documentos. Para recibir tips, puedes escribirnos a través
+					del <a href="http://migracionytransparencia.org/contacto/" target="_blank">formulario de contacto</a>.</p>
 					</div>
 
 				<?php } ?>
@@ -306,6 +312,12 @@
 	<?php if( $sidebar_exists == true ): ?>
 	<?php wp_reset_query(); ?>
 	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
+	<div id="sidebar" class="Acercade">						<?php 
+                    if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acerca de') ) : ?>
+                <?php endif; ?>
+	</div>
+			
+	
 		
 <!-- inicio #recientes- entradas-->
         <div id="content" class="full-width">
@@ -327,7 +339,29 @@
 	</article> <!-- end .entry -->
        <?php endwhile; // end of the loop. ?>
 		
-	</div><!-- post recientes -->		
+	</div><!-- post recientes -->
+	
+<!-- inicio #organizaciones-->
+        <div id="content" class="full-width">
+		<div class="divisor-2"></div>		
+		
+			
+		<?php 
+	$service_query = new WP_Query('page_id=10531');
+			while ( $service_query->have_posts() ) : $service_query->the_post(); ?>
+
+	<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+
+		<div class="post_content clearfix" style="padding: 3px 0px;">
+			<h3 class="headings"><?php the_title(); ?></h3>
+			
+			<?php the_content(); ?>
+			<?php themefusion_pagination($pages = '', $range = 2); ?>
+		</div> 	<!-- end .post_content -->
+	</article> <!-- end .entry -->
+       <?php endwhile; // end of the loop. ?>
+		
+	</div><!-- organizaciones -->		
 	
 	
 	<?php endif ;?>
