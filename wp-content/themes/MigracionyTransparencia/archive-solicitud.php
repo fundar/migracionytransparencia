@@ -79,9 +79,16 @@
 					</div>
 					<div class="excerpt-container strip-html">
 						<h2 class="entry-title">
-							<a href="/solicitudes/solicitud/?slug=<?php echo $request["slug"];?>" title="<?php echo utf8_encode($request["short_name"]);?>">
-								<?php echo utf8_encode($request["short_name"]);?>
-							</a>
+							<?php die(var_dump($request["short_name"])); ?>
+							<?php if($request["short_name"] != "") { ?>
+								<a href="/solicitudes/solicitud/?slug=<?php echo $request["slug"];?>" title="<?php echo utf8_encode($request["short_name"]);?>">
+									<?php echo utf8_encode($request["short_name"]);?>
+								</a>
+							<?php } else { ?>
+								<a href="/solicitudes/solicitud/?slug=<?php echo $request["slug"];?>" title="<?php echo utf8_encode($request["name"]);?>">
+									<?php echo utf8_encode($request["name"]);?>
+								</a>
+							<?php } ?>
 						</h2>
 						<p><?php echo utf8_encode($request["description"]);?></p>
 					</div>
