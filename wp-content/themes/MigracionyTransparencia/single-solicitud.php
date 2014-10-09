@@ -130,13 +130,14 @@
 					<?php } ?>
 					
 				<div class="avada-row">	
-				<div class="fusion-one-third one_third fusion-column">
-					<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $request["file_url"];?>" title="Documento respuesta" target="_blank" type="button">
-						Ver respuesta
-					</a>
-					<span style="padding-right: 1px;"></span>
-				</div>
-				
+				<?php if($resolution and !is_null($response["file_url"])) { ?>
+					<div class="fusion-one-third one_third fusion-column">
+						<a class="fusion-button button-16" href="http://migracion.fundarlabs.mx/assets/uploads/files/<?php echo $response["file_url"];?>" title="Documento respuesta" target="_blank" type="button">
+							Ver respuesta
+						</a>
+						<span style="padding-right: 1px;"></span>
+					</div>
+				<?php } ?>
 				
 				<?php if($resolution and !is_null($resolution["file_url"])) { ?>
 					<div class="fusion-one-third one_third fusion-column">
