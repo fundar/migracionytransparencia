@@ -5,7 +5,7 @@
 		<div id="post-404page">
 			<div class="post-content">
 				<div class="fusion-title title">
-					<h2 class="title-heading-left" style="line-height: 34px;"><?php echo __('P&aacute;gina no encontrada', 'Avada'); ?></h2><div class="title-sep-container"><div class="title-sep sep-double"></div></div>
+					<h2 class="title-heading-left" style="line-height: 54px;padding-bottom:6px;"><?php echo __('P&aacute;gina no encontrada', 'Avada'); ?></h2><div class="title-sep-container"><div class="title-sep sep-double"></div></div>
 				</div>
 				<div class="fusion-clearfix"></div>
 				<div class="error_page">
