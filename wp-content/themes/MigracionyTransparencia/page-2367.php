@@ -309,13 +309,14 @@
 		
 		<?php endif; ?>
 	</div>
-	<?php if( $sidebar_exists == true ): ?>
-	<?php wp_reset_query(); ?>
-	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
-	<div id="sidebar" class="Acercade">						<?php 
+		<div id="sidebar" class="Acercade">						<?php 
                     if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Acerca de') ) : ?>
                 <?php endif; ?>
 	</div>
+	<?php if( $sidebar_exists == true ): ?>
+	<?php wp_reset_query(); ?>
+	<div id="sidebar" class="SidebarInicio" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
+
 			
 	
 		
