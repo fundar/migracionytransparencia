@@ -183,8 +183,7 @@
 				
 				<?php if(isError()) { ?>
 				        <div class="fusion-alert alert error alert-dismissable alert-danger">
-					<button aria-hidden="true" data-dismiss="alert" class="close toggle-alert" type="button">×</button>
-                                        <span class="alert-icon"><i class="fa fa-lg fa-exclamation-triangle"></i></span>
+					<button aria-hidden="true" data-dismiss="alert" class="close toggle-alert" type="button">×</button>                                       
 					<p>Actualmente, la información que buscaste no se encuentra en la base de datos.</p>
                                         <p>¿Quieres saber cómo solicitar información pública al gobierno?</p>
                                         <p>Piensa unos minutos sobre qué información necesitas, si ya puede ser pública y disponible en algún lugar, y si no, quién la debería
