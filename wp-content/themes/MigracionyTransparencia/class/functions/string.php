@@ -123,9 +123,9 @@ function isSearch() {
 		$query = "";
 		
 		if(isset($_GET["search_query"]) and $_GET["search_query"] != "") {
-			$array = explode(" ", clean($_GET["search_query"]));
+			$arraysearch_query = explode(" ", clean($_GET["search_query"]));
 			$wherequery = "";
-			foreach($array as $value) {
+			foreach($arraysearch_query as $value) {
 				$wherequery .= " or value like '%" . $value . "%'";
 			}
 			
