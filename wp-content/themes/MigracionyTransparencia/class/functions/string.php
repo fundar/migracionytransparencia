@@ -123,7 +123,15 @@ function isSearch() {
 		$query = "";
 		
 		if(isset($_GET["search_query"]) and $_GET["search_query"] != "") {
-			$where[0] = "id_request in (select id_request from keywords2requests where id_keyword in (select id_keyword from keywords where value like '%" . clean($_GET["search_query"]) ."%')) ";
+			$array = explode(" ", clean($_GET["search_query"]));
+			$where = "";
+			foreach($array as $value) {
+				$where .= " or value='" . $value . "'";
+			}
+			
+			$query  = "id_request in (select id_request from keywords2requests where id_keyword in (select id_keyword from keywords where ";
+			$query .= "value like '%" . clean($_GET["search_query"]) ."%'" . $where . "))";
+			$where[0] = $query;
 			$array[0] = clean($_GET["search_query"]);
 		}
 		
