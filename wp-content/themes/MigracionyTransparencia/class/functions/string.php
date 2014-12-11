@@ -126,7 +126,7 @@ function isSearch() {
 			$array = explode(" ", clean($_GET["search_query"]));
 			$wherequery = "";
 			foreach($array as $value) {
-				$wherequery .= " or value='" . $value . "'";
+				$wherequery .= " or value like '%" . $value . "%'";
 			}
 			
 			$search_query  = "id_request in (select id_request from keywords2requests where id_keyword in (select id_keyword from keywords where ";
