@@ -117,11 +117,11 @@
 								 echo "No";
 						         }
 								else{
-								 echo $response["resource_number"];
+								 echo $resolution["resource_number"];
 								}
 							?>
 						</p>
-
+m
 					</div>
 					
 					<?php if($cumplimiento) { ?>
