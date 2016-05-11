@@ -121,7 +121,6 @@
 								}
 							?>
 						</p>
-m
 					</div>
 					
 					<?php if($cumplimiento) { ?>
