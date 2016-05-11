@@ -114,9 +114,11 @@
 								$string = "";
 								if(!$review) echo "No";
 								else foreach($turn_acts as $act) $string .= $act["name"] . ",";
-								echo utf8_encode(rtrim($string, ","));
+								//echo utf8_encode(rtrim($string, ","));
+								echo $response["resource_number"];
 							?>
-						</p>	
+						</p>
+
 					</div>
 					
 					<?php if($cumplimiento) { ?>
