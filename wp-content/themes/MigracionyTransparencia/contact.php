@@ -60,7 +60,7 @@ if(isset($_POST['submit'])) {
 		$subject = wp_filter_kses( $subject );
 		$comments = wp_filter_kses( $comments );
 		
-		$emailTo = $smof_data['email_address']; //Put your own email address here
+		$emailTo = 'josech@fundar.org.mx'; //Put your own email address here
 		$body = __('Name:', 'Avada')." $name \n\n";
 		$body .= __('Email:', 'Avada')." $email \n\n";
 		$body .= __('Subject:', 'Avada')." $subject \n\n";
